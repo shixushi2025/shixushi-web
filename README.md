@@ -1,5 +1,51 @@
-# Vue 3 + TypeScript + Vite
+# 时序史 · 时间宇宙
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+「时序史」是一个把历史、当下与未来规划放进同一条纵向时间线的实验项目。首页展示所有事件（历史朝代节点、经济/科技/政治观察等），用户可以通过类别筛选或关键词检索，直接从同一序列穿梭古今，再进入相应模块做深度阅读。
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+> 在线预览：尚未公开部署  
+> 技术栈：Vue 3 · TypeScript · Vite
+
+---
+
+## 核心能力
+
+- **统一时间线**：所有事件以竖向卡片形式按照时间顺序排列，支持关键词搜索与类别（历史/经济/政治/科技/社会/当下观察）筛选。
+- **当下观察板块**：与历史事件使用同样的数据结构，记录实时的经济、科技、政策节点。
+- **模块化阅读**：提供中国历史时间线、世界重大事件、专题、人物等模块化页面，便于深入挖掘。
+- **结构化数据**：`src/data/` 中保存朝代、皇帝、事件等结构化数据，便于后续拓展检索与可视化。
+- **品牌与视觉统一**：站点 Logo、favicon、Hero、导航、页脚等沿用“时间宇宙”风格，方便后续延展。
+
+---
+
+## 目录速览
+
+```
+.
+├── public/                # 静态资源（含 timeline-icon.svg favicon）
+├── src/
+│   ├── assets/            # 全局样式
+│   ├── components/
+│   │   ├── common/        # 时间线、列表等通用组件
+│   │   └── home/          # 首页专用组件（当下观察板块等）
+│   ├── data/              # 手工维护的数据（朝代/皇帝/事件等）
+│   ├── layouts/           # 布局
+│   ├── pages/             # 页面（Home、中国、世界、专题、人
+│   ├── router/            # Vue Router 配置
+│   └── types/             # TypeScript 类型
+└── README.md
+```
+
+---
+
+## 本地开发
+
+```bash
+# 安装依赖
+npm install
+
+# 本地开发模式
+npm run dev
+
+# 类型检查 + 打包
+npm run build
+```

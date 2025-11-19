@@ -1,16 +1,20 @@
 <template>
-  <section>
-    <h1>按朝代查看历史</h1>
-    <p class="desc">从夏商周到宋元明清，按朝代进入对应时间线。</p>
+  <section class="page">
+    <header class="page-header">
+      <p class="eyebrow">Dynasty Index</p>
+      <h1>按朝代查看历史</h1>
+      <p class="lead">沿着朝代顺序进入，每个节点都对应详尽的时间线与事件列表。</p>
+    </header>
 
-    <ul class="era-list">
-      <li v-for="era in eras" :key="era.slug">
-        <RouterLink :to="`/era/${era.slug}`">
+    <div class="era-grid">
+      <RouterLink v-for="era in eras" :key="era.slug" :to="`/era/${era.slug}`" class="era-card">
+        <header>
           <h2>{{ era.name }}</h2>
-          <p>{{ era.startYear }}–{{ era.endYear }} · {{ era.summary }}</p>
-        </RouterLink>
-      </li>
-    </ul>
+          <p>{{ era.startYear }} – {{ era.endYear }}</p>
+        </header>
+        <p class="summary">{{ era.summary }}</p>
+      </RouterLink>
+    </div>
   </section>
 </template>
 
@@ -20,28 +24,61 @@ import { eras } from '@/data/eras';
 </script>
 
 <style scoped>
-.desc {
-  margin-bottom: 12px;
-  color: #666;
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
-.era-list {
-  list-style: none;
-  padding: 0;
+.page-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-.era-list li {
-  border-bottom: 1px solid #eee;
-  padding: 12px 0;
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 12px;
+  color: var(--text-muted);
 }
-.era-list a {
-  text-decoration: none;
-  color: #333;
+.lead {
+  color: var(--text-muted);
 }
-.era-list h2 {
-  font-size: 18px;
-  margin-bottom: 4px;
+.era-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
 }
-.era-list p {
-  font-size: 13px;
-  color: #666;
+.era-card {
+  border-radius: 20px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid var(--border-soft);
+  color: var(--text-body);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.era-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 24px rgba(33, 24, 8, 0.12);
+}
+.era-card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+.era-card h2 {
+  margin: 0;
+  font-size: 20px;
+}
+.era-card p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+.summary {
+  color: var(--text-body);
 }
 </style>
