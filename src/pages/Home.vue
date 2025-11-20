@@ -1,32 +1,39 @@
 <template>
   <div class="home">
     <section class="hero">
+      <div class="hero-backdrop"></div>
       <div class="hero-content">
-        <p class="eyebrow">时序史 · 时间宇宙</p>
-        <h1>纵向时间线，串联历史与当下的所有事件</h1>
-        <p class="subtitle">
-          不限制模块，所有事件都按照时间顺序排列。选择你关心的类别，或直接阅读全量时间流。
-        </p>
-        <div class="hero-actions">
-          <RouterLink to="/china" class="btn primary">进入历史模块</RouterLink>
-          <RouterLink to="/world" class="btn ghost">查看世界/专题</RouterLink>
+        <div class="hero-left">
+          <div class="hero-labels">
+            <p class="eyebrow">时序史 · 时间宇宙</p>
+            <span class="glow-pill">时间流 · 事件网络</span>
+          </div>
+          <h1>纵向时间线，串联历史与当下的所有事件</h1>
+          <p class="subtitle">
+            不限制模块，所有事件都按照时间顺序排列。选择你关心的类别，或直接阅读全量时间流。
+          </p>
+          <div class="hero-actions">
+            <RouterLink to="/china" class="btn primary">进入历史模块</RouterLink>
+            <RouterLink to="/world" class="btn ghost">查看世界/专题</RouterLink>
+          </div>
+          <div class="stat-badges">
+            <span v-for="stat in stats" :key="stat.label" class="stat-chip">
+              <span class="value">{{ stat.value }}</span>
+              <span class="label">{{ stat.label }}</span>
+            </span>
+          </div>
         </div>
-        <ul class="stats">
-          <li v-for="stat in stats" :key="stat.label">
-            <span class="value">{{ stat.value }}</span>
-            <span class="label">{{ stat.label }}</span>
-          </li>
-        </ul>
-      </div>
-      <div class="hero-panel">
-        <h3>精选视角</h3>
-        <ul>
-          <li v-for="item in heroHighlights" :key="item.label">
-            <span class="pill">{{ item.pill }}</span>
-            <p class="title">{{ item.label }}</p>
-            <p class="desc">{{ item.desc }}</p>
-          </li>
-        </ul>
+        <div class="hero-panel">
+          <div class="panel-illustration" aria-hidden="true">⏳</div>
+          <h3>精选视角</h3>
+          <ul>
+            <li v-for="item in heroHighlights" :key="item.label">
+              <span class="pill">{{ item.pill }}</span>
+              <p class="title">{{ item.label }}</p>
+              <p class="desc">{{ item.desc }}</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -222,18 +229,76 @@ watch(keyword, () => {
   gap: 48px;
 }
 .hero {
+  position: relative;
+}
+
+.hero-backdrop {
+  position: absolute;
+  inset: 0;
+  border-radius: 32px;
+  background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.42), transparent 40%),
+    radial-gradient(circle at 80% 10%, rgba(247, 153, 68, 0.25), transparent 40%),
+    linear-gradient(135deg, #fff7ee, #f5e7d4);
+  filter: drop-shadow(0 25px 60px rgba(92, 65, 32, 0.2));
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 32px;
   padding: 40px;
   border-radius: 32px;
-  background: linear-gradient(135deg, #fff2e0, #f2e1cf);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0 25px 60px rgba(92, 65, 32, 0.25);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.55));
 }
+
+.hero-content::after {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.2));
+  backdrop-filter: blur(12px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-left,
+.hero-panel {
+  position: relative;
+  z-index: 1;
+}
+
 .hero-content h1 {
   font-size: clamp(28px, 4vw, 40px);
   margin-bottom: 16px;
+}
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.hero-labels {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.glow-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(247, 153, 68, 0.18);
+  color: var(--brand);
+  font-weight: 600;
+  border: 1px solid rgba(247, 153, 68, 0.4);
+  box-shadow: 0 10px 24px rgba(247, 153, 68, 0.25);
 }
 .eyebrow {
   text-transform: uppercase;
@@ -258,46 +323,81 @@ watch(keyword, () => {
   justify-content: center;
   padding: 10px 20px;
   border-radius: 999px;
-  border: 1px solid var(--text-strong);
+  border: 1px solid transparent;
   font-size: 14px;
   font-weight: 600;
 }
 .btn.primary {
-  background: var(--text-strong);
+  background: var(--brand);
+  border-color: rgba(247, 153, 68, 0.45);
   color: #fff;
+  box-shadow: 0 15px 35px rgba(247, 153, 68, 0.35), 0 2px 12px rgba(247, 153, 68, 0.35);
 }
 .btn.ghost {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.6);
+  border-color: rgba(0, 0, 0, 0.08);
   color: var(--text-strong);
 }
-.stats {
-  list-style: none;
-  padding: 0;
-  margin: 28px 0 0;
+.stat-badges {
   display: flex;
-  gap: 24px;
   flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
 }
-.stats li {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+
+.stat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 18px rgba(12, 7, 2, 0.08);
 }
-.stats .value {
-  font-size: 24px;
+
+.stat-chip .value {
+  font-size: 18px;
   font-weight: 700;
+  color: var(--text-strong);
 }
-.stats .label {
+
+.stat-chip .label {
   font-size: 12px;
   color: var(--text-muted);
   letter-spacing: 0.05em;
 }
+
 .hero-panel {
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 24px;
-  padding: 20px 24px;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 22px 24px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 16px 32px rgba(18, 12, 4, 0.14);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
+
+.panel-illustration {
+  align-self: flex-start;
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: linear-gradient(145deg, rgba(247, 153, 68, 0.18), rgba(58, 32, 9, 0.15));
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 12px 24px rgba(18, 12, 4, 0.18);
+  color: var(--text-strong);
+}
+
+.hero-panel h3 {
+  margin: 0;
+}
+
 .hero-panel ul {
   list-style: none;
   padding: 0;
@@ -452,9 +552,12 @@ watch(keyword, () => {
 }
 
 @media (max-width: 768px) {
-  .hero {
-    padding: 28px 20px;
+  .hero-backdrop,
+  .hero-content {
     border-radius: 20px;
+  }
+  .hero-content {
+    padding: 28px 20px;
   }
   .filter-controls {
     flex-direction: column;
