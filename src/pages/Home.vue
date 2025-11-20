@@ -47,22 +47,26 @@
             :class="{ active: selectedCategory === option.key }"
             @click="selectCategory(option.key)"
           >
+            <span class="category-icon" aria-hidden="true">{{ categoryIcons[option.key] }}</span>
             {{ option.label }}
+            <span class="category-count">{{ categoryCounts[option.key] }}</span>
           </button>
         </div>
         <label class="search-box">
-          <span>检索</span>
+          <span class="search-icon" aria-hidden="true">🔍</span>
           <input
             v-model="keyword"
             type="text"
             placeholder="输入事件、年份或关键词"
           />
+          <button v-if="keyword" type="button" class="clear-btn" @click="clearKeyword">×</button>
         </label>
       </div>
       <p class="filter-hint">
         当前选择：<strong>{{ activeCategoryLabel }}</strong> · 匹配
         <strong>{{ totalEvents }}</strong> 条事件
       </p>
+      <p v-if="totalEvents === 0" class="empty-hint">没有找到匹配的事件，换个关键词或选择其他类别试试。</p>
     </section>
 
     <section class="timeline-section">
@@ -136,6 +140,16 @@ const categoryOptions = [
   { key: 'today', label: '当下观察' },
 ];
 
+const categoryIcons: Record<string, string> = {
+  all: '🧭',
+  history: '🏛️',
+  economy: '💹',
+  politics: '🏛️',
+  tech: '🛰️',
+  society: '🤝',
+  today: '👀',
+};
+
 const categoryKeywordMap: Record<string, string[]> = {
   history: ['历史事件'],
   economy: ['经济', '金融创新'],
@@ -204,9 +218,22 @@ const activeCategoryLabel = computed(
   () => categoryOptions.find(option => option.key === selectedCategory.value)?.label ?? '全部'
 );
 const currentSpotlights = computed(() => contemporaryEvents.slice(0, 3));
+const categoryCounts = computed(() =>
+  categoryOptions.reduce((acc, option) => {
+    const count =
+      option.key === 'all'
+        ? events.length
+        : events.filter(event => matchCategory(event, option.key)).length;
+    return { ...acc, [option.key]: count };
+  }, {} as Record<string, number>),
+);
 
 const selectCategory = (key: string) => {
   selectedCategory.value = key;
+};
+
+const clearKeyword = () => {
+  keyword.value = '';
 };
 
 const loadMore = () => {
@@ -457,34 +484,95 @@ watch(keyword, () => {
   border: 1px solid var(--border-soft);
   background: #fff;
   border-radius: 999px;
-  padding: 6px 14px;
+  padding: 8px 16px;
   font-size: 13px;
   font-weight: 600;
   color: var(--text-muted);
-}
-.category-btn.active {
-  background: rgba(247, 153, 68, 0.16);
-  border-color: rgba(247, 153, 68, 0.4);
-  color: var(--brand);
-}
-.search-box {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+.category-btn.active {
+  background: rgba(247, 153, 68, 0.25);
+  border-color: rgba(247, 153, 68, 0.75);
+  color: var(--brand);
+  box-shadow: 0 10px 24px rgba(247, 153, 68, 0.28);
+}
+.category-btn:hover {
+  border-color: rgba(247, 153, 68, 0.5);
+  color: var(--text-strong);
+}
+.category-icon {
+  font-size: 14px;
+}
+.category-count {
+  background: var(--bg-muted);
   color: var(--text-muted);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.search-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-muted);
+  background: #fff;
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  padding: 6px 10px 6px 12px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7), 0 6px 12px rgba(0, 0, 0, 0.04);
 }
 .search-box input {
-  border: 1px solid var(--border-soft);
+  border: none;
+  outline: none;
   border-radius: 12px;
-  padding: 8px 12px;
+  padding: 6px 2px;
   font-size: 14px;
-  min-width: 200px;
+  min-width: 220px;
+}
+.search-icon {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+.clear-btn {
+  border: none;
+  background: var(--bg-muted);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--text-muted);
+}
+.clear-btn:hover {
+  color: var(--text-strong);
 }
 .filter-hint {
   margin: 0;
   font-size: 13px;
+  color: var(--brand);
+  background: rgba(247, 153, 68, 0.08);
+  border: 1px dashed rgba(247, 153, 68, 0.45);
+  border-radius: 12px;
+  padding: 10px 12px;
+  position: relative;
+  z-index: 1;
+}
+.empty-hint {
+  margin: 0;
+  font-size: 13px;
   color: var(--text-muted);
+  padding: 8px 12px;
+  background: var(--bg-muted);
+  border-radius: 10px;
 }
 .timeline-section {
   display: flex;
