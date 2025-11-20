@@ -99,11 +99,27 @@
         </div>
       </div>
       <div class="module-grid">
-        <RouterLink v-for="card in moduleCards" :key="card.title" :to="card.link" class="module-card">
-          <span class="pill">{{ card.focus }}</span>
+        <RouterLink
+          v-for="card in moduleCards"
+          :key="card.title"
+          :to="card.link"
+          class="module-card"
+          :style="getCardStyle(card.focusKey)"
+        >
+          <div class="module-card__header">
+            <span class="pill" :style="getPillStyle(card.focusKey)">
+              <span class="pill-icon" aria-hidden="true">{{ getFocusMeta(card.focusKey).icon }}</span>
+              {{ card.focus }} · {{ card.tag }}
+            </span>
+            <span class="module-illustration" aria-hidden="true">{{ getFocusMeta(card.focusKey).glyph }}</span>
+          </div>
           <h3>{{ card.title }}</h3>
+          <p class="module-subtitle">{{ card.subtitle }}</p>
           <p>{{ card.desc }}</p>
-          <span class="module-link">{{ card.cta }} &rarr;</span>
+          <span class="module-link">
+            <span class="label">{{ card.cta }}</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </span>
         </RouterLink>
       </div>
     </section>
@@ -162,33 +178,93 @@ const categoryKeywordMap: Record<string, string[]> = {
 const moduleCards = [
   {
     focus: '历史',
+    focusKey: 'history',
     title: '中国历史时间线',
+    subtitle: '王朝更迭与制度脉络',
     desc: '从夏商周到近现代，查看朝代阶段、人物、事件详情。',
     link: '/china',
     cta: '进入历史模块',
+    tag: '年代轴',
   },
   {
     focus: '世界',
+    focusKey: 'world',
     title: '世界重大事件',
+    subtitle: '全球视角下的时代转折',
     desc: '同步全球战争、工业化、地缘节点，与中国进程对照。',
     link: '/world',
     cta: '浏览世界线',
+    tag: '对照阅读',
   },
   {
     focus: '专题',
+    focusKey: 'topic',
     title: '专题与人物',
+    subtitle: '制度·思想·科技的专题档案',
     desc: '围绕制度、战争、思想、科技开展纵深阅读，串联更多关联。',
     link: '/topics',
     cta: '查看专题索引',
+    tag: '深度策展',
   },
   {
     focus: '人物',
+    focusKey: 'people',
     title: '人物索引',
+    subtitle: '人物谱系与影响轨迹',
     desc: '查看皇帝、政治人物、科学家等的生平与相关事件。',
     link: '/people',
     cta: '阅读人物传记',
+    tag: '传记目录',
   },
 ];
+
+type FocusMeta = { gradient: string; accent: string; icon: string; glyph: string };
+
+const focusMeta: Record<string, FocusMeta> = {
+  history: {
+    gradient: 'linear-gradient(135deg, rgba(247, 153, 68, 0.14), rgba(255, 227, 199, 0.8))',
+    accent: '#f79944',
+    icon: '⏳',
+    glyph: '📜',
+  },
+  world: {
+    gradient: 'linear-gradient(135deg, rgba(40, 115, 255, 0.16), rgba(218, 232, 255, 0.9))',
+    accent: '#2873ff',
+    icon: '🌐',
+    glyph: '🗺️',
+  },
+  topic: {
+    gradient: 'linear-gradient(135deg, rgba(128, 90, 213, 0.16), rgba(233, 224, 255, 0.9))',
+    accent: '#805ad5',
+    icon: '📂',
+    glyph: '🎯',
+  },
+  people: {
+    gradient: 'linear-gradient(135deg, rgba(0, 196, 140, 0.14), rgba(214, 246, 237, 0.9))',
+    accent: '#00c48c',
+    icon: '👥',
+    glyph: '🧭',
+  },
+};
+
+const defaultFocusMeta: FocusMeta = focusMeta.history!;
+
+const getFocusMeta = (key: string): FocusMeta => {
+  const meta = focusMeta[key];
+  return meta ?? defaultFocusMeta;
+};
+
+const getCardStyle = (key: string) => ({
+  backgroundImage: getFocusMeta(key).gradient,
+  borderColor: `${getFocusMeta(key).accent}33`,
+  boxShadow: `0 16px 30px ${getFocusMeta(key).accent}22`,
+});
+
+const getPillStyle = (key: string) => ({
+  background: `${getFocusMeta(key).accent}12`,
+  color: getFocusMeta(key).accent,
+  borderColor: `${getFocusMeta(key).accent}40`,
+});
 
 const selectedCategory = ref('all');
 const keyword = ref('');
@@ -608,26 +684,53 @@ watch(keyword, () => {
 }
 .module-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
 }
 .module-card {
-  background: #fff;
-  border: 1px solid var(--border-soft);
-  border-radius: 20px;
-  padding: 18px;
+  border-radius: 22px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   color: inherit;
   text-decoration: none;
-  box-shadow: 0 12px 20px rgba(18, 12, 4, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  background-color: #fff;
+}
+.module-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 32px rgba(18, 12, 4, 0.12);
+}
+.module-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .module-card .pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid transparent;
   font-size: 12px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  background: var(--bg-muted);
+}
+.pill-icon {
+  font-size: 14px;
+}
+.module-illustration {
+  font-size: 28px;
+  opacity: 0.8;
+}
+.module-subtitle {
+  margin: 0;
+  color: var(--text-strong);
+  font-weight: 600;
+  font-size: 14px;
 }
 .module-card p {
   margin: 0;
@@ -635,8 +738,19 @@ watch(keyword, () => {
 }
 .module-link {
   margin-top: auto;
-  font-weight: 600;
-  color: var(--brand);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  color: var(--text-strong);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  width: fit-content;
+}
+.module-link .arrow {
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
