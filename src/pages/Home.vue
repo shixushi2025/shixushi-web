@@ -1,23 +1,48 @@
 <template>
-  <div class="home">
+  <div class="home" :class="[`layout-${currentLayout.key}`]">
+    <section class="layout-switcher" aria-label="首页布局切换">
+      <div class="switcher-copy">
+        <p class="eyebrow">首页布局模式</p>
+      </div>
+      <div class="switcher-actions">
+        <button
+          v-for="option in homeLayoutOptions"
+          :key="option.key"
+          type="button"
+          class="switcher-btn"
+          :class="{ active: layoutVariant === option.key }"
+          @click="layoutVariant = option.key"
+        >
+          <span class="btn-label">{{ option.label }}</span>
+          <span class="btn-desc">{{ option.description }}</span>
+        </button>
+      </div>
+    </section>
+
     <section class="hero">
       <div class="hero-backdrop"></div>
       <div class="hero-content">
         <div class="hero-left">
           <div class="hero-labels">
-            <p class="eyebrow">时序史 · 时间宇宙</p>
-            <span class="glow-pill">时间流 · 事件网络</span>
+            <p class="eyebrow">{{ currentLayout.hero.eyebrow }}</p>
+            <span class="glow-pill" :style="{ borderColor: `${currentLayout.hero.pillAccent}40`, color: currentLayout.hero.pillAccent }">
+              {{ currentLayout.hero.pill }}
+            </span>
           </div>
-          <h1>纵向时间线，串联历史与当下的所有事件</h1>
+          <h1>{{ currentLayout.hero.title }}</h1>
           <p class="subtitle">
-            不限制模块，所有事件都按照时间顺序排列。选择你关心的类别，或直接阅读全量时间流。
+            {{ currentLayout.hero.subtitle }}
           </p>
           <div class="hero-actions">
-            <RouterLink to="/china" class="btn primary">进入历史模块</RouterLink>
-            <RouterLink to="/world" class="btn ghost">查看世界/专题</RouterLink>
+            <RouterLink :to="currentLayout.hero.primaryCta.link" class="btn primary">
+              {{ currentLayout.hero.primaryCta.label }}
+            </RouterLink>
+            <RouterLink :to="currentLayout.hero.secondaryCta.link" class="btn ghost">
+              {{ currentLayout.hero.secondaryCta.label }}
+            </RouterLink>
           </div>
           <div class="stat-badges">
-            <span v-for="stat in stats" :key="stat.label" class="stat-chip">
+            <span v-for="stat in currentLayout.stats" :key="stat.label" class="stat-chip">
               <span class="value">{{ stat.value }}</span>
               <span class="label">{{ stat.label }}</span>
             </span>
@@ -25,9 +50,9 @@
         </div>
         <div class="hero-panel">
           <div class="panel-illustration" aria-hidden="true">⏳</div>
-          <h3>精选视角</h3>
+          <h3>历史视角精选</h3>
           <ul>
-            <li v-for="item in heroHighlights" :key="item.label">
+            <li v-for="item in currentLayout.highlights" :key="item.label">
               <span class="pill">{{ item.pill }}</span>
               <p class="title">{{ item.label }}</p>
               <p class="desc">{{ item.desc }}</p>
@@ -64,31 +89,42 @@
       </div>
       <p class="filter-hint">
         当前选择：<strong>{{ activeCategoryLabel }}</strong> · 匹配
-        <strong>{{ totalEvents }}</strong> 条事件
+        <strong>{{ totalEvents }}</strong> 条历史事件
       </p>
       <p v-if="totalEvents === 0" class="empty-hint">没有找到匹配的事件，换个关键词或选择其他类别试试。</p>
     </section>
 
-    <section class="timeline-section">
-      <div class="section-head">
-        <div>
-          <h2>全局时间序列</h2>
-          <p>纵向排列所有历史与当代事件，阅读时无须在不同页面跳转。</p>
+    <section class="timeline-section" :class="{ 'with-topics': hasFeaturedTopics, 'topic-emphasis': currentLayout.emphasis === 'topic' }">
+      <div class="timeline-main">
+        <div class="section-head">
+          <div>
+            <h2>全局时间序列</h2>
+            <p>纵向排列所有历史事件，阅读时无须在不同页面跳转。</p>
+          </div>
+          <span class="result-info">显示 {{ displayedEvents.length }} / {{ totalEvents }}</span>
         </div>
-        <span class="result-info">显示 {{ displayedEvents.length }} / {{ totalEvents }}</span>
+        <EventTimeline :events="displayedEvents" />
+        <button v-if="showMore" class="load-more" @click="loadMore">加载更多</button>
       </div>
-      <EventTimeline :events="displayedEvents" />
-      <button v-if="showMore" class="load-more" @click="loadMore">加载更多</button>
-    </section>
-
-    <section class="section current-panel">
-      <div class="section-head">
-        <div>
-          <h2>当下观察</h2>
-          <p>记录经济、政治、科技等正在发生的事项，用与历史相同的结构梳理。</p>
+      <aside v-if="hasFeaturedTopics" class="featured-topics">
+        <div class="section-head">
+          <div>
+            <h3>精选专题</h3>
+            <p>策展专题/人物卡片，便于和时间线对照阅读。</p>
+          </div>
         </div>
-      </div>
-      <CurrentEventBoard :events="currentSpotlights" />
+        <ul class="topic-list">
+          <li v-for="topic in currentLayout.featuredTopics" :key="topic.id" class="topic-card">
+            <div class="topic-meta">
+              <span class="pill">{{ topic.tag }}</span>
+              <span class="era">{{ topic.era }}</span>
+            </div>
+            <h4>{{ topic.title }}</h4>
+            <p>{{ topic.summary }}</p>
+            <RouterLink :to="topic.link" class="topic-link">查看专题 →</RouterLink>
+          </li>
+        </ul>
+      </aside>
     </section>
 
     <section class="section modules-panel">
@@ -130,21 +166,10 @@
 import { RouterLink } from 'vue-router';
 import { computed, ref, watch } from 'vue';
 import EventTimeline from '@/components/common/EventTimeline.vue';
-import CurrentEventBoard from '@/components/home/CurrentEventBoard.vue';
 import type { Event } from '@/types/history';
-import { events, contemporaryEvents } from '@/data/events';
-
-const stats = [
-  { label: '事件条目', value: '690+' },
-  { label: '专题草案', value: '30+' },
-  { label: '观测更新', value: '每周' },
-];
-
-const heroHighlights = [
-  { pill: '历史环节', label: '从王朝到制度', desc: '宏观把握大一统与分裂时期、制度变革、文化流变。' },
-  { pill: '现实脉搏', label: '关注政策与产业', desc: '把经济、科技、政治节点纳入同一时间叙事。' },
-  { pill: '跨模块', label: '历史与当下互证', desc: '通过专题和人物勾连不同事件，让过去照亮当下。' },
-];
+import { events } from '@/data/events';
+import { defaultLayoutKey, homeLayoutOptions } from '@/data/homeLayouts';
+import type { HomeLayoutOption } from '@/data/homeLayouts';
 
 const categoryOptions = [
   { key: 'all', label: '全部' },
@@ -153,7 +178,6 @@ const categoryOptions = [
   { key: 'politics', label: '政治' },
   { key: 'tech', label: '科技' },
   { key: 'society', label: '社会' },
-  { key: 'today', label: '当下观察' },
 ];
 
 const categoryIcons: Record<string, string> = {
@@ -163,7 +187,6 @@ const categoryIcons: Record<string, string> = {
   politics: '🏛️',
   tech: '🛰️',
   society: '🤝',
-  today: '👀',
 };
 
 const categoryKeywordMap: Record<string, string[]> = {
@@ -172,8 +195,9 @@ const categoryKeywordMap: Record<string, string[]> = {
   politics: ['政治'],
   tech: ['科技', '算力基础设施'],
   society: ['社会'],
-  today: ['当代观察'],
 };
+
+const historicalEvents = events.filter(event => !event.types.includes('当代观察'));
 
 const moduleCards = [
   {
@@ -266,9 +290,16 @@ const getPillStyle = (key: string) => ({
   borderColor: `${getFocusMeta(key).accent}40`,
 });
 
+const layoutVariant = ref(defaultLayoutKey);
 const selectedCategory = ref('all');
 const keyword = ref('');
 const limit = ref(25);
+
+const fallbackLayout: HomeLayoutOption = homeLayoutOptions[0]!;
+const currentLayout = computed<HomeLayoutOption>(
+  () => homeLayoutOptions.find(option => option.key === layoutVariant.value) ?? fallbackLayout,
+);
+const hasFeaturedTopics = computed(() => (currentLayout.value.featuredTopics?.length ?? 0) > 0);
 
 const matchCategory = (event: Event, key: string) => {
   if (key === 'all') return true;
@@ -278,7 +309,7 @@ const matchCategory = (event: Event, key: string) => {
 
 const filteredEvents = computed(() => {
   const query = keyword.value.trim().toLowerCase();
-  return events
+  return historicalEvents
     .filter(event => matchCategory(event, selectedCategory.value))
     .filter(event => {
       if (!query) return true;
@@ -293,13 +324,12 @@ const showMore = computed(() => totalEvents.value > limit.value);
 const activeCategoryLabel = computed(
   () => categoryOptions.find(option => option.key === selectedCategory.value)?.label ?? '全部'
 );
-const currentSpotlights = computed(() => contemporaryEvents.slice(0, 3));
 const categoryCounts = computed(() =>
   categoryOptions.reduce((acc, option) => {
     const count =
       option.key === 'all'
-        ? events.length
-        : events.filter(event => matchCategory(event, option.key)).length;
+        ? historicalEvents.length
+        : historicalEvents.filter(event => matchCategory(event, option.key)).length;
     return { ...acc, [option.key]: count };
   }, {} as Record<string, number>),
 );
@@ -330,6 +360,62 @@ watch(keyword, () => {
   display: flex;
   flex-direction: column;
   gap: 48px;
+}
+.layout-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid var(--border-soft);
+  border-radius: 18px;
+  padding: 14px 18px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.05);
+}
+.switcher-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.switcher-desc {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+.switcher-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.switcher-btn {
+  border: 1px solid var(--border-soft);
+  background: #fff;
+  border-radius: 14px;
+  padding: 10px 14px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+.switcher-btn.active {
+  border-color: rgba(128, 90, 213, 0.4);
+  box-shadow: 0 12px 24px rgba(128, 90, 213, 0.18);
+  background: linear-gradient(135deg, rgba(128, 90, 213, 0.08), rgba(255, 255, 255, 0.92));
+}
+.switcher-btn:hover {
+  border-color: rgba(247, 153, 68, 0.4);
+}
+.btn-label {
+  font-weight: 700;
+  color: var(--text-strong);
+}
+.btn-desc {
+  color: var(--text-muted);
+  font-size: 13px;
 }
 .hero {
   position: relative;
@@ -655,6 +741,84 @@ watch(keyword, () => {
   flex-direction: column;
   gap: 20px;
 }
+.timeline-section.with-topics {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 18px;
+  align-items: start;
+}
+.timeline-section.topic-emphasis .timeline-main {
+  border: 1px dashed rgba(128, 90, 213, 0.35);
+  border-radius: 16px;
+  padding: 12px;
+}
+.timeline-main {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.featured-topics {
+  background: #fff;
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.topic-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.topic-card {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border-soft);
+  background: linear-gradient(180deg, rgba(128, 90, 213, 0.04), rgba(255, 255, 255, 0.95));
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.topic-card h4 {
+  margin: 0;
+  font-size: 16px;
+}
+.topic-card p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+.topic-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.topic-card .pill {
+  background: rgba(128, 90, 213, 0.12);
+  color: #805ad5;
+  border: 1px solid rgba(128, 90, 213, 0.25);
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+.topic-card .era {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.topic-link {
+  font-weight: 700;
+  color: #805ad5;
+  text-decoration: none;
+}
+.topic-link:hover {
+  text-decoration: underline;
+}
 .section-head {
   display: flex;
   justify-content: space-between;
@@ -744,9 +908,9 @@ watch(keyword, () => {
   padding: 10px 14px;
   border-radius: 999px;
   font-weight: 700;
-  color: var(--text-strong);
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  color: var(--brand);
+  background: #fff;
+  border: 1px solid var(--brand);
   width: fit-content;
 }
 .module-link .arrow {
@@ -774,6 +938,9 @@ watch(keyword, () => {
   .section-head {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .timeline-section.with-topics {
+    grid-template-columns: 1fr;
   }
 }
 </style>
