@@ -44,7 +44,7 @@ export const homeLayoutOptions: HomeLayoutOption[] = [
       pillAccent: '#f79944',
       title: '专注历史长河，避开当下喧嚣的纵向时间线',
       subtitle:
-        '仅保留历史事件，以时间顺序梳理王朝更迭、战争、制度与人物。选择类别或直接沉浸阅读全量时间流。',
+        '精选历史事件按时间顺序展开，梳理王朝更迭、战争、制度与人物。可按类别筛选，也可直接滚动沉浸阅读。',
       primaryCta: { label: '进入历史模块', link: '/china' },
       secondaryCta: { label: '查看世界/专题', link: '/world' },
     },
@@ -54,9 +54,9 @@ export const homeLayoutOptions: HomeLayoutOption[] = [
       { pill: '人物线索', label: '人物与轨迹', desc: '用人物与家族串起时代气质，辅助追踪关键节点。' },
     ],
     stats: [
-      { label: '事件条目', value: '690+' },
-      { label: '专题草案', value: '30+' },
-      { label: '史料整理', value: '持续补全' },
+      { label: '事件条目', value: '示例 8 条' },
+      { label: '专题草案', value: '示例 4 个' },
+      { label: '史料整理', value: '逐步补全' },
     ],
   },
   {
@@ -70,7 +70,7 @@ export const homeLayoutOptions: HomeLayoutOption[] = [
       pillAccent: '#805ad5',
       title: '以专题与人物为线索，搭配时间线的历史首页',
       subtitle:
-        '专题卡片策展关键议题，侧栏时间线保持纵向阅读。快速切换主题，仍基于同一套历史事件数据。',
+        '专题卡片策展关键议题，侧栏时间线保持纵向阅读。切换不同主题，也能保持时间脉络的连续感。',
       primaryCta: { label: '查看专题索引', link: '/topics' },
       secondaryCta: { label: '切换到时间线模式', link: '/?layout=timeline-first' },
     },
@@ -80,9 +80,9 @@ export const homeLayoutOptions: HomeLayoutOption[] = [
       { pill: '时间线辅助', label: '侧栏时间轴', desc: '紧凑时间线辅助跳转事件详情，保持纵向脉络。' },
     ],
     stats: [
-      { label: '历史事件', value: '同一数据源' },
-      { label: '专题卡片', value: '精选四类标签' },
-      { label: '双模式', value: '可即刻切换' },
+      { label: '历史事件', value: '与时间线同步' },
+      { label: '专题卡片', value: '四类示例标签' },
+      { label: '双模式', value: '一键切换' },
     ],
     featuredTopics: [
       {

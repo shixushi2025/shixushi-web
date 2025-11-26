@@ -3,7 +3,6 @@
     <section class="layout-switcher" aria-label="首页布局切换">
       <div class="switcher-copy">
         <p class="eyebrow">首页布局模式</p>
-        <p class="switcher-desc">在同一套历史数据上切换方案 A / B，验证最合适的呈现方式。</p>
       </div>
       <div class="switcher-actions">
         <button
@@ -111,7 +110,7 @@
         <div class="section-head">
           <div>
             <h3>精选专题</h3>
-            <p>策展专题/人物卡片，与时间线共用同一套历史事件。</p>
+            <p>策展专题/人物卡片，便于和时间线对照阅读。</p>
           </div>
         </div>
         <ul class="topic-list">
@@ -909,9 +908,9 @@ watch(keyword, () => {
   padding: 10px 14px;
   border-radius: 999px;
   font-weight: 700;
-  color: var(--text-strong);
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  color: var(--brand);
+  background: #fff;
+  border: 1px solid var(--brand);
   width: fit-content;
 }
 .module-link .arrow {
