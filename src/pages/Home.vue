@@ -101,7 +101,10 @@
             <h2>全局时间序列</h2>
             <p>纵向排列所有历史事件，阅读时无须在不同页面跳转。</p>
           </div>
-          <span class="result-info">显示 {{ displayedEvents.length }} / {{ totalEvents }}</span>
+          <div class="section-actions">
+            <span class="result-info">显示 {{ displayedEvents.length }} / {{ totalEvents }}</span>
+            <button type="button" class="text-link" @click="scrollToModules">查看深度模块</button>
+          </div>
         </div>
         <EventTimeline :events="displayedEvents" />
         <button v-if="showMore" class="load-more" @click="loadMore">加载更多</button>
@@ -127,7 +130,7 @@
       </aside>
     </section>
 
-    <section class="section modules-panel">
+    <section ref="modulesPanelRef" class="section modules-panel">
       <div class="section-head">
         <div>
           <h2>深度模块</h2>
@@ -164,12 +167,12 @@
 
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
-import { computed, ref, watch } from 'vue';
+import { computed, onMounted, ref, watch } from 'vue';
 import EventTimeline from '@/components/common/EventTimeline.vue';
 import type { Event } from '@/types/history';
 import { events } from '@/data/events';
 import { defaultLayoutKey, homeLayoutOptions } from '@/data/homeLayouts';
-import type { HomeLayoutOption } from '@/data/homeLayouts';
+import type { HomeLayoutKey, HomeLayoutOption } from '@/data/homeLayouts';
 
 const categoryOptions = [
   { key: 'all', label: '全部' },
@@ -290,10 +293,19 @@ const getPillStyle = (key: string) => ({
   borderColor: `${getFocusMeta(key).accent}40`,
 });
 
+const PREFERENCE_KEY = 'home-preferences';
+
+type HomePreferencePayload = {
+  layoutVariant?: HomeLayoutKey;
+  selectedCategory?: string;
+  keyword?: string;
+};
+
 const layoutVariant = ref(defaultLayoutKey);
 const selectedCategory = ref('all');
 const keyword = ref('');
 const limit = ref(25);
+const modulesPanelRef = ref<HTMLElement | null>(null);
 
 const fallbackLayout: HomeLayoutOption = homeLayoutOptions[0]!;
 const currentLayout = computed<HomeLayoutOption>(
@@ -346,12 +358,62 @@ const loadMore = () => {
   limit.value += 25;
 };
 
+const scrollToModules = () => {
+  modulesPanelRef.value?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
+
 watch(selectedCategory, () => {
   limit.value = 25;
 });
 
 watch(keyword, () => {
   limit.value = 25;
+});
+
+const persistPreferences = () => {
+  if (typeof window === 'undefined') return;
+
+  const payload: HomePreferencePayload = {
+    layoutVariant: layoutVariant.value,
+    selectedCategory: selectedCategory.value,
+    keyword: keyword.value,
+  };
+
+  window.localStorage.setItem(PREFERENCE_KEY, JSON.stringify(payload));
+};
+
+const restorePreferences = () => {
+  if (typeof window === 'undefined') return;
+
+  try {
+    const stored = window.localStorage.getItem(PREFERENCE_KEY);
+    if (!stored) return;
+
+    const parsed = JSON.parse(stored) as HomePreferencePayload;
+
+    if (
+      parsed.layoutVariant &&
+      homeLayoutOptions.some(option => option.key === parsed.layoutVariant)
+    ) {
+      layoutVariant.value = parsed.layoutVariant;
+    }
+
+    if (parsed.selectedCategory && categoryOptions.some(opt => opt.key === parsed.selectedCategory)) {
+      selectedCategory.value = parsed.selectedCategory;
+    }
+
+    if (typeof parsed.keyword === 'string') {
+      keyword.value = parsed.keyword;
+    }
+  } catch (error) {
+    console.warn('未能恢复首页偏好设置', error);
+  }
+};
+
+watch([layoutVariant, selectedCategory, keyword], persistPreferences);
+
+onMounted(() => {
+  restorePreferences();
 });
 </script>
 
@@ -517,10 +579,17 @@ watch(keyword, () => {
   font-weight: 600;
 }
 .btn.primary {
-  background: var(--brand);
+  background: linear-gradient(135deg, var(--brand), var(--brand-dark));
   border-color: rgba(247, 153, 68, 0.45);
   color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.18);
   box-shadow: 0 15px 35px rgba(247, 153, 68, 0.35), 0 2px 12px rgba(247, 153, 68, 0.35);
+}
+
+.btn.primary:hover,
+.btn.primary:focus-visible {
+  color: #fff;
+  background: linear-gradient(135deg, var(--brand-dark), var(--brand));
 }
 .btn.ghost {
   background: rgba(255, 255, 255, 0.6);
@@ -825,12 +894,31 @@ watch(keyword, () => {
   align-items: flex-end;
   gap: 16px;
 }
+.section-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 .section-head h2 {
   margin-bottom: 4px;
 }
 .result-info {
   font-size: 13px;
   color: var(--text-muted);
+}
+.text-link {
+  border: none;
+  background: transparent;
+  color: var(--brand);
+  font-weight: 700;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.text-link:hover {
+  background: rgba(48, 111, 255, 0.08);
+  color: var(--brand-strong, #1a4ed8);
 }
 .load-more {
   align-self: center;
