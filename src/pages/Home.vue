@@ -172,7 +172,7 @@ import EventTimeline from '@/components/common/EventTimeline.vue';
 import type { Event } from '@/types/history';
 import { events } from '@/data/events';
 import { defaultLayoutKey, homeLayoutOptions } from '@/data/homeLayouts';
-import type { HomeLayoutOption } from '@/data/homeLayouts';
+import type { HomeLayoutKey, HomeLayoutOption } from '@/data/homeLayouts';
 
 const categoryOptions = [
   { key: 'all', label: '全部' },
