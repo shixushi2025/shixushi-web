@@ -1,0 +1,479 @@
+[
+  {
+    "id": 3001,
+    "name": "孔子",
+    "title": "至圣先师",
+    "dynasty": "春秋",
+    "birthYear": -551,
+    "deathYear": -479,
+    "categories": [
+      "思想",
+      "文化"
+    ],
+    "summary": "中国古代伟大的思想家、教育家，儒家学派创始人。",
+    "achievements": [
+      "创立儒家学说",
+      "首创私学，广收门徒",
+      "编纂《春秋》等六经"
+    ],
+    "quote": "学而时习之，不亦说乎？",
+    "relatedEventIds": []
+  },
+  {
+    "id": 3002,
+    "name": "商鞅",
+    "title": "法家代表人物",
+    "dynasty": "战国",
+    "birthYear": -390,
+    "deathYear": -338,
+    "categories": [
+      "政治",
+      "思想"
+    ],
+    "summary": "战国时期杰出的政治家、改革家，主导了秦国的变法。",
+    "achievements": [
+      "实行商鞅变法",
+      "废井田，开阡陌",
+      "奖励耕战，推行法治"
+    ],
+    "quote": "治世不一道，便国不法古。",
+    "relatedEventIds": [
+      1007
+    ]
+  },
+  {
+    "id": 3003,
+    "name": "孙武",
+    "title": "兵圣",
+    "dynasty": "春秋",
+    "birthYear": -545,
+    "deathYear": -470,
+    "categories": [
+      "军事",
+      "思想"
+    ],
+    "summary": "中国古代著名的军事家，兵家鼻祖。",
+    "achievements": [
+      "著有《孙子兵法》",
+      "指挥吴军破楚"
+    ],
+    "quote": "知彼知己，百战不殆。",
+    "relatedEventIds": []
+  },
+  {
+    "id": 3004,
+    "name": "李斯",
+    "title": "大秦丞相",
+    "dynasty": "秦朝",
+    "birthYear": -284,
+    "deathYear": -208,
+    "categories": [
+      "政治",
+      "文化"
+    ],
+    "summary": "秦代著名的政治家、文学家和书法家，协助秦始皇统一天下。",
+    "achievements": [
+      "建议废分封、行郡县",
+      "参与制定法律，统一度量衡",
+      "整理小篆"
+    ],
+    "quote": "泰山不让土壤，故能成其大。",
+    "relatedEventIds": [
+      1020
+    ]
+  },
+  {
+    "id": 3005,
+    "name": "韩信",
+    "title": "兵仙",
+    "dynasty": "西汉",
+    "birthYear": -231,
+    "deathYear": -196,
+    "categories": [
+      "军事"
+    ],
+    "summary": "西汉开国功臣，中国历史上杰出的军事家。",
+    "achievements": [
+      "明修栈道，暗度陈仓",
+      "背水一战，十面埋伏",
+      "定三秦，擒魏、取代、破赵、胁燕、击齐，灭楚"
+    ],
+    "quote": "置之死地而后生。",
+    "relatedEventIds": [
+      1023
+    ]
+  },
+  {
+    "id": 3006,
+    "name": "张良",
+    "title": "谋圣",
+    "dynasty": "西汉",
+    "birthYear": -250,
+    "deathYear": -186,
+    "categories": [
+      "政治",
+      "军事"
+    ],
+    "summary": "西汉开国功臣，杰出的谋略家。",
+    "achievements": [
+      "运筹帷幄之中，决胜千里之外",
+      "劝刘邦定都关中",
+      "明哲保身"
+    ],
+    "quote": "夫运筹策帷帐之中，决胜于千里之外，吾不如子房。",
+    "relatedEventIds": [
+      1023
+    ]
+  },
+  {
+    "id": 3007,
+    "name": "张骞",
+    "title": "博望侯",
+    "dynasty": "西汉",
+    "birthYear": -164,
+    "deathYear": -114,
+    "categories": [
+      "外交",
+      "探险"
+    ],
+    "summary": "杰出的外交家、探险家，丝绸之路的开拓者。",
+    "achievements": [
+      "两次出使西域",
+      "开辟丝绸之路",
+      "促进中西文化交流"
+    ],
+    "quote": "凿空西域。",
+    "relatedEventIds": [
+      1025
+    ]
+  },
+  {
+    "id": 3008,
+    "name": "司马迁",
+    "title": "太史公",
+    "dynasty": "西汉",
+    "birthYear": -145,
+    "deathYear": -86,
+    "categories": [
+      "文化",
+      "史学"
+    ],
+    "summary": "西汉伟大的史学家、文学家、思想家。",
+    "achievements": [
+      "撰写《史记》",
+      "开创纪传体史书体例"
+    ],
+    "quote": "人固有一死，或重于泰山，或轻于鸿毛。",
+    "relatedEventIds": []
+  },
+  {
+    "id": 3009,
+    "name": "曹操",
+    "title": "魏武帝",
+    "dynasty": "三国",
+    "birthYear": 155,
+    "deathYear": 220,
+    "categories": [
+      "政治",
+      "军事",
+      "文化"
+    ],
+    "summary": "东汉末年杰出的政治家、军事家、文学家，曹魏政权的奠基人。",
+    "achievements": [
+      "统一中国北方",
+      "实行屯田制",
+      "建安风骨代表人物"
+    ],
+    "quote": "宁教我负天下人，休教天下人负我。",
+    "relatedEventIds": [
+      1040,
+      1041
+    ]
+  },
+  {
+    "id": 3010,
+    "name": "诸葛亮",
+    "title": "武乡侯",
+    "dynasty": "三国",
+    "birthYear": 181,
+    "deathYear": 234,
+    "categories": [
+      "政治",
+      "军事"
+    ],
+    "summary": "三国时期蜀汉丞相，杰出的政治家、军事家。",
+    "achievements": [
+      "隆中对三分天下",
+      "联吴抗曹",
+      "治理蜀汉，六出祁山"
+    ],
+    "quote": "鞠躬尽瘁，死而后已。",
+    "relatedEventIds": [
+      1040
+    ]
+  },
+  {
+    "id": 3011,
+    "name": "王羲之",
+    "title": "书圣",
+    "dynasty": "东晋",
+    "birthYear": 303,
+    "deathYear": 361,
+    "categories": [
+      "文化",
+      "艺术"
+    ],
+    "summary": "东晋时期著名书法家，有“书圣”之称。",
+    "achievements": [
+      "《兰亭序》",
+      "开创行书新体"
+    ],
+    "quote": "飘若浮云，矫若惊龙。",
+    "relatedEventIds": []
+  },
+  {
+    "id": 3012,
+    "name": "魏征",
+    "title": "郑国公",
+    "dynasty": "唐朝",
+    "birthYear": 580,
+    "deathYear": 643,
+    "categories": [
+      "政治"
+    ],
+    "summary": "唐朝初年杰出的政治家、思想家、文学家，著名的谏臣。",
+    "achievements": [
+      "辅佐唐太宗开创贞观之治",
+      "直言进谏二百余事"
+    ],
+    "quote": "以铜为镜，可以正衣冠；以古为镜，可以知兴替；以人为镜，可以明得失。",
+    "relatedEventIds": [
+      1063,
+      1064
+    ]
+  },
+  {
+    "id": 3013,
+    "name": "李白",
+    "title": "诗仙",
+    "dynasty": "唐朝",
+    "birthYear": 701,
+    "deathYear": 762,
+    "categories": [
+      "文化"
+    ],
+    "summary": "唐代伟大的浪漫主义诗人。",
+    "achievements": [
+      "创作大量脍炙人口的诗篇",
+      "将唐诗推向高峰"
+    ],
+    "quote": "天生我材必有用，千金散尽还复来。",
+    "relatedEventIds": [
+      1066
+    ]
+  },
+  {
+    "id": 3014,
+    "name": "杜甫",
+    "title": "诗圣",
+    "dynasty": "唐朝",
+    "birthYear": 712,
+    "deathYear": 770,
+    "categories": [
+      "文化"
+    ],
+    "summary": "唐代伟大的现实主义诗人。",
+    "achievements": [
+      "“三吏”、“三别”",
+      "记录了唐朝由盛转衰的历史"
+    ],
+    "quote": "安得广厦千万间，大庇天下寒士俱欢颜。",
+    "relatedEventIds": [
+      1067
+    ]
+  },
+  {
+    "id": 3015,
+    "name": "王安石",
+    "title": "荆国公",
+    "dynasty": "北宋",
+    "birthYear": 1021,
+    "deathYear": 1086,
+    "categories": [
+      "政治",
+      "文化"
+    ],
+    "summary": "北宋著名思想家、政治家、文学家、改革家。",
+    "achievements": [
+      "主持熙宁变法",
+      "唐宋八大家之一"
+    ],
+    "quote": "天变不足畏，祖宗不足法，人言不足恤。",
+    "relatedEventIds": [
+      1074
+    ]
+  },
+  {
+    "id": 3016,
+    "name": "苏轼",
+    "title": "东坡居士",
+    "dynasty": "北宋",
+    "birthYear": 1037,
+    "deathYear": 1101,
+    "categories": [
+      "文化",
+      "政治"
+    ],
+    "summary": "北宋文学家、书画家、美食家，豪放派词人代表。",
+    "achievements": [
+      "诗词书画全才",
+      "唐宋八大家之一",
+      "治理杭州、密州等地"
+    ],
+    "quote": "大江东去，浪淘尽，千古风流人物。",
+    "relatedEventIds": []
+  },
+  {
+    "id": 3017,
+    "name": "岳飞",
+    "title": "鄂王",
+    "dynasty": "南宋",
+    "birthYear": 1103,
+    "deathYear": 1142,
+    "categories": [
+      "军事"
+    ],
+    "summary": "南宋抗金名将，中国历史上著名的军事家、战略家、民族英雄。",
+    "achievements": [
+      "组建岳家军",
+      "收复建康，郾城大捷",
+      "《满江红》"
+    ],
+    "quote": "壮志饥餐胡虏肉，笑谈渴饮匈奴血。",
+    "relatedEventIds": [
+      1076
+    ]
+  },
+  {
+    "id": 3018,
+    "name": "朱熹",
+    "title": "朱子",
+    "dynasty": "南宋",
+    "birthYear": 1130,
+    "deathYear": 1200,
+    "categories": [
+      "思想",
+      "文化"
+    ],
+    "summary": "南宋理学家，程朱理学集大成者。",
+    "achievements": [
+      "编注《四书章句集注》",
+      "建立庞大的理学体系"
+    ],
+    "quote": "存天理，灭人欲。",
+    "relatedEventIds": []
+  },
+  {
+    "id": 3019,
+    "name": "郑和",
+    "title": "三宝太监",
+    "dynasty": "明朝",
+    "birthYear": 1371,
+    "deathYear": 1433,
+    "categories": [
+      "外交",
+      "探险"
+    ],
+    "summary": "明朝伟大的航海家、外交家。",
+    "achievements": [
+      "七下西洋",
+      "访问30多个国家和地区"
+    ],
+    "quote": "欲国家富强，不可置海洋于不顾。",
+    "relatedEventIds": [
+      1091
+    ]
+  },
+  {
+    "id": 3020,
+    "name": "王阳明",
+    "title": "阳明先生",
+    "dynasty": "明朝",
+    "birthYear": 1472,
+    "deathYear": 1529,
+    "categories": [
+      "思想",
+      "政治",
+      "军事"
+    ],
+    "summary": "明代杰出的思想家、文学家、军事家，心学集大成者。",
+    "achievements": [
+      "创立阳明心学",
+      "平定宁王之乱",
+      "提出知行合一"
+    ],
+    "quote": "知行合一。",
+    "relatedEventIds": []
+  },
+  {
+    "id": 3021,
+    "name": "张居正",
+    "title": "太岳先生",
+    "dynasty": "明朝",
+    "birthYear": 1525,
+    "deathYear": 1582,
+    "categories": [
+      "政治"
+    ],
+    "summary": "明朝中后期政治家、改革家，万历时期内阁首辅。",
+    "achievements": [
+      "实行一条鞭法",
+      "考成法整顿吏治"
+    ],
+    "quote": "天下之事，不难于立法，而难于法之必行。",
+    "relatedEventIds": [
+      1093
+    ]
+  },
+  {
+    "id": 3022,
+    "name": "林则徐",
+    "title": "民族英雄",
+    "dynasty": "清朝",
+    "birthYear": 1785,
+    "deathYear": 1850,
+    "categories": [
+      "政治"
+    ],
+    "summary": "清朝后期政治家、思想家、诗人，睁眼看世界第一人。",
+    "achievements": [
+      "虎门销烟",
+      "主持编译《四洲志》"
+    ],
+    "quote": "苟利国家生死以，岂因祸福避趋之。",
+    "relatedEventIds": [
+      1097
+    ]
+  },
+  {
+    "id": 3023,
+    "name": "曾国藩",
+    "title": "晚清中兴名臣",
+    "dynasty": "清朝",
+    "birthYear": 1811,
+    "deathYear": 1872,
+    "categories": [
+      "政治",
+      "军事"
+    ],
+    "summary": "晚清政治家、战略家、理学家、文学家，湘军的创立者和统帅。",
+    "achievements": [
+      "组建湘军平定太平天国",
+      "发起洋务运动"
+    ],
+    "quote": "屡败屡战。",
+    "relatedEventIds": [
+      1099
+    ]
+  }
+]
