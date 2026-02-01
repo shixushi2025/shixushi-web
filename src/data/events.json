@@ -5,7 +5,10 @@
     "desc": "Zhu Yuanzhang proclaimed himself Emperor (Hongwu Emperor) in Yingtian (Nanjing), establishing the Ming Dynasty and overthrowing Yuan rule.",
     "date": "1368-01-23",
     "type": "pol",
-    "level": 5
+    "level": 5,
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1091,
@@ -13,7 +16,10 @@
     "desc": "Admiral Zheng He began his first of seven naval expeditions to the Western Oceans, showcasing Ming naval power and extending tribute trade.",
     "date": "1405-07-11",
     "type": "pol",
-    "level": 5
+    "level": 5,
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1092,
@@ -21,7 +27,10 @@
     "desc": "Emperor Yingzong of Ming was captured by Oirat Mongols at Tumu Fortress, marking a turning point from offense to defense for the Ming Dynasty.",
     "date": "1449-09-01",
     "type": "war",
-    "level": 4
+    "level": 4,
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1093,
@@ -29,7 +38,10 @@
     "desc": "Grand Secretary Zhang Juzheng implemented the 'Single Whip Law' nationwide, simplifying taxes and strengthening centralized power.",
     "date": "1581",
     "type": "pol",
-    "level": 4
+    "level": 4,
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1094,
@@ -37,7 +49,10 @@
     "desc": "Li Zicheng captured Beijing; Emperor Chongzhen committed suicide. Wu Sangui opened Shanhai Pass, allowing Qing forces to enter China.",
     "date": "1644-04-25",
     "type": "war",
-    "level": 5
+    "level": 5,
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1095,
@@ -45,7 +60,10 @@
     "desc": "Admiral Shi Lang defeated the Zheng regime in Taiwan; the Qing Dynasty formally annexed Taiwan, completing unification.",
     "date": "1683-10-03",
     "type": "war",
-    "level": 4
+    "level": 4,
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1096,
@@ -53,7 +71,10 @@
     "desc": "The Qing Dynasty and Russia signed their first border treaty, defining the boundary along the Argun and Shilka rivers.",
     "date": "1689-08-27",
     "type": "pol",
-    "level": 3
+    "level": 3,
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1097,
@@ -61,7 +82,10 @@
     "desc": "Commissioner Lin Zexu destroyed confiscated opium at Humen, taking a hard stance against the drug trade.",
     "date": "1839-06-03",
     "type": "pol",
-    "level": 4
+    "level": 4,
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1098,
@@ -69,7 +93,10 @@
     "desc": "British forces attacked coastal China. The war ended with the Treaty of Nanjing (1842), the first unequal treaty.",
     "date": "1840-06-28",
     "type": "war",
-    "level": 5
+    "level": 5,
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1099,
@@ -77,7 +104,10 @@
     "desc": "Hong Xiuquan led the Jintian Uprising, starting a massive civil war that established the Taiping Heavenly Kingdom.",
     "date": "1851-01-11",
     "type": "war",
-    "level": 5
+    "level": 5,
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1100,
@@ -85,7 +115,10 @@
     "desc": "Anglo-French forces looted and burned the Old Summer Palace (Yuanmingyuan) during the Second Opium War.",
     "date": "1860-10-18",
     "type": "war",
-    "level": 4
+    "level": 4,
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1101,
@@ -93,7 +126,10 @@
     "desc": "War broke out over Korea. Qing's defeat led to the Treaty of Shimonoseki and the loss of Taiwan.",
     "date": "1894-07-25",
     "type": "war",
-    "level": 5
+    "level": 5,
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1102,
@@ -101,7 +137,10 @@
     "desc": "Emperor Guangxu issued decrees for modernization, but the reform was crushed by Empress Dowager Cixi after 103 days.",
     "date": "1898-06-11",
     "type": "pol",
-    "level": 4
+    "level": 4,
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1103,
@@ -109,7 +148,10 @@
     "desc": "The Boxer movement attacked foreigners; the Eight-Nation Alliance invaded Beijing, leading to the Boxer Protocol.",
     "date": "1900-06-21",
     "type": "war",
-    "level": 4
+    "level": 4,
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1104,
@@ -117,7 +159,10 @@
     "desc": "Revolutionaries in Wuchang launched an uprising that spread across China, leading to the collapse of the Qing Dynasty.",
     "date": "1911-10-10",
     "type": "war",
-    "level": 5
+    "level": 5,
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1105,
@@ -125,7 +170,10 @@
     "desc": "The Xuantong Emperor (Puyi) abdicated, formally ending the Qing Dynasty and over 2,000 years of imperial rule.",
     "date": "1912-02-12",
     "type": "pol",
-    "level": 5
+    "level": 5,
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1001,
@@ -825,7 +873,10 @@
     "title": "陈桥兵变",
     "desc": "赵匡胤在陈桥驿发动兵变，黄袍加身，建立宋朝（北宋），定都开封（东京），结束了五代十国的分裂局面。",
     "type": "political",
-    "dynasty": "Song"
+    "dynasty": "Song",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1071,
@@ -833,7 +884,10 @@
     "title": "澶渊之盟",
     "desc": "宋辽达成和议，宋朝每年向辽提供“岁币”。此后百年间双方保持和平，促进了边境贸易与经济交流。",
     "type": "political",
-    "dynasty": "Song"
+    "dynasty": "Song",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1072,
@@ -841,7 +895,10 @@
     "title": "官方交子发行",
     "desc": "北宋在四川设立益州交子务，正式发行“官交子”。这是世界上最早由政府发行的纸币，标志着货币经济的重大突破。",
     "type": "economy",
-    "dynasty": "Song"
+    "dynasty": "Song",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1073,
@@ -849,7 +906,10 @@
     "title": "毕昇发明活字印刷",
     "desc": "平民毕昇发明胶泥活字印刷术，比欧洲早约400年。这一技术大大提高了书籍印刷效率，推动了文化传播。",
     "type": "technology",
-    "dynasty": "Song"
+    "dynasty": "Song",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1074,
@@ -857,7 +917,10 @@
     "title": "王安石变法",
     "desc": "宋神宗任用王安石推行新法（熙宁变法），包括青苗法、募役法等，旨在富国强兵，但因各方阻力最终未能完全成功。",
     "type": "political",
-    "dynasty": "Song"
+    "dynasty": "Song",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1075,
@@ -865,7 +928,10 @@
     "title": "靖康之变",
     "desc": "金军攻破开封，俘虏徽、钦二帝，北宋灭亡。赵构随即在南京应天府即位，建立南宋。",
     "type": "war",
-    "dynasty": "Song"
+    "dynasty": "Song",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1076,
@@ -873,7 +939,10 @@
     "title": "岳飞遇害与绍兴和议",
     "desc": "宋高宗与秦桧以“莫须有”罪名杀害抗金名将岳飞，并与金朝签订《绍兴和议》，确立了南北对峙的局面。",
     "type": "political",
-    "dynasty": "Song"
+    "dynasty": "Song",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1077,
@@ -881,7 +950,10 @@
     "title": "铁木真统一蒙古",
     "desc": "铁木真在斡难河源被推举为成吉思汗，统一蒙古诸部，建立了大蒙古国，开始对外扩张。",
     "type": "political",
-    "dynasty": "Yuan"
+    "dynasty": "Yuan",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1078,
@@ -889,7 +961,10 @@
     "title": "忽必烈建元",
     "desc": "忽必烈取《易经》“大哉乾元”之意，定国号为“大元”，次年定都大都（今北京），确立了元朝的统治基础。",
     "type": "political",
-    "dynasty": "Yuan"
+    "dynasty": "Yuan",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1079,
@@ -897,7 +972,10 @@
     "title": "崖山海战",
     "desc": "元军在崖山海战中击败南宋残军，陆秀夫背负少帝赵昺投海殉国，南宋彻底灭亡，元朝统一中国。",
     "type": "war",
-    "dynasty": "Yuan"
+    "dynasty": "Yuan",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1080,
@@ -905,7 +983,10 @@
     "title": "授时历颁行",
     "desc": "元朝天文学家郭守敬等人编制的《授时历》正式颁行，定一回归年为365.2425日，精度与现代公历相当。",
     "type": "technology",
-    "dynasty": "Yuan"
+    "dynasty": "Yuan",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1081,
@@ -913,7 +994,10 @@
     "title": "元朝灭亡",
     "desc": "朱元璋称帝建立明朝，同年明军攻占大都，元顺帝北逃，元朝在中原的统治结束。",
     "type": "political",
-    "dynasty": "Yuan"
+    "dynasty": "Yuan",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1060,
@@ -1281,7 +1365,10 @@
     "type": "war",
     "from": "208",
     "to": "208",
-    "description": "孙权、刘备联军在长江赤壁（今湖北赤壁西北）一带大破曹操大军。这是中国历史上著名的以少胜多的战役之一。此战后，曹操北回，孙、刘各自夺去荆州的一部分，奠定了三国鼎立的基础。"
+    "description": "孙权、刘备联军在长江赤壁（今湖北赤壁西北）一带大破曹操大军。这是中国历史上著名的以少胜多的战役之一。此战后，曹操北回，孙、刘各自夺去荆州的一部分，奠定了三国鼎立的基础。",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1041,
@@ -1289,7 +1376,10 @@
     "type": "politics",
     "from": "220",
     "to": "220",
-    "description": "魏王曹丕逼迫汉献帝禅让，正式称帝，国号魏，定都洛阳，史称曹魏。这标志着汉朝的正式结束和三国时代的正式开始。"
+    "description": "魏王曹丕逼迫汉献帝禅让，正式称帝，国号魏，定都洛阳，史称曹魏。这标志着汉朝的正式结束和三国时代的正式开始。",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1042,
@@ -1297,7 +1387,10 @@
     "type": "politics",
     "from": "265",
     "to": "265",
-    "description": "司马炎逼迫魏元帝禅让，即位称帝，国号晋，定都洛阳，史称西晋。司马炎即晋武帝。"
+    "description": "司马炎逼迫魏元帝禅让，即位称帝，国号晋，定都洛阳，史称西晋。司马炎即晋武帝。",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1043,
@@ -1305,7 +1398,10 @@
     "type": "war",
     "from": "280",
     "to": "280",
-    "description": "西晋大举伐吴，吴主孙皓投降，东吴灭亡。至此，西晋结束了汉末以来近百年的分裂局面，重新统一了中国。"
+    "description": "西晋大举伐吴，吴主孙皓投降，东吴灭亡。至此，西晋结束了汉末以来近百年的分裂局面，重新统一了中国。",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1044,
@@ -1313,7 +1409,10 @@
     "type": "war",
     "from": "291",
     "to": "306",
-    "description": "西晋皇族内部为了争夺中央政权而爆发的一场长达十六年的混战。主要参与者为司马氏的八位藩王。这场动乱严重破坏了社会经济，耗竭了西晋国力，导致了西晋的亡国和“五胡乱华”局面的出现。"
+    "description": "西晋皇族内部为了争夺中央政权而爆发的一场长达十六年的混战。主要参与者为司马氏的八位藩王。这场动乱严重破坏了社会经济，耗竭了西晋国力，导致了西晋的亡国和“五胡乱华”局面的出现。",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1045,
@@ -1321,7 +1420,10 @@
     "type": "war",
     "from": "311",
     "to": "311",
-    "description": "匈奴军队攻陷西晋都城洛阳，俘虏晋怀帝，杀王公士民三万余人。这是“五胡乱华”的高潮，标志着西晋在北方的统治彻底崩溃，中原汉族大举南迁，史称“衣冠南渡”。"
+    "description": "匈奴军队攻陷西晋都城洛阳，俘虏晋怀帝，杀王公士民三万余人。这是“五胡乱华”的高潮，标志着西晋在北方的统治彻底崩溃，中原汉族大举南迁，史称“衣冠南渡”。",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1046,
@@ -1329,7 +1431,10 @@
     "type": "war",
     "from": "383",
     "to": "383",
-    "description": "前秦苻坚率大军南下进攻东晋，在淝水（今安徽寿县东南）被东晋谢安、谢玄领导的北府兵击败。此战是中国历史上著名的以少胜多的战役，它瓦解了前秦的统一形势，使北方重新陷入分裂，确立了南北朝长期对峙的格局。"
+    "description": "前秦苻坚率大军南下进攻东晋，在淝水（今安徽寿县东南）被东晋谢安、谢玄领导的北府兵击败。此战是中国历史上著名的以少胜多的战役，它瓦解了前秦的统一形势，使北方重新陷入分裂，确立了南北朝长期对峙的格局。",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1047,
@@ -1337,7 +1442,10 @@
     "type": "politics",
     "from": "439",
     "to": "439",
-    "description": "北魏太武帝拓跋焘攻灭北凉，结束了十六国以来北方分裂割据的局面，统一了黄河流域。这标志着北朝的开始。"
+    "description": "北魏太武帝拓跋焘攻灭北凉，结束了十六国以来北方分裂割据的局面，统一了黄河流域。这标志着北朝的开始。",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1048,
@@ -1345,7 +1453,10 @@
     "type": "politics",
     "from": "494",
     "to": "494",
-    "description": "北魏孝文帝拓跋宏为了加强对中原的统治，推行了一系列汉化改革，包括迁都洛阳、改穿汉服、说汉话、改汉姓（皇室改为元姓）、与汉族通婚等。这些措施极大地促进了民族融合。"
+    "description": "北魏孝文帝拓跋宏为了加强对中原的统治，推行了一系列汉化改革，包括迁都洛阳、改穿汉服、说汉话、改汉姓（皇室改为元姓）、与汉族通婚等。这些措施极大地促进了民族融合。",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1049,
@@ -1353,7 +1464,10 @@
     "type": "war",
     "from": "548",
     "to": "552",
-    "description": "东魏降将侯景发动叛乱，攻陷梁朝都城建康，导致梁武帝被饿死。这场叛乱对江南社会经济造成了毁灭性的打击，南朝士族遭到沉重打击，南朝实力从此衰落。"
+    "description": "东魏降将侯景发动叛乱，攻陷梁朝都城建康，导致梁武帝被饿死。这场叛乱对江南社会经济造成了毁灭性的打击，南朝士族遭到沉重打击，南朝实力从此衰落。",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1050,
@@ -1361,7 +1475,10 @@
     "type": "politics",
     "from": "581",
     "to": "581",
-    "description": "北周静帝禅让，杨坚即位称帝，改国号为隋，是为隋文帝。北周灭亡。"
+    "description": "北周静帝禅让，杨坚即位称帝，改国号为隋，是为隋文帝。北周灭亡。",
+    "types": [
+      "历史事件"
+    ]
   },
   {
     "id": 1051,
@@ -1369,6 +1486,9 @@
     "type": "war",
     "from": "589",
     "to": "589",
-    "description": "隋文帝派大军南下攻灭陈朝，俘虏陈后主。至此，隋朝结束了自西晋末年以来长达270多年的分裂局面，中国再次实现了大一统。"
+    "description": "隋文帝派大军南下攻灭陈朝，俘虏陈后主。至此，隋朝结束了自西晋末年以来长达270多年的分裂局面，中国再次实现了大一统。",
+    "types": [
+      "历史事件"
+    ]
   }
 ]
