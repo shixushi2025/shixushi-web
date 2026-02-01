@@ -112,6 +112,105 @@ const recentEvents = computed(() => {
   // 过滤掉世界史，只看中国史，取前5条
   return events.filter(e => !e.types?.includes('世界史')).slice(0, 5);
 });
+
+// 动态计算模块卡片数据
+const moduleCards = computed(() => {
+  const worldEvents = events.filter(e => e.types?.includes('世界史'));
+  const latestWorld = worldEvents[worldEvents.length - 1];
+  
+  return [
+    {
+      focus: '历史',
+      focusKey: 'history',
+      title: '中国史主轴',
+      subtitle: '王朝更迭与制度脉络',
+      desc: '从夏商周到近现代，详尽记录朝代兴衰。',
+      link: '/china',
+      cta: '进入历史模块',
+      tag: '年代轴',
+    },
+    {
+      focus: '世界',
+      focusKey: 'world',
+      title: '世界重大事件',
+      subtitle: latestWorld 
+        ? `同期：${latestWorld.title}`
+        : '全球视角下的时代转折',
+      desc: '同步全球战争、工业化、地缘节点，与中国进程对照。',
+      link: '/world',
+      cta: '浏览世界线',
+      tag: '对照阅读',
+    },
+    {
+      focus: '专题',
+      focusKey: 'topic',
+      title: '专题与人物',
+      subtitle: '制度·思想·科技',
+      desc: '聚焦变革关键点：#变法 #科举 #大一统',
+      link: '/topics',
+      cta: '查看专题索引',
+      tag: '深度策展',
+    },
+    {
+      focus: '人物',
+      focusKey: 'people',
+      title: '人物索引',
+      subtitle: '人物谱系与影响轨迹',
+      desc: `收录 ${peopleData.length} 位风云人物`,
+      link: '/people',
+      cta: '阅读人物传记',
+      tag: '传记目录',
+    },
+  ];
+});
+
+// 辅助样式函数
+const focusMeta: Record<string, { gradient: string; accent: string; icon: string; glyph: string }> = {
+  history: {
+    gradient: 'linear-gradient(135deg, rgba(247, 153, 68, 0.14), rgba(255, 227, 199, 0.8))',
+    accent: '#f79944',
+    icon: '⏳',
+    glyph: '📜',
+  },
+  world: {
+    gradient: 'linear-gradient(135deg, rgba(40, 115, 255, 0.16), rgba(218, 232, 255, 0.9))',
+    accent: '#2873ff',
+    icon: '🌐',
+    glyph: '🗺️',
+  },
+  topic: {
+    gradient: 'linear-gradient(135deg, rgba(128, 90, 213, 0.16), rgba(233, 224, 255, 0.9))',
+    accent: '#805ad5',
+    icon: '📂',
+    glyph: '🎯',
+  },
+  people: {
+    gradient: 'linear-gradient(135deg, rgba(0, 196, 140, 0.14), rgba(214, 246, 237, 0.9))',
+    accent: '#00c48c',
+    icon: '👥',
+    glyph: '🧭',
+  },
+  era: {
+    gradient: 'linear-gradient(135deg, rgba(220, 38, 38, 0.14), rgba(254, 226, 226, 0.9))',
+    accent: '#dc2626',
+    icon: '⛩️',
+    glyph: '👑',
+  }
+};
+
+const getFocusMeta = (key: string) => focusMeta[key] || focusMeta.history;
+
+const getCardStyle = (key: string) => ({
+  backgroundImage: getFocusMeta(key).gradient,
+  borderColor: `${getFocusMeta(key).accent}33`,
+  boxShadow: `0 16px 30px ${getFocusMeta(key).accent}22`,
+});
+
+const getPillStyle = (key: string) => ({
+  background: `${getFocusMeta(key).accent}12`,
+  color: getFocusMeta(key).accent,
+  borderColor: `${getFocusMeta(key).accent}40`,
+});
 </script>
 
 <style scoped>
