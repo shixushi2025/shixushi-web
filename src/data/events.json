@@ -7,8 +7,13 @@
     "startYear": -1600,
     "eraSlug": "shang",
     "eraName": "商朝",
-    "region": ["河南"],
-    "types": ["战争", "政治"],
+    "region": [
+      "河南"
+    ],
+    "types": [
+      "战争",
+      "政治"
+    ],
     "summary": "商汤在鸣条击败夏桀，夏朝灭亡，商朝建立。",
     "background": "夏朝末年，夏桀统治残暴，民不聊生。商部落在汤的领导下日益强大。",
     "process": "商汤在伊尹辅佐下誓师伐夏，双方在鸣条决战，夏军溃败。",
@@ -17,7 +22,14 @@
       "shortTerm": "结束夏朝统治，确立商朝霸权。",
       "longTerm": "标志中国历史第一次王朝更迭。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《史记·殷本纪》",
+        "quote": "汤乃践天子位，平定海内... 桀败于有娀之虚，桀奔于鸣条，夏师败绩。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1002,
@@ -27,8 +39,13 @@
     "startYear": -1300,
     "eraSlug": "shang",
     "eraName": "商朝",
-    "region": ["河南"],
-    "types": ["政治", "迁都"],
+    "region": [
+      "河南"
+    ],
+    "types": [
+      "政治",
+      "迁都"
+    ],
     "summary": "商王盘庚迁都至殷，结束九世之乱。",
     "background": "商朝中期王位继承混乱，且水患频繁。",
     "process": "盘庚力排众议，将都城迁往殷（今安阳）。",
@@ -37,7 +54,14 @@
       "shortTerm": "解决内部危机，社会趋稳。",
       "longTerm": "开启商朝中兴，殷墟文化发展成熟。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《史记·殷本纪》",
+        "quote": "帝盘庚之时，殷已都河北，盘庚渡河南，复居成汤之故居，乃五迁，无定处... 盘庚乃涉殷，治汤之政。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1003,
@@ -47,8 +71,13 @@
     "startYear": -1046,
     "eraSlug": "western-zhou",
     "eraName": "西周",
-    "region": ["河南"],
-    "types": ["战争", "政治"],
+    "region": [
+      "河南"
+    ],
+    "types": [
+      "战争",
+      "政治"
+    ],
     "summary": "周武王击败商纣王，商亡周立。",
     "background": "商纣王无道，周文王、武王励精图治。",
     "process": "武王趁商军主力在外，率诸侯联军突袭，在牧野大败商军。",
@@ -57,7 +86,14 @@
       "shortTerm": "确立周朝统治。",
       "longTerm": "开启八百年周朝，确立宗法分封制。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《史记·周本纪》",
+        "quote": "武王驰之，纣兵皆崩畔纣。纣走，反入登于鹿台之上，蒙衣其珠玉，自燔于火而死。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1004,
@@ -67,8 +103,13 @@
     "startYear": -770,
     "eraSlug": "chunqiu",
     "eraName": "春秋",
-    "region": ["河南"],
-    "types": ["政治", "迁都"],
+    "region": [
+      "河南"
+    ],
+    "types": [
+      "政治",
+      "迁都"
+    ],
     "summary": "周平王迁都洛邑，东周开始。",
     "background": "犬戎攻破镐京，西周灭亡。",
     "process": "平王在诸侯护送下东迁。",
@@ -77,7 +118,14 @@
       "shortTerm": "开启春秋战国时代。",
       "longTerm": "中国进入大分裂与大变革时期。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《史记·周本纪》",
+        "quote": "平王立，东迁于洛邑，辟戎寇。平王之时，周室衰微，诸侯强并弱，齐、楚、秦、晋始大。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1005,
@@ -87,8 +135,13 @@
     "startYear": -651,
     "eraSlug": "chunqiu",
     "eraName": "春秋",
-    "region": ["山东"],
-    "types": ["政治", "外交"],
+    "region": [
+      "山东"
+    ],
+    "types": [
+      "政治",
+      "外交"
+    ],
     "summary": "齐桓公葵丘会盟，成为春秋首霸。",
     "background": "管仲改革使齐国强盛。",
     "process": "尊王攘夷，九合诸侯。",
@@ -97,7 +150,14 @@
       "shortTerm": "维持中原稳定。",
       "longTerm": "开启春秋五霸格局。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《史记·齐太公世家》",
+        "quote": "桓公九合诸侯，一匡天下，诸侯受宪令，名为霸主。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1006,
@@ -107,8 +167,12 @@
     "startYear": -403,
     "eraSlug": "zhanguo",
     "eraName": "战国",
-    "region": ["山西"],
-    "types": ["政治"],
+    "region": [
+      "山西"
+    ],
+    "types": [
+      "政治"
+    ],
     "summary": "韩赵魏瓜分晋国，列为诸侯。",
     "background": "晋国六卿专权，最终只剩三家。",
     "process": "周天子册封三家为诸侯。",
@@ -117,7 +181,14 @@
       "shortTerm": "标志春秋结束战国开始。",
       "longTerm": "礼乐制度彻底崩坏。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《资治通鉴·周纪一》",
+        "quote": "初命晋大夫魏斯、赵籍、韩虔为诸侯。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1007,
@@ -127,8 +198,13 @@
     "startYear": -356,
     "eraSlug": "zhanguo",
     "eraName": "战国",
-    "region": ["陕西"],
-    "types": ["政治", "改革"],
+    "region": [
+      "陕西"
+    ],
+    "types": [
+      "政治",
+      "改革"
+    ],
     "summary": "商鞅在秦国变法，富国强兵。",
     "background": "秦国落后，秦孝公求贤。",
     "process": "废井田、开阡陌、奖耕战。",
@@ -137,7 +213,14 @@
       "shortTerm": "秦国崛起。",
       "longTerm": "为秦统一中国奠定基础。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《史记·商君列传》",
+        "quote": "令民为什伍，而相牧司连坐... 有军功者，各以率受上爵... 宗室非有军功论，不得为属籍。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1020,
@@ -147,8 +230,13 @@
     "startYear": -221,
     "eraSlug": "qin",
     "eraName": "秦朝",
-    "region": ["全国"],
-    "types": ["政治", "统一"],
+    "region": [
+      "全国"
+    ],
+    "types": [
+      "政治",
+      "统一"
+    ],
     "summary": "秦始皇统一六国，建立首个中央集权帝国。",
     "background": "战国末期秦国独大。",
     "process": "远交近攻，十年间灭六国。",
@@ -157,7 +245,14 @@
       "shortTerm": "结束战乱。",
       "longTerm": "奠定中国两千年政治格局。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《史记·秦始皇本纪》",
+        "quote": "二十六年... 秦初并天下... 分天下以为三十六郡，郡置守、尉、监。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1021,
@@ -167,8 +262,12 @@
     "startYear": -209,
     "eraSlug": "qin",
     "eraName": "秦朝",
-    "region": ["安徽"],
-    "types": ["民变"],
+    "region": [
+      "安徽"
+    ],
+    "types": [
+      "民变"
+    ],
     "summary": "中国历史上第一次大规模农民起义。",
     "background": "秦政暴虐，戍卒误期。",
     "process": "大泽乡起义，建立张楚政权。",
@@ -177,7 +276,14 @@
       "shortTerm": "揭开反秦序幕。",
       "longTerm": "首创起义精神。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《史记·陈涉世家》",
+        "quote": "且壮士不死即已，死即举大名耳，王侯将相宁有种乎！",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1023,
@@ -187,8 +293,12 @@
     "startYear": -202,
     "eraSlug": "western-han",
     "eraName": "西汉",
-    "region": ["陕西"],
-    "types": ["政治"],
+    "region": [
+      "陕西"
+    ],
+    "types": [
+      "政治"
+    ],
     "summary": "刘邦称帝，建立汉朝。",
     "background": "楚汉相争，项羽兵败。",
     "process": "刘邦在定陶登基。",
@@ -197,7 +307,14 @@
       "shortTerm": "恢复统一安定。",
       "longTerm": "开启汉唐盛世。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《汉书·高帝纪》",
+        "quote": "汉王即皇帝位于氾水之阳... 兵罢，皆归家... 民以饥饿自卖为人奴婢者，皆免为庶人。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1025,
@@ -207,8 +324,12 @@
     "startYear": -138,
     "eraSlug": "western-han",
     "eraName": "西汉",
-    "region": ["西域"],
-    "types": ["外交"],
+    "region": [
+      "西域"
+    ],
+    "types": [
+      "外交"
+    ],
     "summary": "张骞出使西域，凿空之旅。",
     "background": "汉武帝欲联络大月氏抗匈。",
     "process": "历经艰辛抵达中亚。",
@@ -217,7 +338,14 @@
       "shortTerm": "引入西域物产。",
       "longTerm": "促进东西方交流。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《史记·大宛列传》",
+        "quote": "始张骞凿空，其后使往者皆称博望侯，以为质于外国，外国由此信之。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1026,
@@ -227,8 +355,12 @@
     "startYear": -119,
     "eraSlug": "western-han",
     "eraName": "西汉",
-    "region": ["漠北"],
-    "types": ["战争"],
+    "region": [
+      "漠北"
+    ],
+    "types": [
+      "战争"
+    ],
     "summary": "卫青霍去病大破匈奴。",
     "background": "汉武帝决心彻底解决边患。",
     "process": "汉军深入漠北决战。",
@@ -237,7 +369,14 @@
       "shortTerm": "解除匈奴威胁。",
       "longTerm": "确立汉朝东亚霸权。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《史记·卫将军骠骑列传》",
+        "quote": "匈奴远遁，而漠南无王庭。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1031,
@@ -247,8 +386,12 @@
     "startYear": 184,
     "eraSlug": "eastern-han",
     "eraName": "东汉",
-    "region": ["全国"],
-    "types": ["民变"],
+    "region": [
+      "全国"
+    ],
+    "types": [
+      "民变"
+    ],
     "summary": "张角发动的大规模农民起义。",
     "background": "东汉末年腐败，天灾不断。",
     "process": "苍天已死，黄天当立。",
@@ -257,7 +400,14 @@
       "shortTerm": "导致军阀割据。",
       "longTerm": "三国时代的前奏。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《后汉书·皇甫嵩传》",
+        "quote": "苍天已死，黄天当立，岁在甲子，天下大吉。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1040,
@@ -267,8 +417,12 @@
     "timeLabel": "208 年",
     "eraSlug": "three-kingdoms",
     "eraName": "三国",
-    "region": ["湖北"],
-    "types": ["战争"],
+    "region": [
+      "湖北"
+    ],
+    "types": [
+      "战争"
+    ],
     "summary": "孙刘联军火烧赤壁，大败曹操。",
     "background": "曹操南下意图统一。",
     "process": "苦肉计、连环船、火攻。",
@@ -277,7 +431,14 @@
       "shortTerm": "阻断统一。",
       "longTerm": "确立三国鼎立。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《三国志·周瑜传》",
+        "quote": "公烧其余船引退，士卒饥疫，死者大半，备与瑜等复追至南郡，曹公遂北还。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1041,
@@ -287,8 +448,12 @@
     "timeLabel": "220 年",
     "eraSlug": "three-kingdoms",
     "eraName": "三国",
-    "region": ["河南"],
-    "types": ["政治"],
+    "region": [
+      "河南"
+    ],
+    "types": [
+      "政治"
+    ],
     "summary": "曹丕代汉建魏。",
     "background": "汉献帝无实权。",
     "process": "受禅称帝。",
@@ -297,7 +462,14 @@
       "shortTerm": "三国时代正式开始。",
       "longTerm": "九品中正制确立。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《三国志·文帝纪》",
+        "quote": "汉帝以众望在魏，乃召群公卿士，告祠高庙... 禅位于魏王。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1042,
@@ -307,8 +479,12 @@
     "timeLabel": "265 年",
     "eraSlug": "jin",
     "eraName": "西晋",
-    "region": ["河南"],
-    "types": ["政治"],
+    "region": [
+      "河南"
+    ],
+    "types": [
+      "政治"
+    ],
     "summary": "司马炎代魏建晋。",
     "background": "司马氏掌权。",
     "process": "受禅称帝。",
@@ -317,7 +493,14 @@
       "shortTerm": "准备统一。",
       "longTerm": "门阀政治发展。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《晋书·武帝纪》",
+        "quote": "魏帝临轩，禅位于帝... 大赦，改元，大酺五日。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1043,
@@ -327,8 +510,12 @@
     "timeLabel": "280 年",
     "eraSlug": "jin",
     "eraName": "西晋",
-    "region": ["江苏"],
-    "types": ["统一"],
+    "region": [
+      "江苏"
+    ],
+    "types": [
+      "统一"
+    ],
     "summary": "西晋灭吴，统一全国。",
     "background": "东吴腐朽。",
     "process": "多路伐吴，王濬楼船下益州。",
@@ -337,7 +524,14 @@
       "shortTerm": "结束分裂。",
       "longTerm": "短暂统一。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《晋书·武帝纪》",
+        "quote": "王濬以舟师至于秣陵... 孙皓面缚舆榇，诣军门降... 吴郡悉平。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1044,
@@ -348,8 +542,12 @@
     "timeLabel": "291-306 年",
     "eraSlug": "jin",
     "eraName": "西晋",
-    "region": ["北方"],
-    "types": ["动乱"],
+    "region": [
+      "北方"
+    ],
+    "types": [
+      "动乱"
+    ],
     "summary": "西晋宗室诸王的大混战。",
     "background": "分封诸王，贾后乱政。",
     "process": "诸王互相攻杀。",
@@ -358,7 +556,14 @@
       "shortTerm": "西晋衰落。",
       "longTerm": "导致五胡乱华。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《晋书·惠帝纪》",
+        "quote": "诸王构乱，骨肉相残，遂使神州陆沉。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1045,
@@ -368,8 +573,12 @@
     "timeLabel": "311 年",
     "eraSlug": "jin",
     "eraName": "西晋",
-    "region": ["河南"],
-    "types": ["灾难"],
+    "region": [
+      "河南"
+    ],
+    "types": [
+      "灾难"
+    ],
     "summary": "匈奴攻陷洛阳，西晋崩溃。",
     "background": "刘渊建汉。",
     "process": "攻破洛阳，俘虏晋怀帝。",
@@ -378,7 +587,14 @@
       "shortTerm": "西晋灭亡。",
       "longTerm": "衣冠南渡。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《晋书·怀帝纪》",
+        "quote": "六月丁未，刘曜陷洛阳... 帝蒙尘于平阳。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1046,
@@ -388,8 +604,12 @@
     "timeLabel": "383 年",
     "eraSlug": "jin",
     "eraName": "东晋",
-    "region": ["安徽"],
-    "types": ["战争"],
+    "region": [
+      "安徽"
+    ],
+    "types": [
+      "战争"
+    ],
     "summary": "东晋以少胜多击败前秦。",
     "background": "苻坚欲统一全国。",
     "process": "谢安指挥，草木皆兵。",
@@ -398,7 +618,14 @@
       "shortTerm": "保住东晋。",
       "longTerm": "维持南北对峙。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《晋书·苻坚载记》",
+        "quote": "坚众奔溃... 闻风声鹤唳，皆以为王师已至。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1047,
@@ -408,8 +635,12 @@
     "timeLabel": "439 年",
     "eraSlug": "northern-dynasties",
     "eraName": "北朝",
-    "region": ["北方"],
-    "types": ["统一"],
+    "region": [
+      "北方"
+    ],
+    "types": [
+      "统一"
+    ],
     "summary": "北魏灭北凉，统一北方。",
     "background": "鲜卑拓跋部崛起。",
     "process": "攻灭割据政权。",
@@ -418,7 +649,14 @@
       "shortTerm": "北方安定。",
       "longTerm": "促进民族融合。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《魏书·太武帝纪》",
+        "quote": "九月丙戌，姑臧平... 凉州平。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1048,
@@ -428,8 +666,12 @@
     "timeLabel": "494 年",
     "eraSlug": "northern-dynasties",
     "eraName": "北魏",
-    "region": ["河南"],
-    "types": ["改革"],
+    "region": [
+      "河南"
+    ],
+    "types": [
+      "改革"
+    ],
     "summary": "孝文帝推行汉化。",
     "background": "为巩固统治。",
     "process": "迁都洛阳，改汉制。",
@@ -438,7 +680,14 @@
       "shortTerm": "缓和矛盾。",
       "longTerm": "为隋唐统一奠基。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《魏书·高祖纪》",
+        "quote": "革衣服之制... 断诸北语，一从正音... 迁都洛阳。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1049,
@@ -448,8 +697,12 @@
     "timeLabel": "548 年",
     "eraSlug": "southern-dynasties",
     "eraName": "南朝",
-    "region": ["江苏"],
-    "types": ["动乱"],
+    "region": [
+      "江苏"
+    ],
+    "types": [
+      "动乱"
+    ],
     "summary": "侯景乱梁，南朝衰落。",
     "background": "梁武帝崇佛怠政。",
     "process": "攻陷台城，饿死武帝。",
@@ -458,7 +711,14 @@
       "shortTerm": "南朝士族衰落。",
       "longTerm": "北强南弱定局。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《梁书·侯景传》",
+        "quote": "景克台城... 千里绝烟，人迹罕见，白骨成聚，如丘陇焉。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1050,
@@ -468,8 +728,12 @@
     "timeLabel": "581 年",
     "eraSlug": "sui",
     "eraName": "隋朝",
-    "region": ["陕西"],
-    "types": ["建国"],
+    "region": [
+      "陕西"
+    ],
+    "types": [
+      "建国"
+    ],
     "summary": "杨坚受禅建隋。",
     "background": "北周静帝年幼。",
     "process": "废周建隋。",
@@ -478,7 +742,14 @@
       "shortTerm": "取代北周。",
       "longTerm": "开启隋唐。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《隋书·高祖纪》",
+        "quote": "周帝诏... 禅位于隋... 帝加黄屋左纛，入屯复昌乐宫。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1051,
@@ -488,8 +759,12 @@
     "timeLabel": "589 年",
     "eraSlug": "sui",
     "eraName": "隋朝",
-    "region": ["江苏"],
-    "types": ["统一"],
+    "region": [
+      "江苏"
+    ],
+    "types": [
+      "统一"
+    ],
     "summary": "隋灭陈，统一全国。",
     "background": "陈朝腐败。",
     "process": "渡江灭陈。",
@@ -498,7 +773,14 @@
       "shortTerm": "结束三百年分裂。",
       "longTerm": "开创大一统局面。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《隋书·高祖纪》",
+        "quote": "韩擒虎进师入朱雀门... 陈主乃入于井... 陈国平。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1063,
@@ -508,8 +790,12 @@
     "startYear": 626,
     "eraSlug": "tang",
     "eraName": "唐朝",
-    "region": ["陕西"],
-    "types": ["政变"],
+    "region": [
+      "陕西"
+    ],
+    "types": [
+      "政变"
+    ],
     "summary": "李世民发动政变夺权。",
     "background": "储位之争。",
     "process": "射杀太子元吉，逼宫。",
@@ -518,7 +804,14 @@
       "shortTerm": "政局稳定。",
       "longTerm": "开启贞观之治。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《旧唐书·太宗本纪》",
+        "quote": "六月四日，建成、元吉至玄武门... 太宗射杀建成，尉迟敬德诛元吉。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1064,
@@ -528,8 +821,12 @@
     "startYear": 627,
     "eraSlug": "tang",
     "eraName": "唐朝",
-    "region": ["全国"],
-    "types": ["盛世"],
+    "region": [
+      "全国"
+    ],
+    "types": [
+      "盛世"
+    ],
     "summary": "唐太宗统治时期的盛世。",
     "background": "吸取隋亡教训。",
     "process": "纳谏任贤，轻徭薄赋。",
@@ -538,7 +835,14 @@
       "shortTerm": "社会安定。",
       "longTerm": "奠定大唐基业。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《新唐书·食货志》",
+        "quote": "贞观都邑，斗米三四钱... 外户不闭，行旅不赍粮。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1065,
@@ -548,8 +852,12 @@
     "startYear": 690,
     "eraSlug": "tang",
     "eraName": "武周",
-    "region": ["全国"],
-    "types": ["政治"],
+    "region": [
+      "全国"
+    ],
+    "types": [
+      "政治"
+    ],
     "summary": "中国唯一女皇帝。",
     "background": "太后临朝。",
     "process": "废唐建周。",
@@ -558,7 +866,14 @@
       "shortTerm": "打击门阀。",
       "longTerm": "上承贞观下启开元。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《旧唐书·则天皇后本纪》",
+        "quote": "天授元年九月... 革唐命，改国号为周... 称圣神皇帝。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1066,
@@ -568,8 +883,12 @@
     "startYear": 713,
     "eraSlug": "tang",
     "eraName": "唐朝",
-    "region": ["全国"],
-    "types": ["盛世"],
+    "region": [
+      "全国"
+    ],
+    "types": [
+      "盛世"
+    ],
     "summary": "唐玄宗统治前期的极盛时期。",
     "background": "拨乱反正。",
     "process": "励精图治。",
@@ -578,7 +897,14 @@
       "shortTerm": "国力顶峰。",
       "longTerm": "中华文明高峰。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《资治通鉴·唐纪》",
+        "quote": "海内富安，行者虽万里不持寸兵。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1067,
@@ -588,8 +914,12 @@
     "startYear": 755,
     "eraSlug": "tang",
     "eraName": "唐朝",
-    "region": ["北方"],
-    "types": ["动乱"],
+    "region": [
+      "北方"
+    ],
+    "types": [
+      "动乱"
+    ],
     "summary": "唐朝由盛转衰的转折点。",
     "background": "节度使权重，玄宗怠政。",
     "process": "安禄山反叛，攻陷长安。",
@@ -598,7 +928,14 @@
       "shortTerm": "藩镇割据。",
       "longTerm": "经济重心南移。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《旧唐书·安禄山传》",
+        "quote": "禄山反... 潼关失守，玄宗幸蜀... 虽殄巨寇，而海内萧然矣。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1070,
@@ -608,8 +945,12 @@
     "startYear": 960,
     "eraSlug": "song",
     "eraName": "北宋",
-    "region": ["河南"],
-    "types": ["政变"],
+    "region": [
+      "河南"
+    ],
+    "types": [
+      "政变"
+    ],
     "summary": "赵匡胤建立宋朝。",
     "background": "主少国疑。",
     "process": "黄袍加身。",
@@ -618,7 +959,14 @@
       "shortTerm": "结束五代。",
       "longTerm": "重文抑武。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《宋史·太祖本纪》",
+        "quote": "诸军集驿门，宣言策点检为天子... 有以黄衣加太祖身，众皆罗拜呼万岁。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1071,
@@ -628,8 +976,12 @@
     "startYear": 1005,
     "eraSlug": "song",
     "eraName": "北宋",
-    "region": ["河南"],
-    "types": ["外交"],
+    "region": [
+      "河南"
+    ],
+    "types": [
+      "外交"
+    ],
     "summary": "宋辽和议。",
     "background": "辽军南下。",
     "process": "城下之盟。",
@@ -638,7 +990,14 @@
       "shortTerm": "百年和平。",
       "longTerm": "岁币负担。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《宋史·真宗本纪》",
+        "quote": "与契丹约为兄弟之国... 岁输绢二十万匹，银十万两。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1074,
@@ -648,8 +1007,12 @@
     "startYear": 1069,
     "eraSlug": "song",
     "eraName": "北宋",
-    "region": ["全国"],
-    "types": ["改革"],
+    "region": [
+      "全国"
+    ],
+    "types": [
+      "改革"
+    ],
     "summary": "富国强兵的改革尝试。",
     "background": "积贫积弱。",
     "process": "推行新法。",
@@ -658,7 +1021,14 @@
       "shortTerm": "财政改善。",
       "longTerm": "党争加剧。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《宋史·王安石传》",
+        "quote": "变风俗，立法度... 乃置制置三司条例司... 青苗、保甲、均输、市易... 诸法相继并兴。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1075,
@@ -668,8 +1038,12 @@
     "startYear": 1127,
     "eraSlug": "song",
     "eraName": "北宋",
-    "region": ["河南"],
-    "types": ["灾难"],
+    "region": [
+      "河南"
+    ],
+    "types": [
+      "灾难"
+    ],
     "summary": "金灭北宋，徽钦被俘。",
     "background": "金军南下。",
     "process": "攻破开封。",
@@ -678,7 +1052,14 @@
       "shortTerm": "南宋偏安。",
       "longTerm": "民族仇恨。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《宋史·钦宗本纪》",
+        "quote": "金人陷京师... 帝如青城... 金人以帝及皇后、皇太子北归。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1079,
@@ -688,8 +1069,12 @@
     "startYear": 1279,
     "eraSlug": "yuan",
     "eraName": "元朝",
-    "region": ["广东"],
-    "types": ["战争"],
+    "region": [
+      "广东"
+    ],
+    "types": [
+      "战争"
+    ],
     "summary": "宋元最后决战，南宋灭亡。",
     "background": "南宋流亡。",
     "process": "陆秀夫负帝投海。",
@@ -698,7 +1083,14 @@
       "shortTerm": "古典中华转折。",
       "longTerm": "大一统。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《宋史·陆秀夫传》",
+        "quote": "秀夫语帝曰：'国事至此，陛下当为国死。'... 遂负帝投海。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1090,
@@ -708,8 +1100,12 @@
     "startYear": 1368,
     "eraSlug": "ming",
     "eraName": "明朝",
-    "region": ["江苏"],
-    "types": ["建国"],
+    "region": [
+      "江苏"
+    ],
+    "types": [
+      "建国"
+    ],
     "summary": "朱元璋称帝建明，驱逐蒙元。",
     "background": "元末红巾军起义。",
     "process": "应天称帝，北伐大都。",
@@ -718,7 +1114,14 @@
       "shortTerm": "汉人光复。",
       "longTerm": "君主专制强化。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《明史·太祖本纪》",
+        "quote": "洪武元年春正月... 即皇帝位于南郊，定有天下之号曰明。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1091,
@@ -728,8 +1131,12 @@
     "startYear": 1405,
     "eraSlug": "ming",
     "eraName": "明朝",
-    "region": ["西洋"],
-    "types": ["外交"],
+    "region": [
+      "西洋"
+    ],
+    "types": [
+      "外交"
+    ],
     "summary": "世界航海史壮举。",
     "background": "宣扬国威。",
     "process": "七下西洋。",
@@ -738,7 +1145,14 @@
       "shortTerm": "朝贡贸易。",
       "longTerm": "昙花一现的航海。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《明史·郑和传》",
+        "quote": "成祖... 欲耀兵异域，示中国富强... 遍历诸番国，宣天子诏，因给赐其君长。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1092,
@@ -748,8 +1162,12 @@
     "startYear": 1449,
     "eraSlug": "ming",
     "eraName": "明朝",
-    "region": ["河北"],
-    "types": ["危机"],
+    "region": [
+      "河北"
+    ],
+    "types": [
+      "危机"
+    ],
     "summary": "明英宗亲征被俘，明朝转衰。",
     "background": "瓦剌犯边，王振擅权。",
     "process": "仓促亲征，全军覆没。",
@@ -758,7 +1176,14 @@
       "shortTerm": "国力大损。",
       "longTerm": "由攻转守。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《明史·英宗本纪》",
+        "quote": "师溃，死者数十万。帝北狩。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1094,
@@ -768,8 +1193,12 @@
     "startYear": 1644,
     "eraSlug": "qing",
     "eraName": "清朝",
-    "region": ["北京"],
-    "types": ["更迭"],
+    "region": [
+      "北京"
+    ],
+    "types": [
+      "更迭"
+    ],
     "summary": "甲申国难，满清入主中原。",
     "background": "流寇内乱，满清外患。",
     "process": "李自成进京，吴三桂引清兵。",
@@ -778,7 +1207,14 @@
       "shortTerm": "剃发易服。",
       "longTerm": "最后的封建王朝。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《明史·庄烈帝本纪》",
+        "quote": "李自成陷阙... 帝崩于万岁山。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1095,
@@ -788,8 +1224,12 @@
     "startYear": 1683,
     "eraSlug": "qing",
     "eraName": "清朝",
-    "region": ["台湾"],
-    "types": ["统一"],
+    "region": [
+      "台湾"
+    ],
+    "types": [
+      "统一"
+    ],
     "summary": "施琅攻台，台湾归清。",
     "background": "郑氏割据。",
     "process": "澎湖海战，郑克塽降。",
@@ -798,7 +1238,14 @@
       "shortTerm": "国家统一。",
       "longTerm": "开发台湾。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《清史稿·圣祖本纪》",
+        "quote": "施琅败郑克塽于澎湖... 克塽乃遣使纳降... 台湾平。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1098,
@@ -808,8 +1255,12 @@
     "startYear": 1840,
     "eraSlug": "qing",
     "eraName": "清朝",
-    "region": ["沿海"],
-    "types": ["战争"],
+    "region": [
+      "沿海"
+    ],
+    "types": [
+      "战争"
+    ],
     "summary": "中国近代史开端。",
     "background": "虎门销烟。",
     "process": "英军封锁海口，攻占定海。",
@@ -818,7 +1269,14 @@
       "shortTerm": "割地赔款。",
       "longTerm": "半殖民地化开始。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《清史稿·宣宗本纪》",
+        "quote": "二十二年八月... 耆英、伊里布与英人定和约... 赐香港。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1099,
@@ -828,8 +1286,12 @@
     "startYear": 1851,
     "eraSlug": "qing",
     "eraName": "清朝",
-    "region": ["南方"],
-    "types": ["起义"],
+    "region": [
+      "南方"
+    ],
+    "types": [
+      "起义"
+    ],
     "summary": "最大规模农民战争。",
     "background": "阶级矛盾。",
     "process": "金田起义，定都天京。",
@@ -838,7 +1300,14 @@
       "shortTerm": "动摇清廷。",
       "longTerm": "汉族官僚崛起。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《清史稿·洪秀全传》",
+        "quote": "秀全陷江宁，据之，号天京。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1101,
@@ -848,8 +1317,12 @@
     "startYear": 1894,
     "eraSlug": "qing",
     "eraName": "清朝",
-    "region": ["黄海"],
-    "types": ["战争"],
+    "region": [
+      "黄海"
+    ],
+    "types": [
+      "战争"
+    ],
     "summary": "北洋水师全军覆没。",
     "background": "日本扩张。",
     "process": "黄海海战，威海卫战役。",
@@ -858,7 +1331,14 @@
       "shortTerm": "割让台湾。",
       "longTerm": "瓜分狂潮。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《清史稿·德宗本纪》",
+        "quote": "二十一年三月... 李鸿章与日本订和约，割奉天南路、台湾、澎湖。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1104,
@@ -868,8 +1348,12 @@
     "startYear": 1911,
     "eraSlug": "republic",
     "eraName": "民国",
-    "region": ["武汉"],
-    "types": ["革命"],
+    "region": [
+      "武汉"
+    ],
+    "types": [
+      "革命"
+    ],
     "summary": "辛亥革命爆发。",
     "background": "保路运动。",
     "process": "新军起义。",
@@ -878,7 +1362,14 @@
       "shortTerm": "清朝崩溃。",
       "longTerm": "结束帝制。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《清史稿·宣统本纪》",
+        "quote": "八月十九日，革党黎元洪起事于武昌，总督瑞澂弃城走。",
+        "url": ""
+      }
+    ]
   },
   {
     "id": 1105,
@@ -888,8 +1379,12 @@
     "startYear": 1912,
     "eraSlug": "republic",
     "eraName": "民国",
-    "region": ["北京"],
-    "types": ["终结"],
+    "region": [
+      "北京"
+    ],
+    "types": [
+      "终结"
+    ],
     "summary": "帝制终结，共和开始。",
     "background": "南北议和。",
     "process": "颁布退位诏书。",
@@ -898,6 +1393,13 @@
       "shortTerm": "民国建立。",
       "longTerm": "走向共和。"
     },
-    "sources": []
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《清帝退位诏书》",
+        "quote": "今全国人民心理，多倾向共和... 予亦何忍以一姓之尊荣，拂兆民之好恶... 即由袁世凯以全权组织临时共和政府。",
+        "url": ""
+      }
+    ]
   }
 ]
