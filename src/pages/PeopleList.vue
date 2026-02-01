@@ -61,7 +61,7 @@ const groupedPeople = computed(() => {
   
   peopleData.forEach(p => {
     // 归一化朝代名称（处理可能的别名）
-    let dyn = p.dynasty;
+    let dyn = p.dynasty || '其他';
     if (!groups[dyn]) {
       groups[dyn] = [];
     }

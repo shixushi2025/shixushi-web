@@ -80,8 +80,9 @@ import eventsData from '@/data/events.json';
 
 const route = useRoute();
 // 兼容 /people/3001 或 /people/3001-confucius 格式
-const idParam = Array.isArray(route.params.idSlug) ? route.params.idSlug[0] : route.params.idSlug;
-const personId = parseInt(idParam.split('-')[0]);
+const idSlug = route.params.idSlug;
+const idParam = Array.isArray(idSlug) ? idSlug[0] : (idSlug || '');
+const personId = parseInt(idParam.split('-')[0] || '0');
 
 const person = computed(() => {
   return peopleData.find(p => p.id === personId);
