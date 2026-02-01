@@ -17,8 +17,8 @@
           <article v-for="person in group.items" :key="person.id" class="person-card">
             <header>
               <div class="meta">
-                <span class="role-tag" :class="getRoleClass(person.categories[0])">
-                  {{ person.categories[0] }}
+                <span class="role-tag" :class="getRoleClass(person.categories?.[0] || '其他')">
+                  {{ person.categories?.[0] || '其他' }}
                 </span>
                 <span v-if="person.title" class="title-tag">{{ person.title }}</span>
               </div>
@@ -26,7 +26,7 @@
                 <RouterLink :to="`/people/${person.id}`">{{ person.name }}</RouterLink>
               </h3>
               <p class="years" v-if="person.birthYear">
-                {{ formatYear(person.birthYear) }} – {{ formatYear(person.deathYear) }}
+                {{ formatYear(person.birthYear || 0) }} – {{ formatYear(person.deathYear || 0) }}
               </p>
             </header>
             
@@ -61,7 +61,7 @@ const groupedPeople = computed(() => {
   
   peopleData.forEach(p => {
     // 归一化朝代名称（处理可能的别名）
-    let dyn = p.dynasty || '其他';
+    const dyn = (p.dynasty || '其他') as string;
     if (!groups[dyn]) {
       groups[dyn] = [];
     }
@@ -78,10 +78,13 @@ const groupedPeople = computed(() => {
       if (idxB === -1) return -1;
       return idxA - idxB;
     })
-    .map(dyn => ({
-      dynasty: dyn,
-      items: groups[dyn].sort((a, b) => (a.birthYear || 0) - (b.birthYear || 0))
-    }));
+    .map(dyn => {
+      const items = groups[dyn] || [];
+      return {
+        dynasty: dyn,
+        items: items.sort((a, b) => (a.birthYear || 0) - (b.birthYear || 0))
+      };
+    });
 });
 
 function formatYear(year?: number) {
