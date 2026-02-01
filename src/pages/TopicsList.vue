@@ -2,84 +2,161 @@
   <section class="page">
     <header class="page-header">
       <p class="eyebrow">Topics</p>
-      <h1>专题列表</h1>
-      <p class="lead">战争、制度、科技、思想等专题会陆续上线，便于纵向阅读。</p>
+      <h1>历史专题索引</h1>
+      <p class="lead">通过 {{ topics.length }} 个不同的切面，重新审视五千年历史脉络。</p>
     </header>
 
     <div class="topics-grid">
-      <RouterLink v-for="topic in topics" :key="topic.slug" :to="`/topics/${topic.slug}`" class="topic-card">
-        <span class="topic-tag">{{ topic.tag }}</span>
-        <h3>{{ topic.title }}</h3>
-        <p>{{ topic.summary }}</p>
+      <RouterLink 
+        v-for="topic in topics" 
+        :key="topic.tag" 
+        :to="`/topics/${topic.tag}`" 
+        class="topic-card"
+        :class="getTopicClass(topic.count)"
+      >
+        <div class="topic-head">
+          <span class="topic-tag">{{ topic.tag }}</span>
+          <span class="count-badge">{{ topic.count }} 事件</span>
+        </div>
+        <h3>{{ topic.tag }}史</h3>
+        <p>聚合 {{ topic.count }} 个相关历史节点，点击查看完整时间线。</p>
       </RouterLink>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue';
 import { RouterLink } from 'vue-router';
+import { events } from '@/data/events';
 
-const topics = [
-  { tag: '制度', title: '制度变革与国家治理', summary: '横跨三千年的政治制度与治理工具演化。', slug: 'systems' },
-  { tag: '军事', title: '关键战争与地缘格局', summary: '用战役与军事技术的升级来观察地缘稳定与扩张。', slug: 'wars' },
-  { tag: '文化', title: '思想文化与学术流派', summary: '串联儒释道、理学、启蒙与新文化思潮。', slug: 'thought' },
-];
+// 自动聚合 Topics
+const topics = computed(() => {
+  const counts: Record<string, number> = {};
+  
+  events.forEach(ev => {
+    // 排除通用标签和非主题标签
+    const validTypes = ev.types?.filter(t => !['历史事件', '世界史', '中国史', '古代'].includes(t)) || [];
+    
+    validTypes.forEach(t => {
+      counts[t] = (counts[t] || 0) + 1;
+    });
+  });
+
+  return Object.keys(counts)
+    .map(tag => ({ tag, count: counts[tag] }))
+    .sort((a, b) => b.count - a.count); // 按数量降序
+});
+
+function getTopicClass(count: number) {
+  if (count >= 10) return 'hot';
+  if (count >= 5) return 'medium';
+  return 'normal';
+}
 </script>
 
 <style scoped>
 .page {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .page-header {
   background: #fff;
-  padding: 28px;
-  border-radius: 28px;
+  padding: 40px;
+  border-radius: 24px;
   border: 1px solid var(--border-soft);
-  box-shadow: 0 18px 34px rgba(24, 18, 10, 0.08);
+  text-align: center;
+  background: linear-gradient(to bottom, #fff, #fbfbfa);
 }
 .eyebrow {
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: var(--text-muted);
-  margin-bottom: 8px;
+  letter-spacing: 0.15em;
+  color: var(--brand);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+h1 {
+  font-size: 36px;
+  margin: 0 0 12px;
+  color: #1a202c;
+  font-family: "Songti SC", serif;
 }
 .lead {
   margin: 0;
-  color: var(--text-body);
+  color: #64748b;
 }
+
 .topics-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
 }
+
 .topic-card {
-  border-radius: 22px;
+  border-radius: 16px;
   border: 1px solid var(--border-soft);
-  padding: 20px;
+  padding: 24px;
   background: #fff;
-  color: var(--text-body);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .topic-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 24px rgba(22, 16, 8, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.06);
+  border-color: var(--brand);
+}
+
+/* 热度分级样式 */
+.topic-card.hot {
+  background: linear-gradient(135deg, #fff, #fff7ed);
+  border-color: #ffedd5;
+}
+.topic-card.hot .topic-tag {
+  color: #c2410c;
+  background: #ffedd5;
+}
+
+.topic-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .topic-tag {
   font-size: 12px;
-  letter-spacing: 0.12em;
-  color: var(--text-muted);
-  text-transform: uppercase;
+  font-weight: 700;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 4px 8px;
+  border-radius: 6px;
 }
-.topic-card p {
-  color: var(--text-muted);
+.count-badge {
+  font-size: 12px;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #1e293b;
+}
+p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 @media (max-width: 640px) {
   .page-header {
-    padding: 20px;
+    padding: 24px;
   }
 }
 </style>

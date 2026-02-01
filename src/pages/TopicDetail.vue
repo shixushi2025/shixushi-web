@@ -1,84 +1,68 @@
+<template>
+  <section class="page">
+    <header class="page-header">
+      <p class="eyebrow">Topic Timeline</p>
+      <h1>{{ topicName }}史</h1>
+      <p class="lead">共收录 {{ topicEvents.length }} 个关键节点</p>
+    </header>
+
+    <div class="timeline-container">
+      <EventTimeline :events="topicEvents" />
+    </div>
+  </section>
+</template>
+
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
+import { events } from '@/data/events';
+import EventTimeline from '@/components/common/EventTimeline.vue';
 
 const route = useRoute();
 const slug = route.params.slug as string;
 
-const displayTitle = computed(() => {
-  if (!slug) return '专题详情';
-  return decodeURIComponent(slug).replace(/-/g, ' / ');
+const topicName = computed(() => decodeURIComponent(slug));
+
+const topicEvents = computed(() => {
+  return events
+    .filter(ev => ev.types?.includes(topicName.value))
+    .sort((a, b) => (a.startYear || 0) - (b.startYear || 0));
 });
 </script>
-
-<template>
-  <section class="page">
-    <header class="page-header">
-      <p class="eyebrow">专题</p>
-      <h1>{{ displayTitle }}</h1>
-      <p class="lead">该专题的内容尚在整理阶段，下方示例展示结构化呈现方式。</p>
-    </header>
-
-    <div class="sections">
-      <article>
-        <h2>纵向脉络</h2>
-        <p>按时间段拆分主题的发展，例如制度诞生—演进—变革。</p>
-      </article>
-      <article>
-        <h2>关键事件</h2>
-        <p>列出影响该专题的关键事件，并与中国/世界历史互相参照。</p>
-      </article>
-      <article>
-        <h2>参考资料</h2>
-        <p>收集书目、论文与多媒体资源，便于延伸阅读。</p>
-      </article>
-    </div>
-  </section>
-</template>
 
 <style scoped>
 .page {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .page-header {
+  text-align: center;
+  padding: 40px;
   background: #fff;
-  padding: 28px;
-  border-radius: 28px;
+  border-radius: 24px;
   border: 1px solid var(--border-soft);
-  box-shadow: 0 18px 32px rgba(25, 16, 8, 0.09);
+  background: linear-gradient(to bottom, #fff, #fdfbf7);
 }
 .eyebrow {
-  font-size: 12px;
-  letter-spacing: 0.2em;
+  font-size: 13px;
   text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 8px;
+  letter-spacing: 0.15em;
+  color: var(--brand);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+h1 {
+  font-size: 36px;
+  margin: 0 0 12px;
+  color: #1a202c;
+  font-family: "Songti SC", serif;
 }
 .lead {
   margin: 0;
-  color: var(--text-body);
-}
-.sections {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-}
-.sections article {
-  border-radius: 20px;
-  border: 1px solid var(--border-soft);
-  padding: 18px;
-  background: #fff;
-}
-.sections p {
-  margin: 0;
-  color: var(--text-muted);
-}
-
-@media (max-width: 640px) {
-  .page-header {
-    padding: 20px;
-  }
+  color: #64748b;
+  font-variant-numeric: tabular-nums;
 }
 </style>
