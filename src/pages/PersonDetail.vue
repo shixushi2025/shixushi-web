@@ -81,12 +81,7 @@ import eventsData from '@/data/events.json';
 const route = useRoute();
 // 兼容 /people/3001 或 /people/3001-confucius 格式
 const idSlug = route.params.idSlug;
-let idParam = '';
-if (Array.isArray(idSlug)) {
-  idParam = idSlug[0];
-} else if (typeof idSlug === 'string') {
-  idParam = idSlug;
-}
+const idParam = Array.isArray(idSlug) ? (idSlug[0] ?? '') : (idSlug ?? '');
 const personId = parseInt(idParam.split('-')[0] || '0');
 
 const person = computed(() => {
