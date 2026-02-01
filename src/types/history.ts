@@ -31,9 +31,10 @@ export interface Emperor {
 }
 
 export interface SourceRef {
-  type: 'book' | 'article' | 'paper' | 'other';
+  type: 'book' | 'article' | 'paper' | 'other' | 'zhengshi'; // 新增正史类型
   title: string;
   detail?: string;
+  url?: string; // 新增可选URL字段
 }
 
 export interface Event {

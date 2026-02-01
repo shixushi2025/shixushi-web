@@ -1,0 +1,1374 @@
+[
+  {
+    "id": 1090,
+    "title": "Establishment of Ming Dynasty",
+    "desc": "Zhu Yuanzhang proclaimed himself Emperor (Hongwu Emperor) in Yingtian (Nanjing), establishing the Ming Dynasty and overthrowing Yuan rule.",
+    "date": "1368-01-23",
+    "type": "pol",
+    "level": 5
+  },
+  {
+    "id": 1091,
+    "title": "Zheng He's Voyages",
+    "desc": "Admiral Zheng He began his first of seven naval expeditions to the Western Oceans, showcasing Ming naval power and extending tribute trade.",
+    "date": "1405-07-11",
+    "type": "pol",
+    "level": 5
+  },
+  {
+    "id": 1092,
+    "title": "Tumu Crisis",
+    "desc": "Emperor Yingzong of Ming was captured by Oirat Mongols at Tumu Fortress, marking a turning point from offense to defense for the Ming Dynasty.",
+    "date": "1449-09-01",
+    "type": "war",
+    "level": 4
+  },
+  {
+    "id": 1093,
+    "title": "Zhang Juzheng's Reform",
+    "desc": "Grand Secretary Zhang Juzheng implemented the 'Single Whip Law' nationwide, simplifying taxes and strengthening centralized power.",
+    "date": "1581",
+    "type": "pol",
+    "level": 4
+  },
+  {
+    "id": 1094,
+    "title": "Fall of Ming & Qing Entry",
+    "desc": "Li Zicheng captured Beijing; Emperor Chongzhen committed suicide. Wu Sangui opened Shanhai Pass, allowing Qing forces to enter China.",
+    "date": "1644-04-25",
+    "type": "war",
+    "level": 5
+  },
+  {
+    "id": 1095,
+    "title": "Qing Conquers Taiwan",
+    "desc": "Admiral Shi Lang defeated the Zheng regime in Taiwan; the Qing Dynasty formally annexed Taiwan, completing unification.",
+    "date": "1683-10-03",
+    "type": "war",
+    "level": 4
+  },
+  {
+    "id": 1096,
+    "title": "Treaty of Nerchinsk",
+    "desc": "The Qing Dynasty and Russia signed their first border treaty, defining the boundary along the Argun and Shilka rivers.",
+    "date": "1689-08-27",
+    "type": "pol",
+    "level": 3
+  },
+  {
+    "id": 1097,
+    "title": "Destruction of Opium at Humen",
+    "desc": "Commissioner Lin Zexu destroyed confiscated opium at Humen, taking a hard stance against the drug trade.",
+    "date": "1839-06-03",
+    "type": "pol",
+    "level": 4
+  },
+  {
+    "id": 1098,
+    "title": "First Opium War",
+    "desc": "British forces attacked coastal China. The war ended with the Treaty of Nanjing (1842), the first unequal treaty.",
+    "date": "1840-06-28",
+    "type": "war",
+    "level": 5
+  },
+  {
+    "id": 1099,
+    "title": "Taiping Rebellion",
+    "desc": "Hong Xiuquan led the Jintian Uprising, starting a massive civil war that established the Taiping Heavenly Kingdom.",
+    "date": "1851-01-11",
+    "type": "war",
+    "level": 5
+  },
+  {
+    "id": 1100,
+    "title": "Burning of Old Summer Palace",
+    "desc": "Anglo-French forces looted and burned the Old Summer Palace (Yuanmingyuan) during the Second Opium War.",
+    "date": "1860-10-18",
+    "type": "war",
+    "level": 4
+  },
+  {
+    "id": 1101,
+    "title": "First Sino-Japanese War",
+    "desc": "War broke out over Korea. Qing's defeat led to the Treaty of Shimonoseki and the loss of Taiwan.",
+    "date": "1894-07-25",
+    "type": "war",
+    "level": 5
+  },
+  {
+    "id": 1102,
+    "title": "Hundred Days' Reform",
+    "desc": "Emperor Guangxu issued decrees for modernization, but the reform was crushed by Empress Dowager Cixi after 103 days.",
+    "date": "1898-06-11",
+    "type": "pol",
+    "level": 4
+  },
+  {
+    "id": 1103,
+    "title": "Boxer Rebellion",
+    "desc": "The Boxer movement attacked foreigners; the Eight-Nation Alliance invaded Beijing, leading to the Boxer Protocol.",
+    "date": "1900-06-21",
+    "type": "war",
+    "level": 4
+  },
+  {
+    "id": 1104,
+    "title": "Wuchang Uprising",
+    "desc": "Revolutionaries in Wuchang launched an uprising that spread across China, leading to the collapse of the Qing Dynasty.",
+    "date": "1911-10-10",
+    "type": "war",
+    "level": 5
+  },
+  {
+    "id": 1105,
+    "title": "Abdication of Puyi",
+    "desc": "The Xuantong Emperor (Puyi) abdicated, formally ending the Qing Dynasty and over 2,000 years of imperial rule.",
+    "date": "1912-02-12",
+    "type": "pol",
+    "level": 5
+  },
+  {
+    "id": 1001,
+    "title": "鸣条之战",
+    "slug": "battle-of-mingtiao",
+    "timeLabel": "前 1600 年",
+    "startYear": -1600,
+    "eraSlug": "shang",
+    "eraName": "商朝",
+    "region": [
+      "河南",
+      "山西"
+    ],
+    "types": [
+      "战争",
+      "政治"
+    ],
+    "summary": "商汤在鸣条击败夏桀，夏朝灭亡，商朝建立。",
+    "background": "夏朝末年，夏桀统治残暴，民不聊生。商部落在汤的领导下日益强大，采取了一系列灭夏的准备措施（如灭葛、韦、顾、昆吾等方国）。",
+    "process": "商汤在伊尹的辅佐下，誓师伐夏（《汤誓》）。双方在鸣条（今山西运城附近或河南封丘）决战。夏桀军队士气低落，迅速溃败。",
+    "result": "夏桀逃往南巢并死在那里。商汤在亳（今河南商丘或偃师）建立商朝。",
+    "influence": {
+      "shortTerm": "结束了夏朝的统治，确立了商朝的霸权。",
+      "longTerm": "标志着中国历史上第一次王朝更迭，奠定了商代五百年的基业。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "史记·殷本纪",
+        "url": "https://ctext.org/shiji/yin-ben-ji/zh"
+      },
+      {
+        "type": "zhengshi",
+        "title": "尚书·汤誓",
+        "url": "https://ctext.org/shang-shu/speech-of-tang/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "商汤",
+      "夏桀"
+    ]
+  },
+  {
+    "id": 1002,
+    "title": "盘庚迁殷",
+    "slug": "pan-geng-moves-to-yin",
+    "timeLabel": "前 1300 年",
+    "startYear": -1300,
+    "eraSlug": "shang",
+    "eraName": "商朝",
+    "region": [
+      "河南"
+    ],
+    "types": [
+      "政治",
+      "迁都"
+    ],
+    "summary": "商王盘庚将都城迁至殷（今河南安阳），结束了九世之乱。",
+    "background": "商朝中期，王室内部发生“九世之乱”，王位继承混乱，且水患频繁，国力衰退。都城多次迁徙。",
+    "process": "盘庚力排众议，决定将都城从奄（今山东曲阜）迁往殷（今河南安阳）。他多次训诫贵族和百姓（《盘庚》三篇），最终完成迁都。",
+    "result": "商朝定都于殷，直至灭亡，不再迁徙。因此商朝又称殷商。",
+    "influence": {
+      "shortTerm": "解决了内部政治危机和自然灾害威胁，社会趋于稳定。",
+      "longTerm": "开启了商朝晚期的中兴局面，为武丁盛世奠定了基础。殷墟文化（包括甲骨文）在此发展成熟。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "史记·殷本纪",
+        "url": "https://ctext.org/shiji/yin-ben-ji/zh"
+      },
+      {
+        "type": "zhengshi",
+        "title": "尚书·盘庚",
+        "url": "https://ctext.org/shang-shu/pan-geng-i/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "商盘庚"
+    ]
+  },
+  {
+    "id": 1003,
+    "title": "牧野之战",
+    "slug": "battle-of-muye",
+    "timeLabel": "前 1046 年",
+    "startYear": -1046,
+    "eraSlug": "western-zhou",
+    "eraName": "西周",
+    "region": [
+      "河南"
+    ],
+    "types": [
+      "战争",
+      "政治"
+    ],
+    "summary": "周武王率领诸侯联军在牧野击败商纣王，商朝灭亡，周朝建立。",
+    "background": "商纣王统治后期荒淫无道，严刑峻法，失去民心。周文王、武王父子在西部励精图治，广泛结盟。",
+    "process": "周武王趁商军主力在东南征伐东夷之机，率兵东进。双方在牧野（今河南新乡附近）决战。商军奴隶倒戈，周军大胜。",
+    "result": "纣王逃回鹿台自焚而死。周武王建立周朝，定都镐京。",
+    "influence": {
+      "shortTerm": "推翻了商朝统治，确立了周王朝的统治地位。",
+      "longTerm": "确立了宗法制和分封制的基础，开启了八百年的周朝历史，对中国文化产生了深远影响。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "史记·周本纪",
+        "url": "https://ctext.org/shiji/zhou-ben-ji/zh"
+      },
+      {
+        "type": "zhengshi",
+        "title": "尚书·牧誓",
+        "url": "https://ctext.org/shang-shu/speech-at-mu/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "周武王",
+      "商纣王"
+    ]
+  },
+  {
+    "id": 1004,
+    "title": "平王东迁",
+    "slug": "king-ping-moves-east",
+    "timeLabel": "前 770 年",
+    "startYear": -770,
+    "eraSlug": "chunqiu",
+    "eraName": "春秋",
+    "region": [
+      "陕西",
+      "河南"
+    ],
+    "types": [
+      "政治",
+      "迁都"
+    ],
+    "summary": "周平王将国都从镐京迁至洛邑，西周结束，东周开始。",
+    "background": "周幽王烽火戏诸侯，导致犬戎攻破镐京，幽王被杀。王室衰微，关中地区遭受战乱破坏严重。",
+    "process": "周平王在晋、郑、秦等诸侯的护送下，将都城东迁至洛邑（今河南洛阳）。",
+    "result": "周王室从此失去对诸侯的实际控制力，仅保留名义上的共主地位。",
+    "influence": {
+      "shortTerm": "王室衰微，诸侯势力崛起，开启了春秋时期。",
+      "longTerm": "中国历史进入大分裂、大动荡但也思想大争鸣的时期。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "史记·周本纪",
+        "url": "https://ctext.org/shiji/zhou-ben-ji/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "周平王",
+      "周幽王"
+    ]
+  },
+  {
+    "id": 1005,
+    "title": "齐桓公称霸",
+    "slug": "duke-huan-hegemony",
+    "timeLabel": "前 651 年",
+    "startYear": -651,
+    "eraSlug": "chunqiu",
+    "eraName": "春秋",
+    "region": [
+      "山东",
+      "河南"
+    ],
+    "types": [
+      "政治",
+      "外交"
+    ],
+    "summary": "齐桓公在葵丘会盟诸侯，成为春秋时期第一位霸主。",
+    "background": "周王室衰落，诸侯国之间兼并战争频繁。齐桓公任用管仲为相，进行改革，国力强盛。",
+    "process": "齐桓公提出“尊王攘夷”的口号，多次会盟诸侯（“九合诸侯”）。前651年在葵丘（今河南兰考）举行盟会，周天子派人赐胙。",
+    "result": "确立了齐桓公的霸主地位，维持了中原地区的相对稳定。",
+    "influence": {
+      "shortTerm": "暂时维护了周王室的尊严，抵御了周边部族的入侵。",
+      "longTerm": "开启了春秋五霸的政治格局，改变了原有的分封制秩序。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "史记·齐太公世家",
+        "url": "https://ctext.org/shiji/qi-tai-gong-shi-jia/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "齐桓公"
+    ]
+  },
+  {
+    "id": 1006,
+    "title": "三家分晋",
+    "slug": "partition-of-jin",
+    "timeLabel": "前 403 年",
+    "startYear": -403,
+    "eraSlug": "zhanguo",
+    "eraName": "战国",
+    "region": [
+      "山西",
+      "河南",
+      "河北"
+    ],
+    "types": [
+      "政治"
+    ],
+    "summary": "韩、赵、魏三家大夫瓜分晋国，被周天子正式封为诸侯。",
+    "background": "春秋晚期，晋国公室大权旁落，被六卿把持。经过长期内斗，剩下韩、赵、魏、智四家。赵、韩、魏联合灭智后，瓜分了晋国领土。",
+    "process": "前403年，周威烈王正式册封韩虔、赵籍、魏斯为诸侯。",
+    "result": "晋国灭亡，战国七雄格局形成。",
+    "influence": {
+      "shortTerm": "标志着春秋时期的结束和战国时代的开始。",
+      "longTerm": "彻底破坏了周礼的分封等级制度，各国变法图强成为主流。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "资治通鉴·周纪一",
+        "url": "https://ctext.org/zizhi-tongjian/zhou-ji-yi/zh"
+      },
+      {
+        "type": "zhengshi",
+        "title": "史记·晋世家",
+        "url": "https://ctext.org/shiji/jin-shi-jia/zh"
+      }
+    ]
+  },
+  {
+    "id": 1007,
+    "title": "商鞅变法",
+    "slug": "shang-yang-reforms",
+    "timeLabel": "前 356 年",
+    "startYear": -356,
+    "eraSlug": "zhanguo",
+    "eraName": "战国",
+    "region": [
+      "陕西"
+    ],
+    "types": [
+      "政治",
+      "法律",
+      "经济"
+    ],
+    "summary": "秦孝公任用商鞅在秦国实行变法，富国强兵。",
+    "background": "战国初期，秦国偏处西隅，国力落后，受到魏国等中原强国的打压。秦孝公发布求贤令，寻求富国强兵之道。",
+    "process": "商鞅分两次实行变法（前356年、前350年）。主要内容包括：废井田开阡陌、奖励耕战、实行连坐法、推行县制、统一度量衡等。",
+    "result": "秦国国力大增，成为战国后期最强大的国家。",
+    "influence": {
+      "shortTerm": "使秦国迅速崛起，在对六国的战争中占据优势。",
+      "longTerm": "建立了中央集权的官僚制度雏形，为秦始皇统一中国奠定了坚实的基础。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "史记·商君列传",
+        "url": "https://ctext.org/shiji/shang-jun-lie-zhuan/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "秦孝公",
+      "商鞅"
+    ]
+  },
+  {
+    "id": 1020,
+    "title": "秦灭六国",
+    "slug": "qin-unification",
+    "timeLabel": "前 221 年",
+    "startYear": -221,
+    "eraSlug": "qin",
+    "eraName": "秦朝",
+    "region": [
+      "陕西",
+      "河南",
+      "山东",
+      "河北",
+      "湖北"
+    ],
+    "types": [
+      "战争",
+      "政治",
+      "统一"
+    ],
+    "summary": "秦王嬴政先后灭掉韩、赵、魏、楚、燕、齐六国，结束了战国割据局面，建立了中国历史上第一个中央集权的封建王朝。",
+    "background": "战国末期，秦国经过商鞅变法实力最强。嬴政即位后，任用李斯、尉缭等人，采取“远交近攻”的策略，准备统一六国。",
+    "process": "从前230年灭韩开始，秦军在十年间势如破竹。前228年灭赵，前225年灭魏，前223年灭楚，前222年灭燕，前221年灭齐。",
+    "result": "秦王嬴政统一天下，称“始皇帝”。建立三公九卿制，推行郡县制，统一度量衡、文字和货币。",
+    "influence": {
+      "shortTerm": "结束了诸侯长期混战的局面，社会进入短暂的安定期。",
+      "longTerm": "奠定了中国两千多年大一统政治格局的基础，对中华民族的形成产生了深远影响。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "史记·秦始皇本纪",
+        "url": "https://ctext.org/shiji/qin-shi-huang-ben-ji/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "秦始皇"
+    ]
+  },
+  {
+    "id": 1021,
+    "title": "陈胜吴广起义",
+    "slug": "dazexiang-uprising",
+    "timeLabel": "前 209 年",
+    "startYear": -209,
+    "eraSlug": "qin",
+    "eraName": "秦朝",
+    "region": [
+      "安徽"
+    ],
+    "types": [
+      "战争",
+      "民变"
+    ],
+    "summary": "陈胜、吴广在大泽乡率众起义，这是中国历史上第一次大规模的农民起义。",
+    "background": "秦二世统治残暴，赋税沉重，刑罚严酷。陈胜、吴广等900余名戍卒被征发前往渔阳戍边，途中遇雨误期，按律当斩。",
+    "process": "在安徽大泽乡，陈胜、吴广杀死押解军官，号召戍卒起义，提出“王侯将相宁有种乎”的口号。起义军迅速壮大，建立“张楚”政权。",
+    "result": "起义军一度攻至函谷关，最终因秦军反扑及内部矛盾而失败，陈胜、吴广相继被杀。",
+    "influence": {
+      "shortTerm": "沉重打击了秦朝的统治，揭开了秦末农民战争的序幕。",
+      "longTerm": "树立了反抗暴政的榜样，其首创精神被后世传颂。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "史记·陈涉世家",
+        "url": "https://ctext.org/shiji/chen-she-shi-jia/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "秦二世",
+      "陈胜"
+    ]
+  },
+  {
+    "id": 1022,
+    "title": "巨鹿之战",
+    "slug": "battle-of-julu",
+    "timeLabel": "前 207 年",
+    "startYear": -207,
+    "eraSlug": "qin",
+    "eraName": "秦朝",
+    "region": [
+      "河北"
+    ],
+    "types": [
+      "战争"
+    ],
+    "summary": "项羽率领楚军在巨鹿大破秦军主力，是秦末农民战争中最关键的一场战役。",
+    "background": "秦将章邯击杀项梁后，北上围攻赵国于巨鹿。赵国向各诸侯求援，但诸侯军畏惧秦军，不敢出战。",
+    "process": "项羽杀死畏缩不前的宋义，率军渡河救赵。他命令全军“破釜沉舟”，只带三日口粮，以示必死之心。楚军以一当十，大败秦军，俘虏王离。",
+    "result": "秦军主力被歼，章邯后来投降项羽。项羽确立了在诸侯军中的统帅地位。",
+    "influence": {
+      "shortTerm": "扭转了战局，加速了秦朝的灭亡。",
+      "longTerm": "成为中国历史上以少胜多的著名战例，“破釜沉舟”成为千古名言。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "史记·项羽本纪",
+        "url": "https://ctext.org/shiji/xiang-yu-ben-ji/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "项羽",
+      "秦二世"
+    ]
+  },
+  {
+    "id": 1023,
+    "title": "西汉建立",
+    "slug": "establishment-of-western-han",
+    "timeLabel": "前 202 年",
+    "startYear": -202,
+    "eraSlug": "western-han",
+    "eraName": "西汉",
+    "region": [
+      "河南",
+      "陕西"
+    ],
+    "types": [
+      "政治",
+      "战争"
+    ],
+    "summary": "刘邦在楚汉战争中击败项羽，称帝建立汉朝，定都长安。",
+    "background": "秦亡后，项羽分封诸侯，刘邦被封为汉王。双方为争夺天下进行了长达四年的楚汉战争。",
+    "process": "刘邦重用韩信、萧何、张良等人，采取正确的战略战术。前202年，韩信在垓下十面埋伏，项羽兵败自刎。",
+    "result": "刘邦统一天下，在定陶（后迁长安）登基，建立汉朝，史称西汉。",
+    "influence": {
+      "shortTerm": "结束了战乱，中国重新进入统一安定的时期。",
+      "longTerm": "汉朝继承并发展了秦朝的制度（汉承秦制），开创了中国历史上强盛的汉唐时代之一。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "史记·高祖本纪",
+        "url": "https://ctext.org/shiji/gao-zu-ben-ji/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "汉高祖",
+      "项羽"
+    ]
+  },
+  {
+    "id": 1024,
+    "title": "七国之乱",
+    "slug": "rebellion-of-the-seven-states",
+    "timeLabel": "前 154 年",
+    "startYear": -154,
+    "eraSlug": "western-han",
+    "eraName": "西汉",
+    "region": [
+      "江苏",
+      "山东",
+      "陕西"
+    ],
+    "types": [
+      "战争",
+      "政治"
+    ],
+    "summary": "汉景帝时期，以吴王刘濞为首的七个诸侯王发动的叛乱，最终被朝廷平定。",
+    "background": "汉初实行郡国并行制，诸侯王势力膨胀，威胁中央集权。汉景帝采纳晁错建议，推行“削藩”政策。",
+    "process": "吴王刘濞联合楚、赵等六国，以“清君侧、诛晁错”为名起兵。景帝派周亚夫率军平叛。周亚夫坚壁清野，断绝叛军粮道。",
+    "result": "三个月内叛乱被平定，吴王刘濞被杀。中央收回诸侯王的行政权和用人权。",
+    "influence": {
+      "shortTerm": "消除了诸侯王对皇权的直接威胁。",
+      "longTerm": "大大加强了中央集权，为汉武帝时期的大一统奠定了坚实基础。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "史记·吴王濞列传",
+        "url": "https://ctext.org/shiji/wu-wang-bi-lie-zhuan/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "汉景帝"
+    ]
+  },
+  {
+    "id": 1025,
+    "title": "张骞通西域",
+    "slug": "zhang-qian-mission",
+    "timeLabel": "前 138 年",
+    "startYear": -138,
+    "eraSlug": "western-han",
+    "eraName": "西汉",
+    "region": [
+      "陕西",
+      "新疆",
+      "中亚"
+    ],
+    "types": [
+      "外交",
+      "探险"
+    ],
+    "summary": "张骞奉汉武帝之命出使西域，开辟了连接中原与西域的通道。",
+    "background": "汉武帝欲联合大月氏夹击匈奴，招募使者出使西域。张骞应募。",
+    "process": "前138年，张骞首次出使，途中被匈奴扣留十余年，后逃脱到达大宛、大月氏，但未能达成军事结盟。前119年，张骞第二次出使，访问乌孙等国。",
+    "result": "虽然未实现军事结盟，但带回了西域的详细地理、物产和人文信息。汉朝开始频繁与西域各国交往。",
+    "influence": {
+      "shortTerm": "引入了葡萄、苜蓿、汗血马等物产。",
+      "longTerm": "开辟了著名的“丝绸之路”，促进了东西方文明的交流与融合，史称“凿空”。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "史记·大宛列传",
+        "url": "https://ctext.org/shiji/da-wan-lie-zhuan/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "汉武帝"
+    ]
+  },
+  {
+    "id": 1026,
+    "title": "漠北之战",
+    "slug": "battle-of-mobei",
+    "timeLabel": "前 119 年",
+    "startYear": -119,
+    "eraSlug": "western-han",
+    "eraName": "西汉",
+    "region": [
+      "蒙古高原"
+    ],
+    "types": [
+      "战争"
+    ],
+    "summary": "卫青、霍去病率领汉军主力深入漠北，对匈奴发动决定性打击。",
+    "background": "经过河南之战、河西之战，匈奴势力虽受打击但主力尚存。汉武帝决心发动更大规模的攻势，彻底解决边患。",
+    "process": "卫青、霍去病各率五万骑兵分两路北进。卫青在漠北遭遇单于主力，激战后单于逃遁。霍去病北进两千余里，歼敌七万，封狼居胥。",
+    "result": "匈奴主力溃败，远遁漠北，“是后匈奴远遁，而幕（漠）南无王庭”。",
+    "influence": {
+      "shortTerm": "解除了匈奴对汉朝北部的军事威胁。",
+      "longTerm": "保障了河西走廊和丝绸之路的安全，确立了汉朝在东亚的霸权地位。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "史记·卫将军骠骑列传",
+        "url": "https://ctext.org/shiji/wei-jiang-jun-piao-qi-lie-zhuan/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "汉武帝",
+      "卫青",
+      "霍去病"
+    ]
+  },
+  {
+    "id": 1027,
+    "title": "王莽篡汉",
+    "slug": "wang-mang-usurpation",
+    "timeLabel": "9 年",
+    "startYear": 9,
+    "eraSlug": "xin",
+    "eraName": "新朝",
+    "region": [
+      "陕西"
+    ],
+    "types": [
+      "政治",
+      "政变"
+    ],
+    "summary": "王莽废除孺子婴，自立为帝，改国号为“新”，西汉灭亡。",
+    "background": "西汉末年，外戚专权，社会危机加剧。王莽通过伪装谦恭、笼络人心，逐步掌握朝政大权。",
+    "process": "公元9年，王莽正式称帝，推行一系列复古改革（王莽改制），包括王田制、私属制、五均六箾等。",
+    "result": "建立新朝。但改革脱离实际，触犯了各阶层利益，加剧了社会动荡。",
+    "influence": {
+      "shortTerm": "导致社会经济混乱，引发了绿林、赤眉等大规模农民起义。",
+      "longTerm": "是中国历史上少有的文人通过“禅让”形式夺取政权的案例，其改革思想对后世有一定启示但以失败告终。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "汉书·王莽传",
+        "url": "https://ctext.org/hanshu/wang-mang-zhuan-shang/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "王莽"
+    ]
+  },
+  {
+    "id": 1028,
+    "title": "昆阳之战",
+    "slug": "battle-of-kunyang",
+    "timeLabel": "23 年",
+    "startYear": 23,
+    "eraSlug": "xin",
+    "eraName": "新朝",
+    "region": [
+      "河南"
+    ],
+    "types": [
+      "战争"
+    ],
+    "summary": "刘秀率领绿林军在昆阳以少胜多，击溃王莽主力大军。",
+    "background": "王莽新朝末年，起义风起云涌。王莽派王邑、王寻率领四十万大军围攻昆阳，意图消灭绿林军主力。",
+    "process": "此时昆阳守军仅数千人。刘秀率十三骑突围求援，后带援军三千返回，冲击王莽军中军。此时突降暴雨，莽军大乱，刘秀乘胜追击。",
+    "result": "王莽军主力全军覆没。不久绿林军攻入长安，王莽被杀，新朝灭亡。",
+    "influence": {
+      "shortTerm": "直接导致了新朝的瓦解。",
+      "longTerm": "奠定了刘秀后来统一天下、建立东汉的基础。展示了刘秀卓越的军事才能。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "后汉书·光武帝纪",
+        "url": "https://ctext.org/hou-hanshu/guang-wu-di-ji-shang/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "汉光武帝",
+      "王莽"
+    ]
+  },
+  {
+    "id": 1029,
+    "title": "光武中兴",
+    "slug": "restoration-of-han",
+    "timeLabel": "25 年",
+    "startYear": 25,
+    "eraSlug": "eastern-han",
+    "eraName": "东汉",
+    "region": [
+      "河北",
+      "河南"
+    ],
+    "types": [
+      "政治",
+      "统一"
+    ],
+    "summary": "刘秀称帝，重建汉朝，定都洛阳，史称东汉。经过休养生息，社会经济得到恢复和发展。",
+    "background": "新朝灭亡后，群雄割据。刘秀以河北为基地，逐步消灭各方势力。",
+    "process": "公元25年，刘秀在鄗（今河北柏乡）称帝。随后平定赤眉，消灭陇右隗嚣、四川公孙述等割据势力，完成统一。刘秀采取释放奴婢、轻徭薄赋等措施恢复国力。",
+    "result": "东汉建立，社会逐步安定，经济文化复兴。",
+    "influence": {
+      "shortTerm": "结束了汉末以来的长期战乱。",
+      "longTerm": "延续了汉朝的统治近两百年，开创了“光武中兴”的治世局面。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "后汉书·光武帝纪",
+        "url": "https://ctext.org/hou-hanshu/guang-wu-di-ji-shang/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "汉光武帝"
+    ]
+  },
+  {
+    "id": 1030,
+    "title": "班超经营西域",
+    "slug": "ban-chao-western-regions",
+    "timeLabel": "73 年",
+    "startYear": 73,
+    "eraSlug": "eastern-han",
+    "eraName": "东汉",
+    "region": [
+      "新疆",
+      "中亚"
+    ],
+    "types": [
+      "外交",
+      "军事"
+    ],
+    "summary": "班超投笔从戎，出使西域，重新确立了东汉对西域的控制。",
+    "background": "西汉末年，西域脱离中原控制，被匈奴奴役。东汉明帝时期，国力恢复，决定重新经营西域。",
+    "process": "公元73年，班超随窦固出击匈奴，后率36人出使鄯善、于阗等地，以智谋和胆略收服各国（“不入虎穴，焉得虎子”）。他驻守西域三十余年。",
+    "result": "西域五十余国归附汉朝，丝绸之路重新畅通。",
+    "influence": {
+      "shortTerm": "切断了匈奴的右臂，保障了汉朝边疆安全。",
+      "longTerm": "进一步促进了中西文化交流，班超的事迹成为后来边疆经略的典范。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "后汉书·班梁列传",
+        "url": "https://ctext.org/hou-hanshu/ban-liang-lie-zhuan/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "汉明帝",
+      "班超"
+    ]
+  },
+  {
+    "id": 1031,
+    "title": "黄巾起义",
+    "slug": "yellow-turban-rebellion",
+    "timeLabel": "184 年",
+    "startYear": 184,
+    "eraSlug": "eastern-han",
+    "eraName": "东汉",
+    "region": [
+      "河南",
+      "河北",
+      "山东",
+      "湖北"
+    ],
+    "types": [
+      "战争",
+      "民变"
+    ],
+    "summary": "张角领导的以太平道为号召的农民起义，沉重打击了东汉的统治。",
+    "background": "东汉末年，政治腐败，宦官外戚交替专权，土地兼并严重，天灾不断。张角创办“太平道”，以治病传教为名组织群众。",
+    "process": "184年，张角提出“苍天已死，黄天当立，岁在甲子，天下大吉”的口号，发动起义。起义军头裹黄巾，声势浩大。",
+    "result": "起义军主力在几个月内被朝廷和地方豪强联合镇压，张角病死。但各地余部坚持斗争多年。",
+    "influence": {
+      "shortTerm": "瓦解了东汉朝廷的统治基础。",
+      "longTerm": "为了平叛，朝廷下放军权给地方州牧，导致地方军阀割据，最终引发了三国分裂局面。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "后汉书·皇甫嵩朱俊列传",
+        "url": "https://ctext.org/hou-hanshu/huang-fu-song-zhu-jun-lie-zhuan/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "汉灵帝",
+      "张角"
+    ]
+  },
+  {
+    "id": 1070,
+    "year": 960,
+    "title": "陈桥兵变",
+    "desc": "赵匡胤在陈桥驿发动兵变，黄袍加身，建立宋朝（北宋），定都开封（东京），结束了五代十国的分裂局面。",
+    "type": "political",
+    "dynasty": "Song"
+  },
+  {
+    "id": 1071,
+    "year": 1005,
+    "title": "澶渊之盟",
+    "desc": "宋辽达成和议，宋朝每年向辽提供“岁币”。此后百年间双方保持和平，促进了边境贸易与经济交流。",
+    "type": "political",
+    "dynasty": "Song"
+  },
+  {
+    "id": 1072,
+    "year": 1023,
+    "title": "官方交子发行",
+    "desc": "北宋在四川设立益州交子务，正式发行“官交子”。这是世界上最早由政府发行的纸币，标志着货币经济的重大突破。",
+    "type": "economy",
+    "dynasty": "Song"
+  },
+  {
+    "id": 1073,
+    "year": 1041,
+    "title": "毕昇发明活字印刷",
+    "desc": "平民毕昇发明胶泥活字印刷术，比欧洲早约400年。这一技术大大提高了书籍印刷效率，推动了文化传播。",
+    "type": "technology",
+    "dynasty": "Song"
+  },
+  {
+    "id": 1074,
+    "year": 1069,
+    "title": "王安石变法",
+    "desc": "宋神宗任用王安石推行新法（熙宁变法），包括青苗法、募役法等，旨在富国强兵，但因各方阻力最终未能完全成功。",
+    "type": "political",
+    "dynasty": "Song"
+  },
+  {
+    "id": 1075,
+    "year": 1127,
+    "title": "靖康之变",
+    "desc": "金军攻破开封，俘虏徽、钦二帝，北宋灭亡。赵构随即在南京应天府即位，建立南宋。",
+    "type": "war",
+    "dynasty": "Song"
+  },
+  {
+    "id": 1076,
+    "year": 1142,
+    "title": "岳飞遇害与绍兴和议",
+    "desc": "宋高宗与秦桧以“莫须有”罪名杀害抗金名将岳飞，并与金朝签订《绍兴和议》，确立了南北对峙的局面。",
+    "type": "political",
+    "dynasty": "Song"
+  },
+  {
+    "id": 1077,
+    "year": 1206,
+    "title": "铁木真统一蒙古",
+    "desc": "铁木真在斡难河源被推举为成吉思汗，统一蒙古诸部，建立了大蒙古国，开始对外扩张。",
+    "type": "political",
+    "dynasty": "Yuan"
+  },
+  {
+    "id": 1078,
+    "year": 1271,
+    "title": "忽必烈建元",
+    "desc": "忽必烈取《易经》“大哉乾元”之意，定国号为“大元”，次年定都大都（今北京），确立了元朝的统治基础。",
+    "type": "political",
+    "dynasty": "Yuan"
+  },
+  {
+    "id": 1079,
+    "year": 1279,
+    "title": "崖山海战",
+    "desc": "元军在崖山海战中击败南宋残军，陆秀夫背负少帝赵昺投海殉国，南宋彻底灭亡，元朝统一中国。",
+    "type": "war",
+    "dynasty": "Yuan"
+  },
+  {
+    "id": 1080,
+    "year": 1281,
+    "title": "授时历颁行",
+    "desc": "元朝天文学家郭守敬等人编制的《授时历》正式颁行，定一回归年为365.2425日，精度与现代公历相当。",
+    "type": "technology",
+    "dynasty": "Yuan"
+  },
+  {
+    "id": 1081,
+    "year": 1368,
+    "title": "元朝灭亡",
+    "desc": "朱元璋称帝建立明朝，同年明军攻占大都，元顺帝北逃，元朝在中原的统治结束。",
+    "type": "political",
+    "dynasty": "Yuan"
+  },
+  {
+    "id": 1060,
+    "title": "隋灭陈",
+    "slug": "sui-conquest-of-chen",
+    "timeLabel": "589 年",
+    "startYear": 589,
+    "eraSlug": "sui",
+    "eraName": "隋朝",
+    "region": [
+      "江苏",
+      "浙江",
+      "安徽"
+    ],
+    "types": [
+      "战争",
+      "统一"
+    ],
+    "summary": "隋文帝杨坚派兵南下攻灭陈朝，俘获陈后主，结束了自魏晋南北朝以来长达三百多年的分裂局面，实现全国统一。",
+    "background": "北周灭亡后，杨坚建立隋朝，励精图治，北方国力强盛。南方的陈朝政治腐败，陈后主荒淫无度，防务松弛。隋文帝在充分准备后，下令伐陈。",
+    "process": "588年，隋军五十余万分道南下。589年正月，韩擒虎率先攻入建康（今南京），俘虏陈后主，陈朝灭亡。",
+    "result": "隋朝统一全国，长江南北重归一统。",
+    "influence": {
+      "shortTerm": "结束了长期的战乱与分裂，百姓得以休养生息。",
+      "longTerm": "为后来隋唐盛世的出现奠定了基础，促进了民族融合与南北经济文化交流。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "隋书·高祖纪",
+        "url": "https://ctext.org/sui-shu/gao-zu-shang/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "隋文帝",
+      "陈后主"
+    ]
+  },
+  {
+    "id": 1061,
+    "title": "科举制确立",
+    "slug": "establishment-of-keju",
+    "timeLabel": "605 年",
+    "startYear": 605,
+    "eraSlug": "sui",
+    "eraName": "隋朝",
+    "region": [
+      "全国"
+    ],
+    "types": [
+      "制度",
+      "文化",
+      "政治"
+    ],
+    "summary": "隋炀帝正式设立进士科，标志着科举选官制度的正式形成，取代了魏晋以来的九品中正制。",
+    "background": "魏晋南北朝时期实行的九品中正制导致“上品无寒门，下品无势族”，世家大族垄断仕途，不利于中央集权。隋文帝废除九品中正制，开始采用分科考试的方式选拔官员。",
+    "process": "隋炀帝时期，增设进士科，以“试策”取士，确立了以才学为标准的选官原则。",
+    "result": "科举制度成为后世封建王朝选拔官员的主要途径。",
+    "influence": {
+      "shortTerm": "打破了世家大族对官场的垄断，加强了中央集权。",
+      "longTerm": "延续了一千三百多年，深远影响了中国的教育、文化和社会结构，也被东亚邻国效仿。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "隋书·帝纪",
+        "url": ""
+      }
+    ],
+    "relatedEmperors": [
+      "隋文帝",
+      "隋炀帝"
+    ]
+  },
+  {
+    "id": 1062,
+    "title": "开凿大运河",
+    "slug": "grand-canal-construction",
+    "timeLabel": "605 年",
+    "startYear": 605,
+    "eraSlug": "sui",
+    "eraName": "隋朝",
+    "region": [
+      "河南",
+      "江苏",
+      "浙江",
+      "河北"
+    ],
+    "types": [
+      "工程",
+      "经济"
+    ],
+    "summary": "隋炀帝下令开凿贯通南北的大运河，以洛阳为中心，北达涿郡，南至余杭，全长两千多公里。",
+    "background": "隋朝统一后，随着江南经济的发展，需要加强南北交通运输，以便将南方的粮食物资运往北方政治中心和军事前线。",
+    "process": "605年起，陆续开凿通济渠、邗沟、永济渠、江南河。征发百万民夫，工程浩大。",
+    "result": "建成了世界上最长的人工运河，沟通了海河、黄河、淮河、长江、钱塘江五大水系。",
+    "influence": {
+      "shortTerm": "劳民伤财，加速了隋朝的灭亡；但极大地便利了南北漕运。",
+      "longTerm": "成为中国南北交通的大动脉，对后世经济发展和国家统一维护起了关键作用。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "隋书·炀帝纪",
+        "url": "https://ctext.org/sui-shu/yang-di-shang/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "隋炀帝"
+    ]
+  },
+  {
+    "id": 1063,
+    "title": "玄武门之变",
+    "slug": "xuanwu-gate-incident",
+    "timeLabel": "626 年",
+    "startYear": 626,
+    "eraSlug": "tang",
+    "eraName": "唐朝",
+    "region": [
+      "陕西"
+    ],
+    "types": [
+      "政治",
+      "政变"
+    ],
+    "summary": "秦王李世民在长安皇宫玄武门发动政变，杀死太子李建成和齐王李元吉，迫使唐高祖李渊退位。",
+    "background": "唐朝建立过程中，李世民功勋卓著，与太子李建成之间的权力斗争日益激烈。双方集团势同水火。",
+    "process": "626年7月2日，李世民率长孙无忌、尉迟敬德等人埋伏于玄武门，射杀太子及齐王。随即控制皇宫，李渊被迫册立李世民为太子。",
+    "result": "李世民登基，是为唐太宗，开启了唐朝的盛世局面。",
+    "influence": {
+      "shortTerm": "解决了皇位继承的内部纷争，统一了统治集团的思想。",
+      "longTerm": "为“贞观之治”的出现创造了政治条件，但也留下了皇位争夺的血腥先例。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "旧唐书·太宗本纪",
+        "url": "https://ctext.org/old-tang-shu/tai-zong-ben-ji-shang/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "唐太宗",
+      "唐高祖"
+    ]
+  },
+  {
+    "id": 1064,
+    "title": "贞观之治",
+    "slug": "reign-of-zhenguan",
+    "timeLabel": "627 年",
+    "startYear": 627,
+    "eraSlug": "tang",
+    "eraName": "唐朝",
+    "region": [
+      "全国"
+    ],
+    "types": [
+      "政治",
+      "盛世"
+    ],
+    "summary": "唐太宗李世民在位期间（627-649），政治清明，经济复苏，文化繁荣，国力强盛，史称“贞观之治”。",
+    "background": "经过隋末战乱，民生凋敝。唐太宗吸取隋亡教训，励精图治，任用贤良（如房玄龄、杜如晦、魏征），虚心纳谏。",
+    "process": "推行均田制、租庸调制，轻徭薄赋；完善三省六部制和科举制；击败东突厥，被尊为“天可汗”。",
+    "result": "社会安定，夜不闭户，道不拾遗，唐朝进入快速上升期。",
+    "influence": {
+      "shortTerm": "奠定了唐朝三百年的基业。",
+      "longTerm": "成为中国历史上著名的治世典范，对周边国家产生巨大吸引力，确立了中华文化圈的中心地位。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "新唐书·太宗本纪",
+        "url": "https://ctext.org/new-tang-shu/tai-zong-ben-ji/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "唐太宗"
+    ]
+  },
+  {
+    "id": 1065,
+    "title": "武则天称帝",
+    "slug": "wu-zetian-reign",
+    "timeLabel": "690 年",
+    "startYear": 690,
+    "eraSlug": "tang",
+    "eraName": "武周",
+    "region": [
+      "全国"
+    ],
+    "types": [
+      "政治",
+      "女性"
+    ],
+    "summary": "武则天废唐睿宗，自立为帝，改国号为“周”，成为中国历史上唯一正统的女皇帝。",
+    "background": "武则天原为唐高宗皇后，高宗病重期间协助处理朝政，逐渐掌握大权。高宗驾崩后，先后废立中宗、睿宗，临朝称制。",
+    "process": "690年，武则天正式称帝，定都洛阳（神都）。她打击关陇贵族，大力推行科举，任用酷吏同时也选拔贤才（如狄仁杰）。",
+    "result": "统治期间社会经济继续发展，人口增长，边疆得以巩固。",
+    "influence": {
+      "shortTerm": "虽然政局动荡，但有效地维持了帝国的统一和发展。",
+      "longTerm": "上承贞观，下启开元，促进了社会阶层的流动，提升了女性地位，被称为“政启开元，治宏贞观”。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "旧唐书·则天皇后本纪",
+        "url": "https://ctext.org/old-tang-shu/ze-tian-huang-hou-ben-ji/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "武则天"
+    ]
+  },
+  {
+    "id": 1066,
+    "title": "开元盛世",
+    "slug": "reign-of-kaiyuan",
+    "timeLabel": "713 年",
+    "startYear": 713,
+    "eraSlug": "tang",
+    "eraName": "唐朝",
+    "region": [
+      "全国"
+    ],
+    "types": [
+      "政治",
+      "盛世"
+    ],
+    "summary": "唐玄宗李隆基统治前期，励精图治，使得唐朝国力达到顶峰，史称“开元盛世”。",
+    "background": "武周政权结束后，政局一度混乱。唐玄宗通过先天之变诛杀韦后及太平公主势力，掌握实权。",
+    "process": "任用姚崇、宋璟等贤相，整顿吏治，检田括户，改革兵制。这一时期物价低廉，商业繁荣，长安成为国际性大都市。",
+    "result": "中国封建社会经济文化的鼎盛时期。",
+    "influence": {
+      "shortTerm": "唐朝国威远播，文化辐射力极强。",
+      "longTerm": "是中华文明辉煌的象征之一，但在后期埋下了安史之乱的隐患。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "新唐书·玄宗本纪",
+        "url": "https://ctext.org/new-tang-shu/xuan-zong-ben-ji/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "唐玄宗"
+    ]
+  },
+  {
+    "id": 1067,
+    "title": "安史之乱",
+    "slug": "an-lushan-rebellion",
+    "timeLabel": "755 年",
+    "startYear": 755,
+    "endYear": 763,
+    "eraSlug": "tang",
+    "eraName": "唐朝",
+    "region": [
+      "河北",
+      "河南",
+      "陕西"
+    ],
+    "types": [
+      "战争",
+      "动乱"
+    ],
+    "summary": "身兼三镇节度使的安禄山和部将史思明发动的长达八年的叛乱，是唐朝由盛转衰的转折点。",
+    "background": "唐玄宗晚年怠政，宠信杨贵妃，任用奸相李林甫、杨国忠。边疆节度使权力过大，形成“外重内轻”的局面。",
+    "process": "755年，安禄山在范阳起兵，攻陷洛阳、长安。玄宗入蜀逃避，太子李亨即位（唐肃宗）。唐军在回纥援助下反击，历时八年平定叛乱。",
+    "result": "北方经济遭到严重破坏，人口锐减。",
+    "influence": {
+      "shortTerm": "唐朝中央集权削弱，出现藩镇割据局面。",
+      "longTerm": "中国经济重心开始加速南移，边疆控制力下降。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "旧唐书·安禄山传",
+        "url": "https://ctext.org/old-tang-shu/an-lu-shan-lie-zhuan/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "唐玄宗",
+      "唐肃宗",
+      "安禄山"
+    ]
+  },
+  {
+    "id": 1068,
+    "title": "黄巢起义",
+    "slug": "huang-chao-rebellion",
+    "timeLabel": "875 年",
+    "startYear": 875,
+    "endYear": 884,
+    "eraSlug": "tang",
+    "eraName": "唐朝",
+    "region": [
+      "山东",
+      "河南",
+      "广东",
+      "陕西"
+    ],
+    "types": [
+      "战争",
+      "民变"
+    ],
+    "summary": "唐末爆发的大规模农民起义，王仙芝、黄巢率领起义军转战大半个中国，一度攻占长安。",
+    "background": "唐末宦官专权，藩镇割据，赋役繁重，连年灾荒，百姓民不聊生。",
+    "process": "875年王仙芝起义，黄巢响应。王仙芝死后，黄巢率军南下广州，又北伐攻入长安，建立“大齐”政权。后被唐军及沙陀李克用击败，黄巢败死。",
+    "result": "起义虽然失败，但彻底摧毁了唐朝的统治基础。",
+    "influence": {
+      "shortTerm": "瓦解了唐朝的官僚体系和经济命脉。",
+      "longTerm": "加速了唐朝灭亡，为五代十国的军阀混战拉开序幕。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "新唐书·黄巢传",
+        "url": "https://ctext.org/new-tang-shu/huang-chao-lie-zhuan/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "唐僖宗",
+      "黄巢"
+    ]
+  },
+  {
+    "id": 1069,
+    "title": "唐朝灭亡",
+    "slug": "fall-of-tang",
+    "timeLabel": "907 年",
+    "startYear": 907,
+    "eraSlug": "five-dynasties",
+    "eraName": "后梁",
+    "region": [
+      "河南"
+    ],
+    "types": [
+      "政治",
+      "政变"
+    ],
+    "summary": "宣武军节度使朱温逼迫唐哀帝禅位，建立后梁，唐朝灭亡，中国进入五代十国时期。",
+    "background": "黄巢起义后，唐室垂危，朱温通过镇压起义军和兼并其他藩镇，逐渐控制了朝政。",
+    "process": "朱温先后杀害唐昭宗及大批朝臣（白马驿之祸），立唐哀帝傀儡。907年，朱温正式称帝，国号大梁（后梁）。",
+    "result": "唐朝289年的统治结束。",
+    "influence": {
+      "shortTerm": "北方陷入五代更迭的战乱，南方十国割据。",
+      "longTerm": "政治中心进一步从关中向中原转移，门阀士族彻底退出历史舞台。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "旧五代史·梁书·太祖本纪",
+        "url": "https://ctext.org/jiu-wudai-shi/tai-zu-ji-yi/zh"
+      }
+    ],
+    "relatedEmperors": [
+      "唐哀帝",
+      "朱温"
+    ]
+  },
+  {
+    "id": 1040,
+    "name": "赤壁之战",
+    "type": "war",
+    "from": "208",
+    "to": "208",
+    "description": "孙权、刘备联军在长江赤壁（今湖北赤壁西北）一带大破曹操大军。这是中国历史上著名的以少胜多的战役之一。此战后，曹操北回，孙、刘各自夺去荆州的一部分，奠定了三国鼎立的基础。"
+  },
+  {
+    "id": 1041,
+    "name": "曹丕称帝",
+    "type": "politics",
+    "from": "220",
+    "to": "220",
+    "description": "魏王曹丕逼迫汉献帝禅让，正式称帝，国号魏，定都洛阳，史称曹魏。这标志着汉朝的正式结束和三国时代的正式开始。"
+  },
+  {
+    "id": 1042,
+    "name": "西晋建立",
+    "type": "politics",
+    "from": "265",
+    "to": "265",
+    "description": "司马炎逼迫魏元帝禅让，即位称帝，国号晋，定都洛阳，史称西晋。司马炎即晋武帝。"
+  },
+  {
+    "id": 1043,
+    "name": "西晋灭吴",
+    "type": "war",
+    "from": "280",
+    "to": "280",
+    "description": "西晋大举伐吴，吴主孙皓投降，东吴灭亡。至此，西晋结束了汉末以来近百年的分裂局面，重新统一了中国。"
+  },
+  {
+    "id": 1044,
+    "name": "八王之乱",
+    "type": "war",
+    "from": "291",
+    "to": "306",
+    "description": "西晋皇族内部为了争夺中央政权而爆发的一场长达十六年的混战。主要参与者为司马氏的八位藩王。这场动乱严重破坏了社会经济，耗竭了西晋国力，导致了西晋的亡国和“五胡乱华”局面的出现。"
+  },
+  {
+    "id": 1045,
+    "name": "永嘉之乱",
+    "type": "war",
+    "from": "311",
+    "to": "311",
+    "description": "匈奴军队攻陷西晋都城洛阳，俘虏晋怀帝，杀王公士民三万余人。这是“五胡乱华”的高潮，标志着西晋在北方的统治彻底崩溃，中原汉族大举南迁，史称“衣冠南渡”。"
+  },
+  {
+    "id": 1046,
+    "name": "淝水之战",
+    "type": "war",
+    "from": "383",
+    "to": "383",
+    "description": "前秦苻坚率大军南下进攻东晋，在淝水（今安徽寿县东南）被东晋谢安、谢玄领导的北府兵击败。此战是中国历史上著名的以少胜多的战役，它瓦解了前秦的统一形势，使北方重新陷入分裂，确立了南北朝长期对峙的格局。"
+  },
+  {
+    "id": 1047,
+    "name": "北魏统一北方",
+    "type": "politics",
+    "from": "439",
+    "to": "439",
+    "description": "北魏太武帝拓跋焘攻灭北凉，结束了十六国以来北方分裂割据的局面，统一了黄河流域。这标志着北朝的开始。"
+  },
+  {
+    "id": 1048,
+    "name": "孝文帝改革",
+    "type": "politics",
+    "from": "494",
+    "to": "494",
+    "description": "北魏孝文帝拓跋宏为了加强对中原的统治，推行了一系列汉化改革，包括迁都洛阳、改穿汉服、说汉话、改汉姓（皇室改为元姓）、与汉族通婚等。这些措施极大地促进了民族融合。"
+  },
+  {
+    "id": 1049,
+    "name": "侯景之乱",
+    "type": "war",
+    "from": "548",
+    "to": "552",
+    "description": "东魏降将侯景发动叛乱，攻陷梁朝都城建康，导致梁武帝被饿死。这场叛乱对江南社会经济造成了毁灭性的打击，南朝士族遭到沉重打击，南朝实力从此衰落。"
+  },
+  {
+    "id": 1050,
+    "name": "隋朝建立",
+    "type": "politics",
+    "from": "581",
+    "to": "581",
+    "description": "北周静帝禅让，杨坚即位称帝，改国号为隋，是为隋文帝。北周灭亡。"
+  },
+  {
+    "id": 1051,
+    "name": "隋灭陈",
+    "type": "war",
+    "from": "589",
+    "to": "589",
+    "description": "隋文帝派大军南下攻灭陈朝，俘虏陈后主。至此，隋朝结束了自西晋末年以来长达270多年的分裂局面，中国再次实现了大一统。"
+  }
+]
