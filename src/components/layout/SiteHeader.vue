@@ -2,10 +2,10 @@
   <header class="header">
     <div class="header-inner">
       <RouterLink to="/" class="logo" @click="closeMenu">
-        <span class="logo-mark">线</span>
+        <div class="logo-mark">史</div>
         <div class="logo-text">
-          <span class="logo-main">时序史 · 时间宇宙</span>
-          <span class="logo-sub">历史 · 当下 · 未来</span>
+          <span class="logo-main">时序史</span>
+          <span class="logo-sub">TIME UNIVERSE</span>
         </div>
       </RouterLink>
 
@@ -14,25 +14,27 @@
         type="button"
         @click="toggleMenu"
         :aria-expanded="isNavOpen"
-        aria-label="展开或收起导航"
+        aria-label="Toggle navigation"
       >
-        <span></span>
-        <span></span>
-        <span></span>
+        <span class="hamburger"></span>
       </button>
 
       <nav :class="['nav', { open: isNavOpen }]">
         <div class="nav-links">
-          <RouterLink to="/china" @click="closeMenu">中国时间线</RouterLink>
-          <RouterLink to="/world" @click="closeMenu">世界事件</RouterLink>
-          <RouterLink to="/era" @click="closeMenu">按朝代</RouterLink>
-          <RouterLink to="/people" @click="closeMenu">人物</RouterLink>
-          <RouterLink to="/topics" @click="closeMenu">专题</RouterLink>
+          <RouterLink to="/china" @click="closeMenu">中国史</RouterLink>
+          <RouterLink to="/world" @click="closeMenu">中外对照</RouterLink>
+          <RouterLink to="/people" @click="closeMenu">风云人物</RouterLink>
+          <RouterLink to="/era" @click="closeMenu">朝代索引</RouterLink>
         </div>
 
-        <form class="search" @submit.prevent="onSearch">
-          <input v-model="q" type="text" placeholder="搜索人物、事件、朝代..." />
-          <button type="submit">搜索</button>
+        <form class="search-bar" @submit.prevent="onSearch">
+          <span class="search-icon">🔍</span>
+          <input 
+            v-model="q" 
+            type="text" 
+            placeholder="搜索历史事件、人物..." 
+            aria-label="Search history"
+          />
         </form>
       </nav>
     </div>
@@ -54,7 +56,9 @@ const closeMenu = () => {
 
 const onSearch = () => {
   if (!q.value.trim()) return;
-  router.push({ path: '/search', query: { q: q.value.trim() } });
+  // TODO: Create a real search page later
+  alert(`搜索功能开发中：您搜索了 "${q.value}"\n我们将尽快上线全文检索功能！`);
+  // router.push({ path: '/search', query: { q: q.value.trim() } });
   q.value = '';
   closeMenu();
 };
@@ -75,166 +79,184 @@ watch(
 .header {
   position: sticky;
   top: 0;
-  z-index: 20;
-  border-bottom: 1px solid var(--border-soft);
-  background: rgba(246, 242, 234, 0.9);
-  backdrop-filter: saturate(180%) blur(16px);
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
 }
 .header-inner {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 12px 24px;
   display: flex;
   align-items: center;
-  gap: 24px;
+  justify-content: space-between;
 }
+
+/* Logo */
 .logo {
   display: flex;
   align-items: center;
   gap: 12px;
+  text-decoration: none;
 }
 .logo-mark {
-  font-size: 20px;
-  font-weight: 700;
-  background: linear-gradient(135deg, #ff8a3c, #f45c2c);
+  width: 40px;
+  height: 40px;
+  background: #2c1810;
   color: #fff;
-  width: 38px;
-  height: 38px;
-  border-radius: 12px;
+  border-radius: 8px;
   display: grid;
   place-items: center;
-  box-shadow: 0 8px 20px rgba(244, 92, 44, 0.35);
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Songti SC", serif;
 }
 .logo-text {
   display: flex;
   flex-direction: column;
-  line-height: 1.2;
 }
 .logo-main {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
+  color: #1a202c;
+  letter-spacing: -0.02em;
 }
 .logo-sub {
-  font-size: 12px;
-  color: var(--text-muted);
-  letter-spacing: 0.1em;
+  font-size: 10px;
+  color: #94a3b8;
+  letter-spacing: 0.15em;
+  font-weight: 600;
 }
+
+/* Nav */
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex: 1;
-  gap: 16px;
+  gap: 32px;
 }
 .nav-links {
   display: flex;
-  gap: 8px;
+  gap: 24px;
 }
-.nav a {
-  font-size: 14px;
-  padding: 6px 12px;
-  border-radius: 18px;
-  color: var(--text-body);
-  transition: background 0.2s ease, color 0.2s ease;
+.nav-links a {
+  color: #4a5568;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s;
 }
-.nav a.router-link-active {
-  background: var(--text-strong);
-  color: #fff;
+.nav-links a:hover,
+.nav-links a.router-link-active {
+  color: #2c1810;
 }
-.search {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  border: 1px solid var(--border-soft);
-  border-radius: 999px;
-  padding: 4px 8px;
-  background: #fff;
-}
-.search input {
-  border: none;
-  background: transparent;
-  font-size: 13px;
-  width: 180px;
-}
-.search input:focus {
-  outline: none;
-}
-.search button {
-  border: none;
-  background: var(--brand);
-  color: #fff;
-  font-size: 12px;
-  padding: 6px 16px;
-  border-radius: 999px;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-.search button:hover {
-  background: var(--brand-dark);
-}
-.nav-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  border: 1px solid var(--border-soft);
-  background: #fff;
-  cursor: pointer;
-}
-.nav-toggle span {
-  display: block;
+.nav-links a.router-link-active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
   height: 2px;
-  width: 20px;
-  background: var(--text-strong);
-  margin: 0 auto;
-  transition: transform 0.2s ease;
+  background: #f79944;
+  border-radius: 2px;
 }
 
-@media (max-width: 900px) {
-  .header-inner {
-    flex-wrap: wrap;
-    padding: 12px 16px;
-  }
-  .nav-toggle {
-    display: flex;
-    margin-left: auto;
-  }
+/* Search */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #f1f5f9;
+  border-radius: 99px;
+  padding: 6px 16px;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+.search-bar:focus-within {
+  background: #fff;
+  border-color: #cbd5e0;
+  box-shadow: 0 0 0 3px rgba(203, 213, 224, 0.3);
+}
+.search-icon {
+  font-size: 14px;
+  margin-right: 8px;
+  opacity: 0.5;
+}
+.search-bar input {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  width: 160px;
+  color: #2d3748;
+}
+.search-bar input:focus {
+  outline: none;
+}
+.search-bar input::placeholder {
+  color: #a0aec0;
+}
+
+/* Mobile Toggle */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+.hamburger {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #2d3748;
+  position: relative;
+}
+.hamburger::before, .hamburger::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #2d3748;
+  left: 0;
+}
+.hamburger::before { top: -6px; }
+.hamburger::after { bottom: -6px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-toggle { display: block; }
+  
   .nav {
-    flex-direction: column;
-    width: 100%;
-    border: 1px solid var(--border-soft);
-    border-radius: 18px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     background: #fff;
-    padding: 0;
-    margin-top: 12px;
-    overflow: hidden;
-    max-height: 0;
+    flex-direction: column;
+    padding: 24px;
+    border-bottom: 1px solid var(--border-soft);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     opacity: 0;
-    transform: translateY(-4px);
-    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease,
-      transform 0.3s ease;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.2s;
   }
   .nav.open {
-    padding: 16px;
-    max-height: 480px;
     opacity: 1;
+    pointer-events: auto;
     transform: translateY(0);
   }
   .nav-links {
     flex-direction: column;
+    align-items: center;
+    gap: 16px;
     width: 100%;
   }
-  .nav a {
+  .search-bar {
     width: 100%;
   }
-  .search {
-    width: 100%;
-    border-radius: 12px;
-  }
-  .search input {
+  .search-bar input {
     width: 100%;
   }
 }
