@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "name": "秦始皇",
+    "personalName": "嬴政",
+    "eraSlug": "qin",
+    "reignStart": -221,
+    "reignEnd": -210,
+    "eraNames": [],
+    "fatherId": null
+  },
+  {
+    "id": 2,
+    "name": "秦二世",
+    "personalName": "胡亥",
+    "eraSlug": "qin",
+    "reignStart": -210,
+    "reignEnd": -207,
+    "eraNames": [],
+    "fatherId": 1
+  },
+  {
+    "id": 101,
+    "name": "汉高祖",
+    "personalName": "刘邦",
+    "eraSlug": "western-han",
+    "reignStart": -202,
+    "reignEnd": -195,
+    "eraNames": [],
+    "fatherId": null
+  },
+  {
+    "id": 102,
+    "name": "汉惠帝",
+    "personalName": "刘盈",
+    "eraSlug": "western-han",
+    "reignStart": -195,
+    "reignEnd": -188,
+    "eraNames": [],
+    "fatherId": 101
+  },
+  {
+    "id": 103,
+    "name": "汉文帝",
+    "personalName": "刘恒",
+    "eraSlug": "western-han",
+    "reignStart": -180,
+    "reignEnd": -157,
+    "eraNames": ["后元"],
+    "fatherId": 101
+  },
+  {
+    "id": 104,
+    "name": "汉景帝",
+    "personalName": "刘启",
+    "eraSlug": "western-han",
+    "reignStart": -157,
+    "reignEnd": -141,
+    "eraNames": ["中元", "后元"],
+    "fatherId": 103
+  },
+  {
+    "id": 105,
+    "name": "汉武帝",
+    "personalName": "刘彻",
+    "eraSlug": "western-han",
+    "reignStart": -141,
+    "reignEnd": -87,
+    "eraNames": ["建元", "元光", "元朔", "元狩", "元鼎", "元封", "太初", "天汉", "太始", "征和", "后元"],
+    "fatherId": 104
+  },
+  {
+    "id": 106,
+    "name": "汉昭帝",
+    "personalName": "刘弗陵",
+    "eraSlug": "western-han",
+    "reignStart": -87,
+    "reignEnd": -74,
+    "eraNames": ["始元", "元凤", "元平"],
+    "fatherId": 105
+  },
+  {
+    "id": 107,
+    "name": "汉宣帝",
+    "personalName": "刘询",
+    "eraSlug": "western-han",
+    "reignStart": -74,
+    "reignEnd": -49,
+    "eraNames": ["本始", "地节", "元康", "神爵", "五凤", "甘露", "黄龙"],
+    "fatherId": null
+  },
+  {
+    "id": 201,
+    "name": "汉光武帝",
+    "personalName": "刘秀",
+    "eraSlug": "eastern-han",
+    "reignStart": 25,
+    "reignEnd": 57,
+    "eraNames": ["建武", "建武中元"],
+    "fatherId": null
+  },
+  {
+    "id": 202,
+    "name": "汉明帝",
+    "personalName": "刘庄",
+    "eraSlug": "eastern-han",
+    "reignStart": 57,
+    "reignEnd": 75,
+    "eraNames": ["永平"],
+    "fatherId": 201
+  },
+  {
+    "id": 203,
+    "name": "汉章帝",
+    "personalName": "刘炟",
+    "eraSlug": "eastern-han",
+    "reignStart": 75,
+    "reignEnd": 88,
+    "eraNames": ["建初", "元和", "章和"],
+    "fatherId": 202
+  },
+  {
+    "id": 204,
+    "name": "汉和帝",
+    "personalName": "刘肇",
+    "eraSlug": "eastern-han",
+    "reignStart": 88,
+    "reignEnd": 106,
+    "eraNames": ["永元", "元兴"],
+    "fatherId": 203
+  },
+  {
+    "id": 501,
+    "name": "隋文帝",
+    "personalName": "杨坚",
+    "eraSlug": "sui",
+    "reignStart": 581,
+    "reignEnd": 604,
+    "eraNames": ["开皇", "仁寿"],
+    "fatherId": null
+  },
+  {
+    "id": 502,
+    "name": "隋炀帝",
+    "personalName": "杨广",
+    "eraSlug": "sui",
+    "reignStart": 604,
+    "reignEnd": 618,
+    "eraNames": ["大业"],
+    "fatherId": 501
+  },
+  {
+    "id": 601,
+    "name": "唐高祖",
+    "personalName": "李渊",
+    "eraSlug": "tang",
+    "reignStart": 618,
+    "reignEnd": 626,
+    "eraNames": ["武德"],
+    "fatherId": null
+  },
+  {
+    "id": 602,
+    "name": "唐太宗",
+    "personalName": "李世民",
+    "eraSlug": "tang",
+    "reignStart": 626,
+    "reignEnd": 649,
+    "eraNames": ["贞观"],
+    "fatherId": 601
+  },
+  {
+    "id": 603,
+    "name": "唐高宗",
+    "personalName": "李治",
+    "eraSlug": "tang",
+    "reignStart": 649,
+    "reignEnd": 683,
+    "eraNames": ["永徽", "显庆", "龙朔", "麟德", "乾封", "总章", "咸亨", "上元", "仪凤", "调露", "永隆", "开耀", "永淳", "弘道"],
+    "fatherId": 602
+  },
+  {
+    "id": 604,
+    "name": "武则天",
+    "personalName": "武曌",
+    "eraSlug": "tang",
+    "reignStart": 690,
+    "reignEnd": 705,
+    "eraNames": ["天授", "如意", "长寿", "延载", "证圣", "天册万岁", "万岁登封", "万岁通天", "神功", "圣历", "久视", "大足", "长安"],
+    "fatherId": null
+  },
+  {
+    "id": 605,
+    "name": "唐中宗",
+    "personalName": "李显",
+    "eraSlug": "tang",
+    "reignStart": 705,
+    "reignEnd": 710,
+    "eraNames": ["神龙", "景龙"],
+    "fatherId": 603
+  },
+  {
+    "id": 606,
+    "name": "唐玄宗",
+    "personalName": "李隆基",
+    "eraSlug": "tang",
+    "reignStart": 712,
+    "reignEnd": 756,
+    "eraNames": ["先天", "开元", "天宝"],
+    "fatherId": null
+  },
+  {
+    "id": 607,
+    "name": "唐肃宗",
+    "personalName": "李亨",
+    "eraSlug": "tang",
+    "reignStart": 756,
+    "reignEnd": 762,
+    "eraNames": ["至德", "乾元", "上元"],
+    "fatherId": 606
+  },
+  {
+    "id": 960,
+    "name": "宋太祖",
+    "personalName": "赵匡胤",
+    "eraSlug": "song",
+    "reignStart": 960,
+    "reignEnd": 976,
+    "eraNames": ["建隆", "乾德", "开宝"],
+    "fatherId": null
+  },
+  {
+    "id": 961,
+    "name": "宋太宗",
+    "personalName": "赵光义",
+    "eraSlug": "song",
+    "reignStart": 976,
+    "reignEnd": 997,
+    "eraNames": ["太平兴国", "雍熙", "端拱", "淳化", "至道"],
+    "fatherId": null
+  },
+  {
+    "id": 962,
+    "name": "宋真宗",
+    "personalName": "赵恒",
+    "eraSlug": "song",
+    "reignStart": 997,
+    "reignEnd": 1022,
+    "eraNames": ["咸平", "景德", "大中祥符", "天禧", "乾兴"],
+    "fatherId": 961
+  },
+  {
+    "id": 963,
+    "name": "宋仁宗",
+    "personalName": "赵祯",
+    "eraSlug": "song",
+    "reignStart": 1022,
+    "reignEnd": 1063,
+    "eraNames": ["天圣", "明道", "景祐", "宝元", "康定", "庆历", "皇祐", "至和", "嘉祐"],
+    "fatherId": 962
+  },
+  {
+    "id": 964,
+    "name": "宋英宗",
+    "personalName": "赵曙",
+    "eraSlug": "song",
+    "reignStart": 1063,
+    "reignEnd": 1067,
+    "eraNames": ["治平"],
+    "fatherId": null
+  },
+  {
+    "id": 965,
+    "name": "宋神宗",
+    "personalName": "赵顼",
+    "eraSlug": "song",
+    "reignStart": 1067,
+    "reignEnd": 1085,
+    "eraNames": ["熙宁", "元丰"],
+    "fatherId": 964
+  },
+  {
+    "id": 966,
+    "name": "宋哲宗",
+    "personalName": "赵煦",
+    "eraSlug": "song",
+    "reignStart": 1085,
+    "reignEnd": 1100,
+    "eraNames": ["元祐", "绍圣", "元符"],
+    "fatherId": 965
+  },
+  {
+    "id": 967,
+    "name": "宋徽宗",
+    "personalName": "赵佶",
+    "eraSlug": "song",
+    "reignStart": 1100,
+    "reignEnd": 1126,
+    "eraNames": ["建中靖国", "崇宁", "大观", "政和", "重和", "宣和"],
+    "fatherId": 965
+  },
+  {
+    "id": 968,
+    "name": "宋钦宗",
+    "personalName": "赵桓",
+    "eraSlug": "song",
+    "reignStart": 1126,
+    "reignEnd": 1127,
+    "eraNames": ["靖康"],
+    "fatherId": 967
+  },
+  {
+    "id": 1127,
+    "name": "宋高宗",
+    "personalName": "赵构",
+    "eraSlug": "song",
+    "reignStart": 1127,
+    "reignEnd": 1162,
+    "eraNames": ["建炎", "绍兴"],
+    "fatherId": 967
+  },
+  {
+    "id": 1128,
+    "name": "宋孝宗",
+    "personalName": "赵昚",
+    "eraSlug": "song",
+    "reignStart": 1162,
+    "reignEnd": 1189,
+    "eraNames": ["隆兴", "乾道", "淳熙"],
+    "fatherId": null
+  },
+  {
+    "id": 1271,
+    "name": "元世祖",
+    "personalName": "忽必烈",
+    "eraSlug": "yuan",
+    "reignStart": 1260,
+    "reignEnd": 1294,
+    "eraNames": ["中统", "至元"],
+    "fatherId": null
+  },
+  {
+    "id": 1368,
+    "name": "明太祖",
+    "personalName": "朱元璋",
+    "eraSlug": "ming",
+    "reignStart": 1368,
+    "reignEnd": 1398,
+    "eraNames": ["洪武"],
+    "fatherId": null
+  },
+  {
+    "id": 1369,
+    "name": "明惠帝",
+    "personalName": "朱允炆",
+    "eraSlug": "ming",
+    "reignStart": 1398,
+    "reignEnd": 1402,
+    "eraNames": ["建文"],
+    "fatherId": null
+  },
+  {
+    "id": 1370,
+    "name": "明成祖",
+    "personalName": "朱棣",
+    "eraSlug": "ming",
+    "reignStart": 1402,
+    "reignEnd": 1424,
+    "eraNames": ["永乐"],
+    "fatherId": 1368
+  },
+  {
+    "id": 1371,
+    "name": "明仁宗",
+    "personalName": "朱高炽",
+    "eraSlug": "ming",
+    "reignStart": 1424,
+    "reignEnd": 1425,
+    "eraNames": ["洪熙"],
+    "fatherId": 1370
+  },
+  {
+    "id": 1372,
+    "name": "明宣宗",
+    "personalName": "朱瞻基",
+    "eraSlug": "ming",
+    "reignStart": 1425,
+    "reignEnd": 1435,
+    "eraNames": ["宣德"],
+    "fatherId": 1371
+  },
+  {
+    "id": 1373,
+    "name": "明英宗",
+    "personalName": "朱祁镇",
+    "eraSlug": "ming",
+    "reignStart": 1435,
+    "reignEnd": 1449,
+    "eraNames": ["正统", "天顺"],
+    "fatherId": 1372
+  },
+  {
+    "id": 1374,
+    "name": "明代宗",
+    "personalName": "朱祁钰",
+    "eraSlug": "ming",
+    "reignStart": 1449,
+    "reignEnd": 1457,
+    "eraNames": ["景泰"],
+    "fatherId": 1372
+  },
+  {
+    "id": 1375,
+    "name": "明宪宗",
+    "personalName": "朱见深",
+    "eraSlug": "ming",
+    "reignStart": 1464,
+    "reignEnd": 1487,
+    "eraNames": ["成化"],
+    "fatherId": 1373
+  },
+  {
+    "id": 1376,
+    "name": "明孝宗",
+    "personalName": "朱祐樘",
+    "eraSlug": "ming",
+    "reignStart": 1487,
+    "reignEnd": 1505,
+    "eraNames": ["弘治"],
+    "fatherId": 1375
+  },
+  {
+    "id": 1377,
+    "name": "明武宗",
+    "personalName": "朱厚照",
+    "eraSlug": "ming",
+    "reignStart": 1505,
+    "reignEnd": 1521,
+    "eraNames": ["正德"],
+    "fatherId": 1376
+  },
+  {
+    "id": 1378,
+    "name": "明世宗",
+    "personalName": "朱厚熜",
+    "eraSlug": "ming",
+    "reignStart": 1521,
+    "reignEnd": 1567,
+    "eraNames": ["嘉靖"],
+    "fatherId": null
+  },
+  {
+    "id": 1379,
+    "name": "明穆宗",
+    "personalName": "朱载坖",
+    "eraSlug": "ming",
+    "reignStart": 1567,
+    "reignEnd": 1572,
+    "eraNames": ["隆庆"],
+    "fatherId": 1378
+  },
+  {
+    "id": 1380,
+    "name": "明神宗",
+    "personalName": "朱翊钧",
+    "eraSlug": "ming",
+    "reignStart": 1572,
+    "reignEnd": 1620,
+    "eraNames": ["万历"],
+    "fatherId": 1379
+  },
+  {
+    "id": 1383,
+    "name": "明思宗",
+    "personalName": "朱由检",
+    "eraSlug": "ming",
+    "reignStart": 1627,
+    "reignEnd": 1644,
+    "eraNames": ["崇祯"],
+    "fatherId": 1375
+  },
+  {
+    "id": 1616,
+    "name": "清太祖",
+    "personalName": "努尔哈赤",
+    "eraSlug": "qing",
+    "reignStart": 1616,
+    "reignEnd": 1626,
+    "eraNames": ["天命"],
+    "fatherId": null
+  },
+  {
+    "id": 1626,
+    "name": "清太宗",
+    "personalName": "皇太极",
+    "eraSlug": "qing",
+    "reignStart": 1626,
+    "reignEnd": 1643,
+    "eraNames": ["天聪", "崇德"],
+    "fatherId": 1616
+  },
+  {
+    "id": 1644,
+    "name": "清世祖",
+    "personalName": "福临",
+    "eraSlug": "qing",
+    "reignStart": 1643,
+    "reignEnd": 1661,
+    "eraNames": ["顺治"],
+    "fatherId": 1626
+  },
+  {
+    "id": 1661,
+    "name": "清圣祖",
+    "personalName": "玄烨",
+    "eraSlug": "qing",
+    "reignStart": 1661,
+    "reignEnd": 1722,
+    "eraNames": ["康熙"],
+    "fatherId": 1644
+  },
+  {
+    "id": 1722,
+    "name": "清世宗",
+    "personalName": "胤禛",
+    "eraSlug": "qing",
+    "reignStart": 1722,
+    "reignEnd": 1735,
+    "eraNames": ["雍正"],
+    "fatherId": 1661
+  },
+  {
+    "id": 1735,
+    "name": "清高宗",
+    "personalName": "弘历",
+    "eraSlug": "qing",
+    "reignStart": 1735,
+    "reignEnd": 1796,
+    "eraNames": ["乾隆"],
+    "fatherId": 1722
+  },
+  {
+    "id": 1796,
+    "name": "清仁宗",
+    "personalName": "颙琰",
+    "eraSlug": "qing",
+    "reignStart": 1796,
+    "reignEnd": 1820,
+    "eraNames": ["嘉庆"],
+    "fatherId": 1735
+  },
+  {
+    "id": 1820,
+    "name": "清宣宗",
+    "personalName": "旻宁",
+    "eraSlug": "qing",
+    "reignStart": 1820,
+    "reignEnd": 1850,
+    "eraNames": ["道光"],
+    "fatherId": 1796
+  },
+  {
+    "id": 1850,
+    "name": "清文宗",
+    "personalName": "奕詝",
+    "eraSlug": "qing",
+    "reignStart": 1850,
+    "reignEnd": 1861,
+    "eraNames": ["咸丰"],
+    "fatherId": 1820
+  },
+  {
+    "id": 1861,
+    "name": "清穆宗",
+    "personalName": "载淳",
+    "eraSlug": "qing",
+    "reignStart": 1861,
+    "reignEnd": 1875,
+    "eraNames": ["同治"],
+    "fatherId": 1850
+  },
+  {
+    "id": 1875,
+    "name": "清德宗",
+    "personalName": "载湉",
+    "eraSlug": "qing",
+    "reignStart": 1875,
+    "reignEnd": 1908,
+    "eraNames": ["光绪"],
+    "fatherId": null
+  },
+  {
+    "id": 1908,
+    "name": "宣统帝",
+    "personalName": "溥仪",
+    "eraSlug": "qing",
+    "reignStart": 1908,
+    "reignEnd": 1912,
+    "eraNames": ["宣统"],
+    "fatherId": null
+  }
+]
