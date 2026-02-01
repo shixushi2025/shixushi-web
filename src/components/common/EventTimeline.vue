@@ -6,15 +6,16 @@
         <span class="era-label">{{ event.eraName }}</span>
       </div>
       <div class="axis">
-        <span class="dot"></span>
+        <span class="dot" :class="{ 'dot-world': isWorldEvent(event) }"></span>
       </div>
-      <article class="event-card">
+      <article class="event-card" :class="{ 'is-world': isWorldEvent(event) }">
         <header>
           <div class="tags">
             <span
               v-for="(type, idx) in event.types"
               :key="idx"
               class="tag"
+              :class="{ 'tag-world': type === '世界史' }"
             >
               {{ type }}
             </span>
@@ -22,6 +23,23 @@
           <h3>{{ event.title }}</h3>
           <p class="summary">{{ event.summary }}</p>
         </header>
+
+        <!-- 史料原文展示区域 -->
+        <div v-if="hasQuotes(event)" class="source-quote-box">
+          <details>
+            <summary>📜 史料实证</summary>
+            <div class="source-content">
+              <blockquote v-for="(src, idx) in event.sources" :key="idx" v-show="src.quote">
+                <p v-if="src.quote" class="quote-text">“{{ src.quote }}”</p>
+                <cite>
+                  — {{ src.title }}
+                  <a v-if="src.url" :href="src.url" target="_blank" rel="noopener" title="查看原文">↗</a>
+                </cite>
+              </blockquote>
+            </div>
+          </details>
+        </div>
+
         <footer>
           <div class="meta">
             <span v-if="event.region?.length">地区：{{ event.region.join('、') }}</span>
@@ -44,6 +62,9 @@ import type { Event } from '@/types/history';
 defineProps<{
   events: Event[];
 }>();
+
+const isWorldEvent = (ev: Event) => ev.types && ev.types.includes('世界史');
+const hasQuotes = (ev: Event) => ev.sources && ev.sources.some(s => s.quote);
 </script>
 
 <style scoped>
@@ -98,6 +119,12 @@ defineProps<{
   border: 2px solid #fff;
   box-shadow: 0 0 0 4px rgba(247, 153, 68, 0.25);
 }
+/* 世界史节点样式 */
+.dot.dot-world {
+  background: #718096;
+  box-shadow: 0 0 0 4px rgba(113, 128, 150, 0.25);
+}
+
 .event-card {
   background: #fff;
   border-radius: 20px;
@@ -107,7 +134,17 @@ defineProps<{
   display: flex;
   flex-direction: column;
   gap: 12px;
+  transition: all 0.2s ease;
 }
+/* 世界史卡片样式 */
+.event-card.is-world {
+  background: #f7fafc;
+  border-color: #cbd5e0;
+}
+.event-card.is-world h3 {
+  color: #2d3748;
+}
+
 .event-card header h3 {
   margin: 8px 0 6px;
   font-size: 18px;
@@ -116,6 +153,7 @@ defineProps<{
   margin: 0;
   color: var(--text-body);
   font-size: 14px;
+  line-height: 1.6;
 }
 .tags {
   display: flex;
@@ -130,6 +168,66 @@ defineProps<{
   background: rgba(247, 153, 68, 0.12);
   color: var(--brand);
 }
+.tag.tag-world {
+  border-color: #cbd5e0;
+  background: #e2e8f0;
+  color: #4a5568;
+}
+
+/* 史料引用区域 */
+.source-quote-box {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.source-quote-box details {
+  border-top: 1px dashed var(--border-soft);
+  padding-top: 8px;
+}
+.source-quote-box summary {
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+  user-select: none;
+  list-style: none; /* 隐藏默认三角 */
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.source-quote-box summary::-webkit-details-marker {
+  display: none;
+}
+.source-quote-box summary:hover {
+  color: var(--brand);
+}
+.source-content {
+  margin-top: 10px;
+  padding: 12px 16px;
+  background: #fffbf5; /* 暖色仿纸背景 */
+  border-radius: 8px;
+  border-left: 3px solid #d4b483;
+}
+.quote-text {
+  margin: 0 0 6px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #5d4037; /* 深褐色字体 */
+  font-family: "Songti SC", "SimSun", "Noto Serif SC", serif;
+  font-style: italic;
+}
+.source-content cite {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  color: #8d6e63;
+  font-style: normal;
+}
+.source-content a {
+  text-decoration: none;
+  color: var(--brand);
+  margin-left: 4px;
+}
+
 .meta {
   display: flex;
   flex-wrap: wrap;
