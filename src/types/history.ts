@@ -35,6 +35,7 @@ export interface SourceRef {
   title: string;
   detail?: string;
   url?: string; // 新增可选URL字段
+  quote?: string; // 新增可选引用字段
 }
 
 export interface Event {
