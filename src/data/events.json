@@ -223,6 +223,59 @@
     ]
   },
   {
+    "id": 2002,
+    "title": "秦始皇同期：罗马统一意大利",
+    "slug": "rome-unifies-italy",
+    "startYear": -270,
+    "endYear": -220,
+    "timeLabel": "前3世纪",
+    "eraSlug": "roman-republic",
+    "eraName": "罗马共和国",
+    "region": [
+      "欧洲"
+    ],
+    "types": [
+      "世界史",
+      "政治"
+    ],
+    "summary": "罗马共和国逐步征服意大利半岛各部族。",
+    "background": "罗马城邦的崛起。",
+    "process": "通过萨莫奈战争等一系列征服。",
+    "result": "控制意大利半岛。",
+    "influence": {
+      "shortTerm": "罗马势力大增。",
+      "longTerm": "为向外扩张奠定基础。"
+    },
+    "sources": []
+  },
+  {
+    "id": 2001,
+    "title": "布匿战争",
+    "slug": "punic-wars",
+    "startYear": -264,
+    "endYear": -146,
+    "timeLabel": "前264-前146年",
+    "eraSlug": "roman-republic",
+    "eraName": "罗马共和国",
+    "region": [
+      "欧洲",
+      "北非"
+    ],
+    "types": [
+      "世界史",
+      "战争"
+    ],
+    "summary": "罗马与迦太基争夺地中海霸权的三次战争，罗马获胜。",
+    "background": "罗马扩张至意大利南部，与海上强国迦太基发生利益冲突。",
+    "process": "汉尼拔翻越阿尔卑斯山奇袭罗马（第二次），但最终罗马攻灭迦太基。",
+    "result": "罗马成为地中海霸主。",
+    "influence": {
+      "shortTerm": "迦太基灭亡。",
+      "longTerm": "为罗马帝国的建立铺平道路。"
+    },
+    "sources": []
+  },
+  {
     "id": 1020,
     "title": "秦灭六国",
     "slug": "qin-unification",
@@ -377,6 +430,84 @@
         "url": ""
       }
     ]
+  },
+  {
+    "id": 2003,
+    "title": "凯撒遇刺",
+    "slug": "assassination-of-caesar",
+    "startYear": -44,
+    "endYear": -44,
+    "timeLabel": "前44年",
+    "eraSlug": "roman-republic",
+    "eraName": "罗马共和国",
+    "region": [
+      "欧洲"
+    ],
+    "types": [
+      "世界史",
+      "政治"
+    ],
+    "summary": "尤利乌斯·凯撒被元老院共和派刺杀。",
+    "background": "凯撒被任命为终身独裁官，引发共和派恐慌。",
+    "process": "3月15日，布鲁图斯等人在元老院连刺凯撒23刀。",
+    "result": "引发新一轮内战。",
+    "influence": {
+      "shortTerm": "罗马共和国终结的序曲。",
+      "longTerm": "导致屋大维崛起和帝制建立。"
+    },
+    "sources": []
+  },
+  {
+    "id": 2004,
+    "title": "罗马帝国建立",
+    "slug": "augustus-emperor",
+    "startYear": -27,
+    "endYear": -27,
+    "timeLabel": "前27年",
+    "eraSlug": "roman-empire",
+    "eraName": "罗马帝国",
+    "region": [
+      "欧洲"
+    ],
+    "types": [
+      "世界史",
+      "政治"
+    ],
+    "summary": "屋大维被尊为“奥古斯都”，罗马进入帝国时代（与西汉晚期同期）。",
+    "background": "屋大维击败安东尼和埃及艳后，统一罗马世界。",
+    "process": "元老院授予屋大维最高权力。",
+    "result": "罗马共和国转变为罗马帝国。",
+    "influence": {
+      "shortTerm": "开启“罗马治世”（Pax Romana）。",
+      "longTerm": "确立了欧洲数百年的政治秩序。"
+    },
+    "sources": []
+  },
+  {
+    "id": 2005,
+    "title": "耶稣诞生与基督教兴起",
+    "slug": "birth-of-jesus",
+    "startYear": 1,
+    "endYear": 30,
+    "timeLabel": "1世纪",
+    "eraSlug": "roman-empire",
+    "eraName": "罗马帝国",
+    "region": [
+      "中东"
+    ],
+    "types": [
+      "世界史",
+      "宗教"
+    ],
+    "summary": "耶稣在犹太地区传教，基督教开始传播。",
+    "background": "犹太人在罗马统治下渴望弥赛亚。",
+    "process": "耶稣被钉十字架后，门徒开始向外邦人传教。",
+    "result": "基督教逐渐在罗马帝国境内扩散。",
+    "influence": {
+      "shortTerm": "遭到罗马迫害。",
+      "longTerm": "最终成为欧洲文明的精神核心。"
+    },
+    "sources": []
   },
   {
     "id": 1031,
@@ -659,6 +790,32 @@
     ]
   },
   {
+    "id": 2006,
+    "title": "西罗马帝国灭亡",
+    "slug": "fall-of-western-rome",
+    "startYear": 476,
+    "endYear": 476,
+    "timeLabel": "476年",
+    "eraSlug": "medieval",
+    "eraName": "中世纪",
+    "region": [
+      "欧洲"
+    ],
+    "types": [
+      "世界史",
+      "政治"
+    ],
+    "summary": "日耳曼雇佣兵废黜罗慕路斯·奥古斯都，西罗马帝国灭亡（南北朝同期）。",
+    "background": "蛮族入侵，帝国经济崩溃。",
+    "process": "奥多亚克入主拉文纳。",
+    "result": "西欧进入中世纪（黑暗时代）。",
+    "influence": {
+      "shortTerm": "欧洲政治碎片化。",
+      "longTerm": "古典时代结束，封建制度萌芽。"
+    },
+    "sources": []
+  },
+  {
     "id": 1048,
     "title": "孝文帝改革",
     "slug": "xiaowen-reform",
@@ -781,6 +938,32 @@
         "url": ""
       }
     ]
+  },
+  {
+    "id": 2007,
+    "title": "伊斯兰教兴起",
+    "slug": "rise-of-islam",
+    "startYear": 610,
+    "endYear": 632,
+    "timeLabel": "7世纪初",
+    "eraSlug": "medieval",
+    "eraName": "阿拉伯帝国",
+    "region": [
+      "中东"
+    ],
+    "types": [
+      "世界史",
+      "宗教"
+    ],
+    "summary": "穆罕默德创立伊斯兰教，统一阿拉伯半岛（隋末唐初同期）。",
+    "background": "阿拉伯半岛部落分裂，多神崇拜。",
+    "process": "麦加启示，出走麦地那，重返麦加。",
+    "result": "政教合一的穆斯林公社建立。",
+    "influence": {
+      "shortTerm": "阿拉伯帝国迅速扩张。",
+      "longTerm": "彻底改变了中东、北非和中亚的文明格局。"
+    },
+    "sources": []
   },
   {
     "id": 1063,
@@ -938,6 +1121,32 @@
     ]
   },
   {
+    "id": 2008,
+    "title": "查理曼加冕",
+    "slug": "charlemagne-crowned",
+    "startYear": 800,
+    "endYear": 800,
+    "timeLabel": "800年",
+    "eraSlug": "medieval",
+    "eraName": "法兰克王国",
+    "region": [
+      "欧洲"
+    ],
+    "types": [
+      "世界史",
+      "政治"
+    ],
+    "summary": "查理曼被教皇加冕为“罗马人的皇帝”（唐德宗时期）。",
+    "background": "法兰克王国统一了西欧大部分地区。",
+    "process": "圣诞节在罗马圣彼得大教堂举行加冕礼。",
+    "result": "神圣罗马帝国的雏形。",
+    "influence": {
+      "shortTerm": "确立了教权与皇权的关系。",
+      "longTerm": "奠定了现代法国、德国、意大利的版图基础。"
+    },
+    "sources": []
+  },
+  {
     "id": 1070,
     "title": "陈桥兵变",
     "slug": "chenqiao-mutiny",
@@ -1000,6 +1209,58 @@
     ]
   },
   {
+    "id": 2009,
+    "title": "东西教会大分裂",
+    "slug": "great-schism",
+    "startYear": 1054,
+    "endYear": 1054,
+    "timeLabel": "1054年",
+    "eraSlug": "medieval",
+    "eraName": "中世纪",
+    "region": [
+      "欧洲"
+    ],
+    "types": [
+      "世界史",
+      "宗教"
+    ],
+    "summary": "基督教正式分裂为天主教（罗马）和东正教（君士坦丁堡）（北宋仁宗时期）。",
+    "background": "教义分歧与政治权力争夺。",
+    "process": "双方互相开除教籍。",
+    "result": "基督教世界永久分裂。",
+    "influence": {
+      "shortTerm": "削弱了拜占庭帝国。",
+      "longTerm": "影响了东欧与西欧的文化差异。"
+    },
+    "sources": []
+  },
+  {
+    "id": 2010,
+    "title": "诺曼征服",
+    "slug": "norman-conquest",
+    "startYear": 1066,
+    "endYear": 1066,
+    "timeLabel": "1066年",
+    "eraSlug": "medieval",
+    "eraName": "英格兰",
+    "region": [
+      "欧洲"
+    ],
+    "types": [
+      "世界史",
+      "战争"
+    ],
+    "summary": "威廉公爵征服英格兰，建立诺曼王朝（北宋英宗时期）。",
+    "background": "英格兰王位继承危机。",
+    "process": "黑斯廷斯战役击败哈罗德二世。",
+    "result": "英国历史的转折点。",
+    "influence": {
+      "shortTerm": "引入封建制度和法语文化。",
+      "longTerm": "英国深度融入欧洲大陆政治体系。"
+    },
+    "sources": []
+  },
+  {
     "id": 1074,
     "title": "王安石变法",
     "slug": "wang-anshi-reform",
@@ -1029,6 +1290,33 @@
         "url": ""
       }
     ]
+  },
+  {
+    "id": 2011,
+    "title": "十字军东征开始",
+    "slug": "first-crusade",
+    "startYear": 1096,
+    "endYear": 1099,
+    "timeLabel": "1096年",
+    "eraSlug": "medieval",
+    "eraName": "中世纪",
+    "region": [
+      "欧洲",
+      "中东"
+    ],
+    "types": [
+      "世界史",
+      "战争"
+    ],
+    "summary": "西欧基督徒发动旨在收复圣地耶路撒冷的军事远征（北宋哲宗时期）。",
+    "background": "塞尔柱突厥威胁拜占庭，教皇乌尔班二世号召。",
+    "process": "攻占耶路撒冷，建立十字军国家。",
+    "result": "持续近两百年的宗教战争开启。",
+    "influence": {
+      "shortTerm": "加剧了宗教仇恨。",
+      "longTerm": "促进了东西方贸易和文化交流（意外后果）。"
+    },
+    "sources": []
   },
   {
     "id": 1075,
@@ -1062,6 +1350,32 @@
     ]
   },
   {
+    "id": 2012,
+    "title": "大宪章签署",
+    "slug": "magna-carta",
+    "startYear": 1215,
+    "endYear": 1215,
+    "timeLabel": "1215年",
+    "eraSlug": "medieval",
+    "eraName": "英格兰",
+    "region": [
+      "欧洲"
+    ],
+    "types": [
+      "世界史",
+      "政治"
+    ],
+    "summary": "英王约翰被迫签署《大宪章》，限制王权（南宋宁宗时期）。",
+    "background": "国王横征暴敛，贵族反叛。",
+    "process": "在兰尼米德草地签署。",
+    "result": "确立了“王在法下”的原则。",
+    "influence": {
+      "shortTerm": "暂时缓解国内矛盾。",
+      "longTerm": "宪政和法治精神的基石。"
+    },
+    "sources": []
+  },
+  {
     "id": 1079,
     "title": "崖山海战",
     "slug": "battle-of-yamen",
@@ -1091,6 +1405,32 @@
         "url": ""
       }
     ]
+  },
+  {
+    "id": 2013,
+    "title": "黑死病爆发",
+    "slug": "black-death",
+    "startYear": 1347,
+    "endYear": 1351,
+    "timeLabel": "14世纪中叶",
+    "eraSlug": "medieval",
+    "eraName": "中世纪",
+    "region": [
+      "欧洲"
+    ],
+    "types": [
+      "世界史",
+      "灾难"
+    ],
+    "summary": "鼠疫席卷欧洲，造成约三分之一人口死亡（元末）。",
+    "background": "蒙古西征可能促进了病菌传播。",
+    "process": "通过商船从黑海传入意大利，迅速扩散全欧。",
+    "result": "劳动力短缺，封建农奴制解体。",
+    "influence": {
+      "shortTerm": "社会秩序崩溃，教会权威受损。",
+      "longTerm": "为文艺复兴创造了社会条件。"
+    },
+    "sources": []
   },
   {
     "id": 1090,
@@ -1186,6 +1526,58 @@
     ]
   },
   {
+    "id": 2014,
+    "title": "哥伦布发现新大陆",
+    "slug": "columbus-voyage",
+    "startYear": 1492,
+    "endYear": 1492,
+    "timeLabel": "1492年",
+    "eraSlug": "age-of-discovery",
+    "eraName": "大航海时代",
+    "region": [
+      "美洲"
+    ],
+    "types": [
+      "世界史",
+      "探险"
+    ],
+    "summary": "哥伦布抵达美洲，开启了全球化进程（明孝宗时期）。",
+    "background": "欧洲寻找通往东方的海上新航路。",
+    "process": "横渡大西洋，抵达巴哈马群岛。",
+    "result": "美洲被纳入世界体系。",
+    "influence": {
+      "shortTerm": "西班牙开始殖民美洲。",
+      "longTerm": "哥伦布大交换改变了全球生态和经济。"
+    },
+    "sources": []
+  },
+  {
+    "id": 2015,
+    "title": "麦哲伦环球航行",
+    "slug": "magellan-circumnavigation",
+    "startYear": 1519,
+    "endYear": 1522,
+    "timeLabel": "1519-1522年",
+    "eraSlug": "age-of-discovery",
+    "eraName": "大航海时代",
+    "region": [
+      "全球"
+    ],
+    "types": [
+      "世界史",
+      "探险"
+    ],
+    "summary": "麦哲伦船队完成人类首次环球航行（明武宗/世宗时期）。",
+    "background": "争夺香料群岛的控制权。",
+    "process": "穿越麦哲伦海峡，横渡太平洋。麦哲伦死于菲律宾。",
+    "result": "证明地球是圆的。",
+    "influence": {
+      "shortTerm": "连接了全球贸易网。",
+      "longTerm": "开启了全球海洋霸权时代。"
+    },
+    "sources": []
+  },
+  {
     "id": 1094,
     "title": "明亡清入关",
     "slug": "fall-of-ming",
@@ -1248,6 +1640,58 @@
     ]
   },
   {
+    "id": 2016,
+    "title": "美国独立",
+    "slug": "us-independence",
+    "startYear": 1776,
+    "endYear": 1783,
+    "timeLabel": "1776年",
+    "eraSlug": "modern",
+    "eraName": "近代",
+    "region": [
+      "北美"
+    ],
+    "types": [
+      "世界史",
+      "政治"
+    ],
+    "summary": "北美十三州发表《独立宣言》，脱离英国统治（清乾隆时期）。",
+    "background": "英国殖民政策引起不满（无代表不纳税）。",
+    "process": "独立战争爆发，华盛顿领导大陆军获胜。",
+    "result": "美利坚合众国建立。",
+    "influence": {
+      "shortTerm": "建立了第一个现代民主共和制国家。",
+      "longTerm": "影响了法国大革命和拉美独立运动。"
+    },
+    "sources": []
+  },
+  {
+    "id": 2017,
+    "title": "法国大革命",
+    "slug": "french-revolution",
+    "startYear": 1789,
+    "endYear": 1799,
+    "timeLabel": "1789年",
+    "eraSlug": "modern",
+    "eraName": "近代",
+    "region": [
+      "欧洲"
+    ],
+    "types": [
+      "世界史",
+      "政治"
+    ],
+    "summary": "法国人民攻占巴士底狱，推翻波旁王朝统治（清乾隆时期）。",
+    "background": "启蒙思想传播，财政危机，等级制度森严。",
+    "process": "颁布《人权宣言》，处死路易十六，雅各宾派专政。",
+    "result": "结束了法国封建君主专制。",
+    "influence": {
+      "shortTerm": "拿破仑崛起。",
+      "longTerm": "自由平等博爱思想传遍世界。"
+    },
+    "sources": []
+  },
+  {
     "id": 1098,
     "title": "鸦片战争",
     "slug": "opium-war",
@@ -1308,6 +1752,32 @@
         "url": ""
       }
     ]
+  },
+  {
+    "id": 2018,
+    "title": "明治维新",
+    "slug": "meiji-restoration",
+    "startYear": 1868,
+    "endYear": 1912,
+    "timeLabel": "1868年起",
+    "eraSlug": "modern",
+    "eraName": "近代",
+    "region": [
+      "亚洲"
+    ],
+    "types": [
+      "世界史",
+      "改革"
+    ],
+    "summary": "日本推行全盘西化改革，迅速走上近代化道路（清同治/光绪时期）。",
+    "background": "黑船事件后民族危机加深，倒幕运动成功。",
+    "process": "废藩置县，殖产兴业，文明开化，富国强兵。",
+    "result": "日本成为亚洲强国。",
+    "influence": {
+      "shortTerm": "甲午战争击败中国。",
+      "longTerm": "改变了东亚政治格局。"
+    },
+    "sources": []
   },
   {
     "id": 1101,
