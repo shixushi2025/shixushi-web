@@ -1,6 +1,17 @@
 // src/utils/formatters.ts
-import type { Event, RegionKey } from '@/types/history';
+import type { Event, RegionKey, HistoricalPlace } from '@/types/history';
 import { eras } from '@/data/eras';
+
+/**
+ * 格式化古今地名
+ * @example "建康 (今江苏南京)"
+ */
+export function formatPlace(place: HistoricalPlace): string {
+  if (place.modern && place.modern !== place.ancient) {
+    return `${place.ancient} (今${place.modern})`;
+  }
+  return place.ancient;
+}
 
 /**
  * 动态计算事件的时间显示字符串

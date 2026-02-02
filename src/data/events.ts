@@ -15,6 +15,7 @@ export const events: Event[] = [
       "军事",
       "政治"
     ],
+    "places": [{ "ancient": "鸣条", "modern": "山西夏县之西" }],
     "summary": "商汤在鸣条击败夏桀，夏朝灭亡，商朝建立。",
     "background": "夏朝末年，夏桀统治残暴，民不聊生。商部落在汤的领导下日益强大。",
     "process": "商汤在伊尹辅佐下誓师伐夏，双方在鸣条决战，夏军溃败。",
@@ -78,6 +79,7 @@ export const events: Event[] = [
       "军事",
       "政治"
     ],
+    "places": [{ "ancient": "牧野", "modern": "河南新乡" }],
     "summary": "周武王击败商纣王，商亡周立。",
     "background": "商纣王无道，周文王、武王励精图治。",
     "process": "武王趁商军主力在外，率诸侯联军突袭，在牧野大败商军。",

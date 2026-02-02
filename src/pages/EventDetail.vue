@@ -65,9 +65,16 @@
             <span>所属时期</span>
             <strong>{{ getEraName(event.eraSlug) }}</strong>
           </li>
-          <li v-if="event.region?.length">
-            <span>地区</span>
-            <strong>{{ event.region.map(formatRegion).join('、') }}</strong>
+          <li v-if="event.places?.length || event.region?.length">
+            <span>地点</span>
+            <strong>
+              <template v-if="event.places?.length">
+                {{ event.places.map(formatPlace).join('、') }}
+              </template>
+              <template v-else>
+                {{ event.region?.map(formatRegion).join('、') }}
+              </template>
+            </strong>
           </li>
           <li>
             <span>类型</span>
@@ -87,7 +94,7 @@
 import { computed, watchEffect } from 'vue';
 import { useRoute } from 'vue-router';
 import { events } from '@/data/events';
-import { formatEventTime, formatRegion, getEraName } from '@/utils/formatters';
+import { formatEventTime, formatRegion, getEraName, formatPlace } from '@/utils/formatters';
 
 const route = useRoute();
 const idSlug = Array.isArray(route.params.idSlug) ? route.params.idSlug[0] : route.params.idSlug;

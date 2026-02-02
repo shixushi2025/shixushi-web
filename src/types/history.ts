@@ -50,6 +50,13 @@ export interface SourceRef {
   quote?: string;
 }
 
+// ✅ 新增：历史地理信息
+export interface HistoricalPlace {
+  ancient: string;      // 古地名 (如 "长平", "建康")
+  modern?: string;      // 今地名 (如 "山西高平", "江苏南京")
+  geo?: [number, number]; // 经纬度 [lng, lat]
+}
+
 // 3. 核心事件模型 (Normalized)
 export interface Event {
   id: number;
@@ -68,6 +75,9 @@ export interface Event {
   region: RegionKey[];
   types: EventType[];
   
+  // 地理信息
+  places?: HistoricalPlace[]; // ✅ 新增字段
+
   // 内容详情
   summary: string;
   background?: string;
