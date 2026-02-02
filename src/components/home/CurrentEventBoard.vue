@@ -3,12 +3,12 @@
     <article v-for="event in events" :key="event.id" class="current-card">
       <header class="card-head">
         <span class="pill" :class="pillClass(event)">{{ primaryType(event) }}</span>
-        <span class="time">{{ event.timeLabel }}</span>
-        <span class="region" v-if="event.region?.length">{{ event.region.join('、') }}</span>
+        <span class="time">{{ formatEventTime(event) }}</span>
+        <span class="region" v-if="event.region?.length">{{ event.region.map(formatRegion).join('、') }}</span>
       </header>
       <h3>{{ event.title }}</h3>
       <p class="summary">{{ event.summary }}</p>
-      <dl class="insight">
+      <dl class="insight" v-if="event.influence">
         <div>
           <dt>关注点</dt>
           <dd>{{ event.background }}</dd>
@@ -33,6 +33,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import type { Event } from '@/types/history';
+import { formatEventTime, formatRegion } from '@/utils/formatters';
 
 const props = defineProps<{
   events: Event[];

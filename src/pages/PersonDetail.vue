@@ -41,7 +41,7 @@
               :to="`/event/${ev.id}-${ev.slug}`"
               class="event-link-card"
             >
-              <span class="event-year">{{ ev.timeLabel }}</span>
+              <span class="event-year">{{ formatEventTime(ev) }}</span>
               <span class="event-title">{{ ev.title }}</span>
               <span class="arrow">→</span>
             </RouterLink>
@@ -76,7 +76,8 @@
 import { computed } from 'vue';
 import { useRoute, RouterLink } from 'vue-router';
 import peopleData from '@/data/people.json';
-import eventsData from '@/data/events.json';
+import { events as eventsData } from '@/data/events';
+import { formatEventTime } from '@/utils/formatters';
 
 const route = useRoute();
 // 兼容 /people/3001 或 /people/3001-confucius 格式

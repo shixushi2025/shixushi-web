@@ -2,8 +2,8 @@
   <div class="timeline" v-if="events.length">
     <div v-for="event in events" :key="event.id" class="timeline-item">
       <div class="time-column">
-        <span class="time-label">{{ event.timeLabel }}</span>
-        <span class="era-label">{{ event.eraName }}</span>
+        <span class="time-label">{{ formatEventTime(event) }}</span>
+        <span class="era-label">{{ getEraName(event.eraSlug) }}</span>
       </div>
       <div class="axis">
         <span class="dot" :class="{ 'dot-world': isWorldEvent(event) }"></span>
@@ -42,8 +42,8 @@
 
         <footer>
           <div class="meta">
-            <span v-if="event.region?.length">地区：{{ event.region.join('、') }}</span>
-            <span v-if="event.eraSlug">时期：{{ event.eraName }}</span>
+            <span v-if="event.region?.length">地区：{{ event.region.map(formatRegion).join('、') }}</span>
+            <span v-if="event.eraSlug">时期：{{ getEraName(event.eraSlug) }}</span>
           </div>
           <RouterLink :to="`/event/${event.id}-${event.slug}`" class="detail-link">
             查看详情 &rarr;
@@ -58,6 +58,7 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
 import type { Event } from '@/types/history';
+import { formatEventTime, formatRegion, getEraName } from '@/utils/formatters';
 
 defineProps<{
   events: Event[];

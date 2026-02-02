@@ -32,7 +32,7 @@ watchEffect(() => {
 
 const topicEvents = computed(() => {
   return events
-    .filter(ev => ev.types?.includes(topicName.value))
+    .filter(ev => ev.types?.includes(topicName.value as any))
     .sort((a, b) => (a.startYear || 0) - (b.startYear || 0));
 });
 </script>
