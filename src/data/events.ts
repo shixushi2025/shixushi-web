@@ -319,6 +319,100 @@ export const events: Event[] = [
     "relatedEmperorSlugs": []
   },
   {
+    "id": 10201,
+    "title": "修筑长城与直道",
+    "slug": "great-wall-and-zhidao",
+    "startYear": -215,
+    "endYear": -214,
+    "eraSlug": "qin",
+    "region": ["CN"],
+    "types": ["军事", "政治"],
+    "places": [
+      { "ancient": "临洮", "modern": "甘肃岷县" },
+      { "ancient": "辽东", "modern": "辽宁辽阳" },
+      { "ancient": "九原", "modern": "内蒙古包头" }
+    ],
+    "summary": "秦始皇派蒙恬北击匈奴，连接各国长城，并修筑通往北边疆的直道。",
+    "background": "匈奴威胁秦朝北部边境。",
+    "process": "蒙恬率三十万大军北伐，连接秦、赵、燕长城；同时开凿直道。",
+    "result": "形成万里长城防线，确立北部疆界。",
+    "influence": {
+      "shortTerm": "胡人不敢南下而牧马。",
+      "longTerm": "耗尽民力，成为秦亡原因之一；长城成为中华文明的象征。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《史记·蒙恬列传》",
+        "quote": "筑长城，因地形，用制险塞，起临洮，至辽东，延袤万余里。",
+        "url": "https://ctext.org/shiji/meng-tian-lie-zhuan/zh"
+      },
+      {
+        "type": "article",
+        "title": "贾谊《过秦论》",
+        "quote": "乃使蒙恬北筑长城而守藩篱，却匈奴七百余里。",
+        "url": "https://ctext.org/wiki.pl?if=gb&chapter=325992"
+      }
+    ],
+    "relatedEmperorSlugs": []
+  },
+  {
+    "id": 10202,
+    "title": "焚书坑儒",
+    "slug": "burning-of-books",
+    "startYear": -213,
+    "endYear": -212,
+    "eraSlug": "qin",
+    "region": ["CN"],
+    "types": ["政治", "文化"],
+    "places": [{ "ancient": "咸阳", "modern": "陕西咸阳" }],
+    "summary": "秦始皇采纳李斯建议焚毁民间藏书，后又坑杀犯禁方士儒生。",
+    "background": "博士淳于越主张分封，李斯主张郡县，思想冲突激烈。",
+    "process": "下令焚毁除医药、卜筮、种树外的书籍；次年坑杀方士儒生四百六十余人。",
+    "result": "思想遭到严厉钳制。",
+    "influence": {
+      "shortTerm": "巩固中央集权和法家地位。",
+      "longTerm": "造成先秦文化典籍断层，留下千古骂名。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《史记·秦始皇本纪》",
+        "quote": "臣请史官非秦记皆烧之... 所不去者，医药卜筮种树之书。",
+        "url": "https://ctext.org/shiji/qin-shi-huang-ben-ji/zh"
+      }
+    ],
+    "relatedEmperorSlugs": []
+  },
+  {
+    "id": 10203,
+    "title": "沙丘之变",
+    "slug": "shaqiu-coup",
+    "startYear": -210,
+    "endYear": -210,
+    "eraSlug": "qin",
+    "region": ["CN"],
+    "types": ["政治", "政变"],
+    "places": [{ "ancient": "沙丘", "modern": "河北广宗" }],
+    "summary": "秦始皇东巡途中驾崩，赵高与李斯篡改遗诏，立胡亥为帝，赐死扶苏。",
+    "background": "始皇突然病逝，未及确立接班人。",
+    "process": "赵高威逼利诱李斯，伪造诏书。",
+    "result": "胡亥继位（秦二世），帝国走向崩溃。",
+    "influence": {
+      "shortTerm": "大清洗宗室与功臣。",
+      "longTerm": "直接导致秦末农民战争爆发。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《史记·李斯列传》",
+        "quote": "始皇崩于沙丘平台... 高乃与公子胡亥、丞相斯阴谋破去始皇所封书赐公子扶苏者，而更诈为丞相受始皇遗诏沙丘... 立子胡亥为太子。",
+        "url": "https://ctext.org/shiji/li-si-lie-zhuan/zh"
+      }
+    ],
+    "relatedEmperorSlugs": []
+  },
+  {
     "id": 1021,
     "title": "陈胜吴广起义",
     "slug": "dazexiang-uprising",
@@ -345,6 +439,71 @@ export const events: Event[] = [
         "title": "《史记·陈涉世家》",
         "quote": "且壮士不死即已，死即举大名耳，王侯将相宁有种乎！",
         "url": ""
+      }
+    ],
+    "relatedEmperorSlugs": []
+  },
+  {
+    "id": 10212,
+    "title": "巨鹿之战",
+    "slug": "battle-of-julu",
+    "startYear": -207,
+    "endYear": -207,
+    "eraSlug": "qin",
+    "region": ["CN"],
+    "types": ["军事", "历史事件"],
+    "places": [{ "ancient": "巨鹿", "modern": "河北平乡" }],
+    "summary": "项羽率楚军在巨鹿破釜沉舟，全歼秦军主力。",
+    "background": "秦将章邯围困赵国，诸侯军畏缩不前。",
+    "process": "项羽凿沉船只，打破饭锅，只带三日粮，与秦军决战。",
+    "result": "王离被俘，章邯投降，秦朝丧失军事支柱。",
+    "influence": {
+      "shortTerm": "项羽确立诸侯霸主地位。",
+      "longTerm": "加速秦朝灭亡。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《史记·项羽本纪》",
+        "quote": "项羽乃悉引兵渡河，皆沉船，破釜甑，烧庐舍... 与秦军遇，九战，绝其甬道，大破之。",
+        "url": "https://ctext.org/shiji/xiang-yu-ben-ji/zh"
+      }
+    ],
+    "relatedEmperorSlugs": []
+  },
+  {
+    "id": 10213,
+    "title": "刘邦进咸阳 (秦亡)",
+    "slug": "fall-of-qin",
+    "startYear": -206,
+    "endYear": -206,
+    "eraSlug": "qin",
+    "region": ["CN"],
+    "types": ["政治", "更迭"],
+    "places": [
+      { "ancient": "霸上", "modern": "陕西西安东" },
+      { "ancient": "咸阳", "modern": "陕西咸阳" }
+    ],
+    "summary": "刘邦先入关中，秦王子婴投降，秦朝灭亡。",
+    "background": "楚怀王约定“先入定关中者王之”。",
+    "process": "刘邦军至霸上，子婴系颈以组，降轵道旁。",
+    "result": "刘邦废秦苛法，约法三章。",
+    "influence": {
+      "shortTerm": "秦朝终结。",
+      "longTerm": "开启楚汉相争。"
+    },
+    "sources": [
+      {
+        "type": "zhengshi",
+        "title": "《史记·高祖本纪》",
+        "quote": "汉元年十月，沛公兵遂先诸侯至霸上... 秦王子婴素车白马，系颈以组... 降轵道旁。",
+        "url": "https://ctext.org/shiji/gao-zu-ben-ji/zh"
+      },
+      {
+        "type": "zhengshi",
+        "title": "《史记·高祖本纪》",
+        "quote": "与父老约，法三章耳：杀人者死，伤人及盗抵罪。",
+        "url": "https://ctext.org/shiji/gao-zu-ben-ji/zh"
       }
     ],
     "relatedEmperorSlugs": []
