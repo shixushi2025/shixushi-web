@@ -56,9 +56,7 @@ const closeMenu = () => {
 
 const onSearch = () => {
   if (!q.value.trim()) return;
-  // TODO: Create a real search page later
-  alert(`搜索功能开发中：您搜索了 "${q.value}"\n我们将尽快上线全文检索功能！`);
-  // router.push({ path: '/search', query: { q: q.value.trim() } });
+  router.push({ path: '/search', query: { q: q.value.trim() } });
   q.value = '';
   closeMenu();
 };

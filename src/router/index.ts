@@ -12,9 +12,11 @@ import PeopleList from '@/pages/PeopleList.vue';
 import PersonDetail from '@/pages/PersonDetail.vue';
 import TopicsList from '@/pages/TopicsList.vue';
 import TopicDetail from '@/pages/TopicDetail.vue';
+import Search from '@/pages/Search.vue';
 
 const routes: RouteRecordRaw[] = [
   { path: '/', name: 'home', component: Home },
+  { path: '/search', name: 'search', component: Search },
 
   { path: '/china', name: 'china', component: ChinaTimeline },
   { path: '/world', name: 'world', component: WorldTimeline },
