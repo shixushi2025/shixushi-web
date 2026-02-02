@@ -1396,6 +1396,7 @@ export const events: Event[] = [
     "slug": "black-death",
     "startYear": 1347,
     "endYear": 1351,
+    "timeDisplay": "14世纪中叶",
     "eraSlug": "medieval",
     "region": [
       "EU"
@@ -1737,6 +1738,7 @@ export const events: Event[] = [
     "slug": "meiji-restoration",
     "startYear": 1868,
     "endYear": 1912,
+    "timeDisplay": "1868年起",
     "eraSlug": "modern",
     "region": [
       "OTHER"

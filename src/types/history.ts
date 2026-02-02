@@ -59,6 +59,7 @@ export interface Event {
   // 时间信息 (纯数字，用于计算和排序)
   startYear: number;
   endYear?: number; // 如果是单点事件，该字段可空或等于 startYear
+  timeDisplay?: string; // ✅ 新增：手动覆盖时间显示（如"14世纪中叶"）
   
   // 关联信息 (Foreign Keys)
   eraSlug: string; // 关联 Era 表

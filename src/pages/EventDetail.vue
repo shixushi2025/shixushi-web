@@ -38,10 +38,17 @@
 
         <section class="block">
           <h2>参考来源</h2>
-          <ul>
+          <ul class="source-list">
             <li v-for="(s, idx) in event.sources" :key="idx">
-              {{ s.title }}
-              <template v-if="s.detail">（{{ s.detail }}）</template>
+              <template v-if="s.url">
+                <a :href="s.url" target="_blank" rel="noopener noreferrer" class="source-link">
+                  {{ s.title }} ↗
+                </a>
+              </template>
+              <template v-else>
+                {{ s.title }}
+              </template>
+              <span v-if="s.detail" class="source-detail">（{{ s.detail }}）</span>
             </li>
           </ul>
         </section>
@@ -188,5 +195,22 @@ watchEffect(() => {
   .block {
     padding: 16px;
   }
+}
+
+.source-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.source-link {
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 500;
+}
+.source-link:hover {
+  text-decoration: underline;
+}
+.source-detail {
+  color: var(--text-muted);
 }
 </style>

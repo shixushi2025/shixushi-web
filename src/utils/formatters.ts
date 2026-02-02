@@ -7,7 +7,10 @@ import { eras } from '@/data/eras';
  * @param event 
  * @returns 例如: "1914–1918 年" 或 "626 年"
  */
-export function formatEventTime(event: Pick<Event, 'startYear' | 'endYear'>): string {
+export function formatEventTime(event: Pick<Event, 'startYear' | 'endYear' | 'timeDisplay'>): string {
+  // 1. 优先使用手动指定的显示文本（保留模糊时间的灵活性）
+  if (event.timeDisplay) return event.timeDisplay;
+
   const { startYear, endYear } = event;
   
   if (!endYear || startYear === endYear) {
