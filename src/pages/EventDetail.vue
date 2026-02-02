@@ -77,16 +77,22 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, watchEffect } from 'vue';
 import { useRoute } from 'vue-router';
 import { events } from '@/data/events';
 
 const route = useRoute();
-const idSlug = route.params.idSlug as string;
+const idSlug = Array.isArray(route.params.idSlug) ? route.params.idSlug[0] : route.params.idSlug;
 
 const id = Number((idSlug || '').split('-')[0]);
 
 const event = computed(() => events.find(e => e.id === id));
+
+watchEffect(() => {
+  if (event.value) {
+    document.title = `${event.value.title} (${event.value.timeLabel}) | 时序史 · 时间宇宙`;
+  }
+});
 </script>
 
 <style scoped>

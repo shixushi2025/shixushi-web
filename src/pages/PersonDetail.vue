@@ -88,6 +88,14 @@ const person = computed(() => {
   return peopleData.find(p => p.id === personId);
 });
 
+// Update Title
+import { watchEffect } from 'vue';
+watchEffect(() => {
+  if (person.value) {
+    document.title = `${person.value.name} - 历史风云人物 | 时序史 · 时间宇宙`;
+  }
+});
+
 const relatedEvents = computed(() => {
   if (!person.value || !person.value.relatedEventIds) return [];
   // @ts-ignore

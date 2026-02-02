@@ -23,6 +23,13 @@ const slug = route.params.slug as string;
 
 const topicName = computed(() => decodeURIComponent(slug));
 
+import { watchEffect } from 'vue';
+watchEffect(() => {
+  if (topicName.value) {
+    document.title = `${topicName.value}史 - 历史专题 | 时序史 · 时间宇宙`;
+  }
+});
+
 const topicEvents = computed(() => {
   return events
     .filter(ev => ev.types?.includes(topicName.value))

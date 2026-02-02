@@ -91,6 +91,13 @@ const slug = route.params.slug as string;
 
 const era = computed(() => eras.find(e => e.slug === slug));
 
+import { watchEffect } from 'vue';
+watchEffect(() => {
+  if (era.value) {
+    document.title = `${era.value.name} - 历史朝代 | 时序史 · 时间宇宙`;
+  }
+});
+
 const eraEvents = computed(() =>
   events.filter(ev => ev.eraSlug === slug).sort((a, b) => (a.startYear || 0) - (b.startYear || 0))
 );
