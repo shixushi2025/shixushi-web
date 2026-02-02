@@ -34,6 +34,7 @@
 import { computed } from 'vue';
 import type { Event } from '@/types/history';
 import { formatEventTime, formatRegion } from '@/utils/formatters';
+import { getPrimaryCategory, CATEGORY_COLORS } from '@/data/taxonomy';
 
 const props = defineProps<{
   events: Event[];
@@ -49,10 +50,9 @@ const primaryType = (event: Event) => {
 
 const pillClass = (event: Event) => {
   const label = primaryType(event);
-  if (label.includes('经')) return 'pill-economy';
-  if (label.includes('政')) return 'pill-politics';
-  if (label.includes('科') || label.includes('技')) return 'pill-tech';
-  return 'pill-generic';
+  const parent = getPrimaryCategory(label);
+  const colorKey = CATEGORY_COLORS[parent] || 'gray';
+  return `pill-${colorKey}`;
 };
 </script>
 
@@ -90,26 +90,44 @@ const pillClass = (event: Event) => {
   font-weight: 600;
   border: 1px solid transparent;
 }
-.pill-economy {
-  background: rgba(255, 166, 43, 0.1);
-  color: #c26400;
-  border-color: rgba(255, 166, 43, 0.4);
-}
-.pill-politics {
+
+/* 动态颜色定义 */
+.pill-red { /* 政治 */
   background: rgba(235, 87, 87, 0.1);
   color: #b01d1d;
   border-color: rgba(235, 87, 87, 0.4);
 }
-.pill-tech {
+.pill-orange { /* 军事 */
+  background: rgba(245, 158, 11, 0.1);
+  color: #b45309;
+  border-color: rgba(245, 158, 11, 0.4);
+}
+.pill-yellow { /* 经济 */
+  background: rgba(255, 166, 43, 0.1);
+  color: #c26400;
+  border-color: rgba(255, 166, 43, 0.4);
+}
+.pill-blue { /* 科技 */
   background: rgba(59, 130, 246, 0.12);
   color: #1d4ed8;
   border-color: rgba(59, 130, 246, 0.35);
 }
-.pill-generic {
-  background: rgba(103, 80, 31, 0.1);
-  color: #5c3b09;
-  border-color: rgba(103, 80, 31, 0.4);
+.pill-purple { /* 文化 */
+  background: rgba(147, 51, 234, 0.1);
+  color: #7e22ce;
+  border-color: rgba(147, 51, 234, 0.35);
 }
+.pill-gray { /* 社会/其他 */
+  background: rgba(107, 114, 128, 0.1);
+  color: #374151;
+  border-color: rgba(107, 114, 128, 0.3);
+}
+.pill-cyan { /* 世界史 */
+  background: rgba(6, 182, 212, 0.1);
+  color: #0e7490;
+  border-color: rgba(6, 182, 212, 0.35);
+}
+
 .time {
   font-weight: 600;
   color: var(--text-strong);
