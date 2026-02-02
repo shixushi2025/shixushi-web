@@ -8,7 +8,12 @@
       <h1>{{ event.title }}</h1>
       <p class="meta">
         {{ formatEventTime(event) }} · {{ getEraName(event.eraSlug) }}
-        <template v-if="event.region?.length">· {{ event.region.map(formatRegion).join('、') }}</template>
+        <template v-if="event.places?.length">
+          · {{ event.places.map(formatPlace).join('、') }}
+        </template>
+        <template v-else-if="event.region?.length">
+          · {{ event.region.map(formatRegion).join('、') }}
+        </template>
       </p>
       <p class="lead">{{ event.summary }}</p>
     </header>
