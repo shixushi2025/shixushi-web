@@ -75,8 +75,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "河南",
-        "modern": "河南"
+        "ancient": "殷",
+        "modern": "河南安阳西北",
+        "geo": [
+          114.35,
+          36.1
+        ]
       }
     ]
   },
@@ -168,8 +172,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "河南",
-        "modern": "河南"
+        "ancient": "洛邑",
+        "modern": "河南洛阳",
+        "geo": [
+          112.45,
+          34.62
+        ]
       }
     ]
   },
@@ -205,8 +213,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "山东",
-        "modern": "山东"
+        "ancient": "葵丘",
+        "modern": "河南兰考",
+        "geo": [
+          114.95,
+          34.82
+        ]
       }
     ]
   },
@@ -242,8 +254,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "山西",
-        "modern": "山西"
+        "ancient": "晋阳",
+        "modern": "山西太原",
+        "geo": [
+          112.53,
+          37.87
+        ]
       }
     ]
   },
@@ -279,8 +295,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "陕西",
-        "modern": "陕西"
+        "ancient": "栎阳",
+        "modern": "陕西西安阎良区",
+        "geo": [
+          109.15,
+          34.65
+        ]
       }
     ]
   },
@@ -562,8 +582,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "安徽",
-        "modern": "安徽"
+        "ancient": "大泽乡",
+        "modern": "安徽宿州东南",
+        "geo": [
+          117.22,
+          33.56
+        ]
       }
     ]
   },
@@ -697,8 +721,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "陕西",
-        "modern": "陕西"
+        "ancient": "定陶",
+        "modern": "山东定陶",
+        "geo": [
+          115.57,
+          35.07
+        ]
       }
     ]
   },
@@ -734,8 +762,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "西域",
-        "modern": "西域"
+        "ancient": "长安",
+        "modern": "陕西西安西北",
+        "geo": [
+          108.93,
+          34.27
+        ]
       }
     ]
   },
@@ -772,7 +804,11 @@ export const events: Event[] = [
     "places": [
       {
         "ancient": "漠北",
-        "modern": "漠北"
+        "modern": "蒙古高原",
+        "geo": [
+          106.91,
+          47.91
+        ]
       }
     ]
   },
@@ -898,7 +934,17 @@ export const events: Event[] = [
         "url": ""
       }
     ],
-    "relatedEmperorSlugs": []
+    "relatedEmperorSlugs": [],
+    "places": [
+      {
+        "ancient": "巨鹿",
+        "modern": "河北平乡",
+        "geo": [
+          115.02,
+          37.06
+        ]
+      }
+    ]
   },
   {
     "id": 1040,
@@ -932,8 +978,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "湖北",
-        "modern": "湖北"
+        "ancient": "赤壁",
+        "modern": "湖北咸宁赤壁市西北",
+        "geo": [
+          113.89,
+          29.87
+        ]
       }
     ]
   },
@@ -969,8 +1019,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "河南",
-        "modern": "河南"
+        "ancient": "受禅台",
+        "modern": "河南许昌西南",
+        "geo": [
+          113.85,
+          34.03
+        ]
       }
     ]
   },
@@ -1006,8 +1060,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "河南",
-        "modern": "河南"
+        "ancient": "洛阳",
+        "modern": "河南洛阳",
+        "geo": [
+          112.45,
+          34.62
+        ]
       }
     ]
   },
@@ -1043,8 +1101,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "江苏",
-        "modern": "江苏"
+        "ancient": "建业",
+        "modern": "江苏南京",
+        "geo": [
+          118.79,
+          32.06
+        ]
       }
     ]
   },
@@ -1077,7 +1139,17 @@ export const events: Event[] = [
         "url": ""
       }
     ],
-    "relatedEmperorSlugs": []
+    "relatedEmperorSlugs": [],
+    "places": [
+      {
+        "ancient": "洛阳",
+        "modern": "河南洛阳",
+        "geo": [
+          112.45,
+          34.62
+        ]
+      }
+    ]
   },
   {
     "id": 1045,
@@ -1111,8 +1183,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "河南",
-        "modern": "河南"
+        "ancient": "洛阳",
+        "modern": "河南洛阳",
+        "geo": [
+          112.45,
+          34.62
+        ]
       }
     ]
   },
@@ -1148,8 +1224,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "安徽",
-        "modern": "安徽"
+        "ancient": "淝水",
+        "modern": "安徽寿县东南",
+        "geo": [
+          116.78,
+          32.57
+        ]
       }
     ]
   },
@@ -1182,7 +1262,17 @@ export const events: Event[] = [
         "url": ""
       }
     ],
-    "relatedEmperorSlugs": []
+    "relatedEmperorSlugs": [],
+    "places": [
+      {
+        "ancient": "姑臧",
+        "modern": "甘肃武威",
+        "geo": [
+          102.63,
+          37.93
+        ]
+      }
+    ]
   },
   {
     "id": 2006,
@@ -1247,8 +1337,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "河南",
-        "modern": "河南"
+        "ancient": "洛阳",
+        "modern": "河南洛阳",
+        "geo": [
+          112.45,
+          34.62
+        ]
       }
     ]
   },
@@ -1284,8 +1378,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "江苏",
-        "modern": "江苏"
+        "ancient": "建康",
+        "modern": "江苏南京",
+        "geo": [
+          118.79,
+          32.06
+        ]
       }
     ]
   },
@@ -1321,8 +1419,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "陕西",
-        "modern": "陕西"
+        "ancient": "大兴城",
+        "modern": "陕西西安",
+        "geo": [
+          108.93,
+          34.27
+        ]
       }
     ]
   },
@@ -1358,8 +1460,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "江苏",
-        "modern": "江苏"
+        "ancient": "建康",
+        "modern": "江苏南京",
+        "geo": [
+          118.79,
+          32.06
+        ]
       }
     ]
   },
@@ -1426,8 +1532,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "陕西",
-        "modern": "陕西"
+        "ancient": "玄武门",
+        "modern": "陕西西安太极宫北",
+        "geo": [
+          108.94,
+          34.28
+        ]
       }
     ]
   },
@@ -1460,7 +1570,17 @@ export const events: Event[] = [
         "url": ""
       }
     ],
-    "relatedEmperorSlugs": []
+    "relatedEmperorSlugs": [],
+    "places": [
+      {
+        "ancient": "长安",
+        "modern": "陕西西安",
+        "geo": [
+          108.93,
+          34.27
+        ]
+      }
+    ]
   },
   {
     "id": 1065,
@@ -1491,7 +1611,17 @@ export const events: Event[] = [
         "url": ""
       }
     ],
-    "relatedEmperorSlugs": []
+    "relatedEmperorSlugs": [],
+    "places": [
+      {
+        "ancient": "神都",
+        "modern": "河南洛阳",
+        "geo": [
+          112.45,
+          34.62
+        ]
+      }
+    ]
   },
   {
     "id": 1066,
@@ -1522,7 +1652,17 @@ export const events: Event[] = [
         "url": ""
       }
     ],
-    "relatedEmperorSlugs": []
+    "relatedEmperorSlugs": [],
+    "places": [
+      {
+        "ancient": "长安",
+        "modern": "陕西西安",
+        "geo": [
+          108.93,
+          34.27
+        ]
+      }
+    ]
   },
   {
     "id": 1067,
@@ -1553,7 +1693,17 @@ export const events: Event[] = [
         "url": ""
       }
     ],
-    "relatedEmperorSlugs": []
+    "relatedEmperorSlugs": [],
+    "places": [
+      {
+        "ancient": "范阳",
+        "modern": "北京大兴",
+        "geo": [
+          116.33,
+          39.73
+        ]
+      }
+    ]
   },
   {
     "id": 2008,
@@ -1618,8 +1768,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "河南",
-        "modern": "河南"
+        "ancient": "陈桥驿",
+        "modern": "河南封丘东南",
+        "geo": [
+          114.5,
+          34.93
+        ]
       }
     ]
   },
@@ -1655,8 +1809,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "河南",
-        "modern": "河南"
+        "ancient": "澶州",
+        "modern": "河南濮阳",
+        "geo": [
+          115.03,
+          35.76
+        ]
       }
     ]
   },
@@ -1751,7 +1909,17 @@ export const events: Event[] = [
         "url": ""
       }
     ],
-    "relatedEmperorSlugs": []
+    "relatedEmperorSlugs": [],
+    "places": [
+      {
+        "ancient": "汴京",
+        "modern": "河南开封",
+        "geo": [
+          114.3,
+          34.79
+        ]
+      }
+    ]
   },
   {
     "id": 2011,
@@ -1821,8 +1989,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "河南",
-        "modern": "河南"
+        "ancient": "汴京",
+        "modern": "河南开封",
+        "geo": [
+          114.3,
+          34.79
+        ]
       }
     ]
   },
@@ -1889,8 +2061,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "广东",
-        "modern": "广东"
+        "ancient": "崖山",
+        "modern": "广东江门新会南",
+        "geo": [
+          113.06,
+          22.13
+        ]
       }
     ]
   },
@@ -1957,8 +2133,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "江苏",
-        "modern": "江苏"
+        "ancient": "应天",
+        "modern": "江苏南京",
+        "geo": [
+          118.79,
+          32.06
+        ]
       }
     ]
   },
@@ -1994,8 +2174,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "西洋",
-        "modern": "西洋"
+        "ancient": "刘家港",
+        "modern": "江苏太仓浏河镇",
+        "geo": [
+          121.26,
+          31.51
+        ]
       }
     ]
   },
@@ -2031,8 +2215,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "河北",
-        "modern": "河北"
+        "ancient": "土木堡",
+        "modern": "河北怀来东",
+        "geo": [
+          115.54,
+          40.3
+        ]
       }
     ]
   },
@@ -2130,8 +2318,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "北京",
-        "modern": "北京"
+        "ancient": "山海关",
+        "modern": "河北秦皇岛",
+        "geo": [
+          119.76,
+          40
+        ]
       }
     ]
   },
@@ -2167,8 +2359,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "台湾",
-        "modern": "台湾"
+        "ancient": "澎湖",
+        "modern": "台湾澎湖",
+        "geo": [
+          119.57,
+          23.57
+        ]
       }
     ]
   },
@@ -2263,7 +2459,17 @@ export const events: Event[] = [
         "url": ""
       }
     ],
-    "relatedEmperorSlugs": []
+    "relatedEmperorSlugs": [],
+    "places": [
+      {
+        "ancient": "虎门",
+        "modern": "广东东莞虎门",
+        "geo": [
+          113.65,
+          22.82
+        ]
+      }
+    ]
   },
   {
     "id": 1099,
@@ -2294,7 +2500,17 @@ export const events: Event[] = [
         "url": ""
       }
     ],
-    "relatedEmperorSlugs": []
+    "relatedEmperorSlugs": [],
+    "places": [
+      {
+        "ancient": "金田",
+        "modern": "广西桂平金田村",
+        "geo": [
+          110.07,
+          23.53
+        ]
+      }
+    ]
   },
   {
     "id": 2018,
@@ -2360,8 +2576,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "黄海",
-        "modern": "黄海"
+        "ancient": "大东沟",
+        "modern": "辽宁丹东西南海域",
+        "geo": [
+          123.59,
+          39.75
+        ]
       }
     ]
   },
@@ -2397,8 +2617,12 @@ export const events: Event[] = [
     "relatedEmperorSlugs": [],
     "places": [
       {
-        "ancient": "武汉",
-        "modern": "武汉"
+        "ancient": "武昌",
+        "modern": "湖北武汉武昌",
+        "geo": [
+          114.3,
+          30.54
+        ]
       }
     ]
   },
@@ -2435,7 +2659,11 @@ export const events: Event[] = [
     "places": [
       {
         "ancient": "北京",
-        "modern": "北京"
+        "modern": "北京",
+        "geo": [
+          116.4,
+          39.9
+        ]
       }
     ]
   },
