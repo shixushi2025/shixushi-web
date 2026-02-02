@@ -93,7 +93,21 @@ export const events: Event[] = [
         "type": "zhengshi",
         "title": "《史记·周本纪》",
         "quote": "武王驰之，纣兵皆崩畔纣。纣走，反入登于鹿台之上，蒙衣其珠玉，自燔于火而死。",
-        "url": ""
+        "url": "https://ctext.org/shiji/zhou-ben-ji/zh"
+      },
+      {
+        "type": "book",
+        "title": "《尚书·周书·牧誓》",
+        "quote": "时甲子昧爽，王朝至于商郊牧野，乃誓... 称尔戈，比尔干，立尔矛，予其誓。",
+        "detail": "战场动员令，记录了战前的誓师辞",
+        "url": "https://ctext.org/shang-shu/speech-at-mu/zh"
+      },
+      {
+        "type": "other",
+        "title": "利簋铭文 (西周青铜器)",
+        "quote": "珷征商，隹甲子朝，岁鼎，克昏夙有商...",
+        "detail": "1976年陕西临潼出土，证实了武王伐纣在甲子日清晨",
+        "url": "https://baike.baidu.com/item/%E5%88%A9%E7%AF%8C/1155982"
       }
     ],
     "relatedEmperorSlugs": []
