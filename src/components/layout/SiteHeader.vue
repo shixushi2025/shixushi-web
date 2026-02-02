@@ -43,9 +43,9 @@
 
 <script setup lang="ts">
 import { ref, watch } from 'vue';
-import { useRoute, RouterLink } from 'vue-router';
+import { useRouter, useRoute, RouterLink } from 'vue-router';
 
-// const router = useRouter(); // Removed unused router
+const router = useRouter(); 
 const route = useRoute();
 const q = ref('');
 const isNavOpen = ref(false);
