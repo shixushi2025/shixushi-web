@@ -49,25 +49,28 @@
     <!-- 模块导航 -->
     <section class="modules-panel">
       <div class="module-grid">
-        <RouterLink to="/china" class="module-card history">
-          <span class="module-icon">📜</span>
-          <h3>中国史主轴</h3>
-          <p>纵向时间线，详尽记录朝代兴衰。</p>
-        </RouterLink>
-        <RouterLink to="/world" class="module-card world">
-          <span class="module-icon">🌍</span>
-          <h3>中外对照</h3>
-          <p>全球视野，同步查看世界文明进程。</p>
-        </RouterLink>
-        <RouterLink to="/people" class="module-card people">
-          <span class="module-icon">👥</span>
-          <h3>人物索引</h3>
-          <p>帝王将相、文人墨客的生平轨迹。</p>
-        </RouterLink>
-        <RouterLink to="/era" class="module-card era">
-          <span class="module-icon">⛩️</span>
-          <h3>朝代世系</h3>
-          <p>查阅各朝代帝王列表与在位时间。</p>
+        <RouterLink
+          v-for="card in moduleCards"
+          :key="card.focusKey"
+          :to="card.link"
+          class="module-card"
+          :class="card.focusKey"
+          :style="getCardStyle(card.focusKey)"
+        >
+          <div class="module-card__header">
+            <span class="pill" :style="getPillStyle(card.focusKey)">
+              <span class="pill-icon">{{ getFocusMeta(card.focusKey).icon }}</span>
+              {{ card.focus }} · {{ card.tag }}
+            </span>
+            <span class="module-illustration">{{ getFocusMeta(card.focusKey).glyph }}</span>
+          </div>
+          <h3>{{ card.title }}</h3>
+          <p class="module-subtitle" v-if="card.subtitle">{{ card.subtitle }}</p>
+          <p>{{ card.desc }}</p>
+          <span class="module-link">
+            <span class="label">{{ card.cta }}</span>
+            <span class="arrow">→</span>
+          </span>
         </RouterLink>
       </div>
     </section>
