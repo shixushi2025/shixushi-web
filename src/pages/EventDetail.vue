@@ -88,6 +88,7 @@
             <strong>{{ event.types.join('、') }}</strong>
           </li>
         </ul>
+        </div>
       </aside>
     </div>
   </section>
