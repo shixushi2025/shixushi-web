@@ -44,7 +44,7 @@ const topics = computed(() => {
   });
 
   return Object.keys(counts)
-    .map(tag => ({ tag, count: counts[tag] }))
+    .map(tag => ({ tag, count: counts[tag] || 0 }))
     .sort((a, b) => b.count - a.count); // 按数量降序
 });
 

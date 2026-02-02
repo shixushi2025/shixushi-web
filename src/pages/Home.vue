@@ -198,19 +198,25 @@ const focusMeta: Record<string, { gradient: string; accent: string; icon: string
   }
 };
 
-const getFocusMeta = (key: string) => focusMeta[key] || focusMeta.history;
+const getFocusMeta = (key: string) => focusMeta[key] || focusMeta.history!;
 
-const getCardStyle = (key: string) => ({
-  backgroundImage: getFocusMeta(key).gradient,
-  borderColor: `${getFocusMeta(key).accent}33`,
-  boxShadow: `0 16px 30px ${getFocusMeta(key).accent}22`,
-});
+const getCardStyle = (key: string) => {
+  const meta = getFocusMeta(key);
+  return {
+    backgroundImage: meta.gradient,
+    borderColor: `${meta.accent}33`,
+    boxShadow: `0 16px 30px ${meta.accent}22`,
+  };
+};
 
-const getPillStyle = (key: string) => ({
-  background: `${getFocusMeta(key).accent}12`,
-  color: getFocusMeta(key).accent,
-  borderColor: `${getFocusMeta(key).accent}40`,
-});
+const getPillStyle = (key: string) => {
+  const meta = getFocusMeta(key);
+  return {
+    background: `${meta.accent}12`,
+    color: meta.accent,
+    borderColor: `${meta.accent}40`,
+  };
+};
 </script>
 
 <style scoped>
