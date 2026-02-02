@@ -54,8 +54,15 @@
         </section>
       </article>
 
-      <aside class="side-card">
-        <h3>基本信息</h3>
+      <aside class="side-col">
+        <HistoricalMap 
+          v-if="event.places && event.places.some(p => p.geo)" 
+          :places="event.places" 
+          class="mb-4"
+        />
+
+        <div class="side-card">
+          <h3>基本信息</h3>
         <ul>
           <li>
             <span>时间</span>
@@ -95,6 +102,7 @@ import { computed, watchEffect } from 'vue';
 import { useRoute } from 'vue-router';
 import { events } from '@/data/events';
 import { formatEventTime, formatRegion, getEraName, formatPlace } from '@/utils/formatters';
+import HistoricalMap from '@/components/common/HistoricalMap.vue';
 
 const route = useRoute();
 const idSlug = Array.isArray(route.params.idSlug) ? route.params.idSlug[0] : route.params.idSlug;
@@ -147,6 +155,14 @@ watchEffect(() => {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+.side-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.mb-4 {
+  margin-bottom: 4px;
 }
 .block {
   background: #fff;

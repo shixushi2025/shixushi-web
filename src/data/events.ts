@@ -15,7 +15,7 @@ export const events: Event[] = [
       "军事",
       "政治"
     ],
-    "places": [{ "ancient": "鸣条", "modern": "山西夏县之西" }],
+    "places": [{ "ancient": "鸣条", "modern": "山西夏县之西", "geo": [111.22, 35.14] }],
     "summary": "商汤在鸣条击败夏桀，夏朝灭亡，商朝建立。",
     "background": "夏朝末年，夏桀统治残暴，民不聊生。商部落在汤的领导下日益强大。",
     "process": "商汤在伊尹辅佐下誓师伐夏，双方在鸣条决战，夏军溃败。",
@@ -79,7 +79,7 @@ export const events: Event[] = [
       "军事",
       "政治"
     ],
-    "places": [{ "ancient": "牧野", "modern": "河南新乡" }],
+    "places": [{ "ancient": "牧野", "modern": "河南新乡", "geo": [113.92, 35.30] }],
     "summary": "周武王击败商纣王，商亡周立。",
     "background": "商纣王无道，周文王、武王励精图治。",
     "process": "武王趁商军主力在外，率诸侯联军突袭，在牧野大败商军。",
@@ -328,9 +328,9 @@ export const events: Event[] = [
     "region": ["CN"],
     "types": ["军事", "政治"],
     "places": [
-      { "ancient": "临洮", "modern": "甘肃岷县" },
-      { "ancient": "辽东", "modern": "辽宁辽阳" },
-      { "ancient": "九原", "modern": "内蒙古包头" }
+      { "ancient": "临洮", "modern": "甘肃岷县", "geo": [104.03, 34.43] },
+      { "ancient": "辽东", "modern": "辽宁辽阳", "geo": [123.17, 41.27] },
+      { "ancient": "九原", "modern": "内蒙古包头", "geo": [109.84, 40.65] }
     ],
     "summary": "秦始皇派蒙恬北击匈奴，连接各国长城，并修筑通往北边疆的直道。",
     "background": "匈奴威胁秦朝北部边境。",
@@ -365,7 +365,7 @@ export const events: Event[] = [
     "eraSlug": "qin",
     "region": ["CN"],
     "types": ["政治", "文化"],
-    "places": [{ "ancient": "咸阳", "modern": "陕西咸阳" }],
+    "places": [{ "ancient": "咸阳", "modern": "陕西咸阳", "geo": [108.70, 34.33] }],
     "summary": "秦始皇采纳李斯建议焚毁民间藏书，后又坑杀犯禁方士儒生。",
     "background": "博士淳于越主张分封，李斯主张郡县，思想冲突激烈。",
     "process": "下令焚毁除医药、卜筮、种树外的书籍；次年坑杀方士儒生四百六十余人。",
@@ -393,7 +393,7 @@ export const events: Event[] = [
     "eraSlug": "qin",
     "region": ["CN"],
     "types": ["政治", "政变"],
-    "places": [{ "ancient": "沙丘", "modern": "河北广宗" }],
+    "places": [{ "ancient": "沙丘", "modern": "河北广宗", "geo": [115.15, 37.07] }],
     "summary": "秦始皇东巡途中驾崩，赵高与李斯篡改遗诏，立胡亥为帝，赐死扶苏。",
     "background": "始皇突然病逝，未及确立接班人。",
     "process": "赵高威逼利诱李斯，伪造诏书。",
@@ -452,7 +452,7 @@ export const events: Event[] = [
     "eraSlug": "qin",
     "region": ["CN"],
     "types": ["军事", "历史事件"],
-    "places": [{ "ancient": "巨鹿", "modern": "河北平乡" }],
+    "places": [{ "ancient": "巨鹿", "modern": "河北平乡", "geo": [115.02, 37.06] }],
     "summary": "项羽率楚军在巨鹿破釜沉舟，全歼秦军主力。",
     "background": "秦将章邯围困赵国，诸侯军畏缩不前。",
     "process": "项羽凿沉船只，打破饭锅，只带三日粮，与秦军决战。",
@@ -481,8 +481,8 @@ export const events: Event[] = [
     "region": ["CN"],
     "types": ["政治", "更迭"],
     "places": [
-      { "ancient": "霸上", "modern": "陕西西安东" },
-      { "ancient": "咸阳", "modern": "陕西咸阳" }
+      { "ancient": "霸上", "modern": "陕西西安东", "geo": [109.06, 34.26] },
+      { "ancient": "咸阳", "modern": "陕西咸阳", "geo": [108.70, 34.33] }
     ],
     "summary": "刘邦先入关中，秦王子婴投降，秦朝灭亡。",
     "background": "楚怀王约定“先入定关中者王之”。",
