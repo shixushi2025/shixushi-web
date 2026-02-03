@@ -1,79 +1,268 @@
 <template>
   <section class="page">
     <header class="page-header">
-      <p class="eyebrow">World Timeline</p>
-      <h1>世界重大事件时间线</h1>
-      <p class="lead">
-        聚焦对全球格局与中国进程产生重要影响的节点，后续将扩展至更多地区、领域与专题视角。
-      </p>
+      <div class="header-content">
+        <p class="eyebrow">Global Perspective</p>
+        <h1>世界重大事件</h1>
+        <p class="lead">
+          从文明古国到全球化时代，追踪塑造现代世界的关键转折点。
+        </p>
+      </div>
+      <div class="header-decoration">🗺️</div>
     </header>
 
-    <EventList :events="worldPreviewEvents" />
-
-    <div class="focus-grid">
-      <article v-for="area in focusAreas" :key="area.title">
-        <h3>{{ area.title }}</h3>
-        <p>{{ area.desc }}</p>
-      </article>
+    <div class="world-timeline">
+      <div v-for="group in groupedEvents" :key="group.label" class="time-group">
+        <div class="group-label">
+          <span>{{ group.label }}</span>
+        </div>
+        
+        <div class="events-list">
+          <RouterLink 
+            v-for="ev in group.events" 
+            :key="ev.id"
+            :to="`/event/${ev.id}-${ev.slug}`"
+            class="world-event-card"
+          >
+            <div class="event-meta">
+              <span class="year">{{ formatYear(ev.startYear) }}</span>
+              <div class="badges">
+                <span v-for="r in ev.region" :key="r" class="region-badge">{{ r }}</span>
+              </div>
+            </div>
+            
+            <div class="event-content">
+              <h3>{{ ev.title }}</h3>
+              <p>{{ ev.summary }}</p>
+            </div>
+          </RouterLink>
+        </div>
+      </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import EventList from '@/components/common/EventList.vue';
+import { computed } from 'vue';
+import { RouterLink } from 'vue-router';
 import { worldPreviewEvents } from '@/data/events';
+import type { Event } from '@/types/history';
 
-const focusAreas = [
-  { title: '全球战争与和平秩序', desc: '记录两次世界大战、冷战以及地区冲突对国际秩序的重塑。' },
-  { title: '科学革命与工业化', desc: '追踪科技突破与产业革命如何改变生产方式与社会结构。' },
-  { title: '殖民体系与民族独立', desc: '关注殖民扩张、独立浪潮以及新兴国家的诞生。' },
-];
+// 格式化年份
+const formatYear = (y: number) => (y < 0 ? `前${Math.abs(y)}` : `${y}`);
+
+// 分组逻辑 (按世纪)
+const groupedEvents = computed(() => {
+  const groups: Record<string, Event[]> = {};
+  const order: string[] = [];
+
+  // 按时间排序
+  const sorted = [...worldPreviewEvents].sort((a, b) => a.startYear - b.startYear);
+
+  sorted.forEach(ev => {
+    let label = '';
+    if (ev.startYear < 0) {
+      const c = Math.ceil(Math.abs(ev.startYear) / 100);
+      label = `公元前 ${c} 世纪`;
+    } else {
+      const c = Math.floor(ev.startYear / 100) + 1;
+      label = `公元 ${c} 世纪`;
+    }
+
+    if (!groups[label]) {
+      groups[label] = [];
+      order.push(label);
+    }
+    groups[label]!.push(ev);
+  });
+
+  return order.map(label => ({
+    label,
+    events: groups[label]
+  }));
+});
 </script>
 
 <style scoped>
 .page {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
 }
+
+/* Header with Blue Theme */
 .page-header {
-  background: #fff;
-  border-radius: 28px;
-  padding: 28px;
-  border: 1px solid var(--border-soft);
-  box-shadow: 0 20px 36px rgba(24, 20, 15, 0.08);
+  background: linear-gradient(135deg, #eef5ff 0%, #ffffff 100%);
+  border-radius: 24px;
+  padding: 40px;
+  border: 1px solid rgba(40, 115, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
+
+.header-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
 .eyebrow {
-  font-size: 12px;
-  letter-spacing: 0.2em;
+  font-size: 13px;
   text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 8px;
+  letter-spacing: 0.2em;
+  color: #2873ff;
+  font-weight: 700;
+  margin-bottom: 12px;
 }
+
+h1 {
+  font-size: 36px;
+  margin: 0 0 16px;
+  color: #1a202c;
+  font-family: "Songti SC", serif;
+}
+
 .lead {
-  margin: 0;
-  color: var(--text-body);
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.6;
 }
-.focus-grid {
+
+.header-decoration {
+  font-size: 80px;
+  opacity: 0.1;
+  transform: rotate(-10deg);
+  position: absolute;
+  right: 40px;
+  bottom: -10px;
+  user-select: none;
+}
+
+/* Timeline Styles */
+.world-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding-left: 20px;
+  border-left: 2px solid rgba(40, 115, 255, 0.1);
+  margin-left: 20px;
+}
+
+.time-group {
+  position: relative;
+}
+
+.group-label {
+  position: absolute;
+  left: -34px; /* Adjust based on border padding */
+  top: -6px;
+  background: #2873ff;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 99px;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(40, 115, 255, 0.2);
+}
+
+.events-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
+  padding-top: 32px; /* Make space for label */
 }
-.focus-grid article {
+
+.world-event-card {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 20px;
   background: #fff;
-  border-radius: 20px;
-  padding: 18px;
-  border: 1px dashed var(--border-soft);
-  color: var(--text-body);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+  text-decoration: none;
+  transition: all 0.2s ease;
 }
-.focus-grid p {
+
+.world-event-card:hover {
+  transform: translateX(4px);
+  border-color: #2873ff;
+  box-shadow: 0 8px 16px rgba(40, 115, 255, 0.08);
+}
+
+.event-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.year {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2c3e50;
+  font-family: monospace;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.region-badge {
+  font-size: 11px;
+  background: #f1f5f9;
+  color: #64748b;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.event-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.event-content h3 {
   margin: 0;
-  color: var(--text-muted);
+  font-size: 18px;
+  color: #1a202c;
+  line-height: 1.3;
+}
+
+.event-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 @media (max-width: 640px) {
-  .page-header {
-    padding: 20px;
+  .world-event-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .event-meta {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .world-timeline {
+    margin-left: 10px;
+    padding-left: 16px;
+  }
+  .group-label {
+    left: -28px;
   }
 }
 </style>
