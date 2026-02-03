@@ -85,6 +85,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useRoute, RouterLink } from 'vue-router';
+import Fuse from 'fuse.js';
 import { events } from '@/data/events';
 import peopleData from '@/data/people.json';
 import { eras } from '@/data/eras';
@@ -93,31 +94,49 @@ import { formatEventTime, getEraName } from '@/utils/formatters';
 const route = useRoute();
 const query = computed(() => (route.query.q as string || '').trim());
 
+// 配置 Fuse
+const peopleFuse = new Fuse(peopleData, {
+  keys: [
+    { name: 'name', weight: 2 },
+    { name: 'title', weight: 1.5 },
+    { name: 'summary', weight: 1 },
+    'achievements'
+  ],
+  threshold: 0.3,
+});
+
+const eraFuse = new Fuse(eras, {
+  keys: [
+    { name: 'name', weight: 2 },
+    'summary'
+  ],
+  threshold: 0.3,
+});
+
+const eventFuse = new Fuse(events, {
+  keys: [
+    { name: 'title', weight: 2 },
+    { name: 'summary', weight: 1.2 },
+    'background',
+    'process'
+  ],
+  threshold: 0.3,
+});
+
 // 搜索逻辑
 const matchedPeople = computed(() => {
   if (!query.value) return [];
-  const q = query.value.toLowerCase();
-  return peopleData.filter(p => 
-    p.name.includes(q) || 
-    p.title?.includes(q) ||
-    p.achievements?.some(a => a.includes(q))
-  );
+  return peopleFuse.search(query.value).map(r => r.item);
 });
 
 const matchedEras = computed(() => {
   if (!query.value) return [];
-  const q = query.value.toLowerCase();
-  return eras.filter(e => e.name.includes(q));
+  return eraFuse.search(query.value).map(r => r.item);
 });
 
 const matchedEvents = computed(() => {
   if (!query.value) return [];
-  const q = query.value.toLowerCase();
-  return events.filter(e => 
-    e.title.includes(q) || 
-    e.summary?.includes(q) ||
-    getEraName(e.eraSlug).includes(q)
-  );
+  return eventFuse.search(query.value).map(r => r.item);
 });
 
 const totalCount = computed(() => matchedPeople.value.length + matchedEras.value.length + matchedEvents.value.length);

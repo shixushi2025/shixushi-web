@@ -1,16 +1,22 @@
 <template>
   <section v-if="person" class="page">
     <header class="page-header">
-      <div class="header-meta">
-        <span class="dynasty-badge">{{ person.dynasty }}</span>
-        <span v-if="person.title" class="title-badge">{{ person.title }}</span>
+      <div class="header-main">
+        <div class="header-meta">
+          <span class="dynasty-badge">{{ person.dynasty }}</span>
+          <span v-if="person.title" class="title-badge">{{ person.title }}</span>
+        </div>
+        <h1>{{ person.name }}</h1>
+        <p class="years">
+          {{ formatYear(person.birthYear) }} – {{ formatYear(person.deathYear) }}
+        </p>
       </div>
-      <h1>{{ person.name }}</h1>
-      <p class="years">
-        {{ formatYear(person.birthYear) }} – {{ formatYear(person.deathYear) }}
-      </p>
-      <div v-if="person.quote" class="quote-box">
-        “{{ person.quote }}”
+      
+      <div v-if="person.quote" class="quote-container">
+        <div class="quote-vertical">
+          “{{ person.quote }}”
+        </div>
+        <div class="seal-mark">史</div>
       </div>
     </header>
 
@@ -123,14 +129,27 @@ function formatYear(year?: number) {
   background: #fff;
   border-radius: 24px;
   padding: 40px;
-  text-align: center;
   border: 1px solid var(--border-soft);
   background: linear-gradient(to bottom, #fff, #fcfcfc);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  overflow: hidden;
+  min-height: 200px;
 }
+
+.header-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  flex: 1;
+}
+
 .header-meta {
   display: flex;
-  justify-content: center;
   gap: 12px;
   margin-bottom: 16px;
 }
@@ -160,15 +179,72 @@ h1 {
   font-size: 16px;
   color: #64748b;
   font-variant-numeric: tabular-nums;
-  margin: 0 0 24px;
+  margin: 0;
 }
-.quote-box {
-  display: inline-block;
-  font-size: 20px;
-  color: #5d4037;
-  font-family: "Kaiti SC", "KaiTi", serif;
+
+/* Vertical Quote */
+.quote-container {
   position: relative;
-  padding: 0 20px;
+  padding-right: 20px;
+  padding-left: 40px;
+  border-left: 1px solid rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+}
+
+.quote-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 24px;
+  color: #2c1810;
+  font-family: "Kaiti SC", "STKaiti", "KaiTi", serif;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+  max-height: 200px;
+}
+
+.seal-mark {
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #d63031;
+  color: #d63031;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  font-family: "Songti SC", serif;
+  font-weight: bold;
+  opacity: 0.2;
+  font-size: 20px;
+  transform: rotate(-15deg);
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px;
+  }
+  .header-main {
+    align-items: center;
+    width: 100%;
+  }
+  .quote-container {
+    border-left: none;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    padding: 24px 0 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .quote-vertical {
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+  }
+  .seal-mark {
+    display: none;
+  }
 }
 
 /* Grid Layout */

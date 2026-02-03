@@ -37,19 +37,24 @@
             aria-label="Search history"
           />
         </form>
+
+        <button class="theme-toggle" @click="toggleTheme" aria-label="切换主题">
+          {{ isDark ? '🌞' : '🌙' }}
+        </button>
       </nav>
     </div>
   </header>
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue';
+import { ref, watch, onMounted } from 'vue';
 import { useRouter, useRoute, RouterLink } from 'vue-router';
 
 const router = useRouter(); 
 const route = useRoute();
 const q = ref('');
 const isNavOpen = ref(false);
+const isDark = ref(false);
 
 const closeMenu = () => {
   isNavOpen.value = false;
@@ -66,6 +71,24 @@ const toggleMenu = () => {
   isNavOpen.value = !isNavOpen.value;
 };
 
+// Theme Logic
+const toggleTheme = () => {
+  isDark.value = !isDark.value;
+  const theme = isDark.value ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', theme);
+};
+
+onMounted(() => {
+  const savedTheme = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  
+  if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+    isDark.value = true;
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+});
+
 watch(
   () => route.fullPath,
   () => {
@@ -75,6 +98,25 @@ watch(
 </script>
 
 <style scoped>
+/* Theme Toggle */
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--border-soft);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--text-body);
+  transition: all 0.2s;
+}
+.theme-toggle:hover {
+  background: var(--bg-muted);
+  border-color: var(--text-muted);
+}
+
 .header {
   position: sticky;
   top: 0;
