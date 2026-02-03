@@ -126,7 +126,8 @@ const timelineGroups = computed(() => {
 const goToEvent = (ev: Event) => {
   // Use slug based navigation if possible, fallback to ID if needed
   // Route is /event/:idSlug
-  router.push(`/event/${ev.slug}`);
+  // EventDetail expects format: id-slug (e.g. 1001-battle-of-mingtiao)
+  router.push(`/event/${ev.id}-${ev.slug}`);
 };
 </script>
 
