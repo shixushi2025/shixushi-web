@@ -6,6 +6,16 @@ import type { Era } from '@/types/history';
 
 export const chinaEras: Era[] = [
   {
+    id: 0,
+    name: '三皇五帝',
+    slug: 'legendary',
+    startYear: -3000,
+    endYear: -2070,
+    summary: '中华文明的传说时代，神话与早期部落文明交织。',
+    broadPeriod: '先秦',
+    periods: [],
+  },
+  {
     id: 1,
     name: '夏朝',
     slug: 'xia',

@@ -1,5 +1,152 @@
 [
   {
+    "id": 3024,
+    "name": "黄帝",
+    "title": "人文初祖",
+    "dynasty": "五帝",
+    "birthYear": -2717,
+    "deathYear": -2599,
+    "categories": [
+      "政治",
+      "军事"
+    ],
+    "summary": "中华文明的奠基者，五帝之首，统一炎黄部落。",
+    "achievements": [
+      "涿鹿之战败蚩尤",
+      "发明舟车、音律、医学",
+      "置百官，制衣冠"
+    ],
+    "quote": "声教讫于四海。",
+    "relatedEventIds": [
+      1201
+    ]
+  },
+  {
+    "id": 3025,
+    "name": "大禹",
+    "title": "夏禹",
+    "dynasty": "夏",
+    "birthYear": -2123,
+    "deathYear": -2025,
+    "categories": [
+      "政治",
+      "工程"
+    ],
+    "summary": "上古治水英雄，夏朝的奠基者，划定九州。",
+    "achievements": [
+      "治理黄河水患",
+      "划定九州",
+      "铸九鼎"
+    ],
+    "quote": "三过家门而不入。",
+    "relatedEventIds": []
+  },
+  {
+    "id": 3026,
+    "name": "商汤",
+    "title": "成汤",
+    "dynasty": "商",
+    "birthYear": -1670,
+    "deathYear": -1587,
+    "categories": [
+      "政治",
+      "军事"
+    ],
+    "summary": "商朝开国君主，推翻夏桀暴政。",
+    "achievements": [
+      "鸣条之战灭夏",
+      "网开一面",
+      "建立商朝"
+    ],
+    "quote": "人视水见形，视民知治不。",
+    "relatedEventIds": [
+      1001
+    ]
+  },
+  {
+    "id": 3027,
+    "name": "周武王",
+    "title": "姬发",
+    "dynasty": "西周",
+    "birthYear": -1076,
+    "deathYear": -1043,
+    "categories": [
+      "政治",
+      "军事"
+    ],
+    "summary": "西周开国君主，灭商建周，确立分封制。",
+    "achievements": [
+      "牧野之战灭商",
+      "分封诸侯",
+      "释放箕子"
+    ],
+    "quote": "维师尚父，时维鹰扬。",
+    "relatedEventIds": [
+      1003
+    ]
+  },
+  {
+    "id": 3029,
+    "name": "管仲",
+    "title": "管子",
+    "dynasty": "春秋",
+    "birthYear": -723,
+    "deathYear": -645,
+    "categories": [
+      "政治",
+      "经济"
+    ],
+    "summary": "春秋时期齐国名相，法家先驱，辅佐齐桓公称霸。",
+    "achievements": [
+      "盐铁专卖",
+      "三其国而五其鄙",
+      "尊王攘夷战略"
+    ],
+    "quote": "仓廪实而知礼节，衣食足而知荣辱。",
+    "relatedEventIds": [
+      1005
+    ]
+  },
+  {
+    "id": 3028,
+    "name": "齐桓公",
+    "title": "姜小白",
+    "dynasty": "春秋",
+    "birthYear": -715,
+    "deathYear": -643,
+    "categories": [
+      "政治"
+    ],
+    "summary": "春秋五霸之首，任用管仲改革，尊王攘夷。",
+    "achievements": [
+      "九合诸侯",
+      "葵丘会盟",
+      "北伐山戎"
+    ],
+    "quote": "尊王攘夷。",
+    "relatedEventIds": [
+      1005
+    ]
+  },
+  {
+    "id": 3030,
+    "name": "老子",
+    "title": "道德天尊",
+    "dynasty": "春秋",
+    "birthYear": -571,
+    "deathYear": -471,
+    "categories": [
+      "思想"
+    ],
+    "summary": "道家学派创始人，中国古代伟大的哲学家。",
+    "achievements": [
+      "著《道德经》",
+      "提出“道”与“无为”思想"
+    ],
+    "quote": "道可道，非常道。",
+    "relatedEventIds": []
+  },
+  {
     "id": 3001,
     "name": "孔子",
     "title": "至圣先师",
@@ -18,6 +165,47 @@
     ],
     "quote": "学而时习之，不亦说乎？",
     "relatedEventIds": []
+  },
+  {
+    "id": 3003,
+    "name": "孙武",
+    "title": "兵圣",
+    "dynasty": "春秋",
+    "birthYear": -545,
+    "deathYear": -470,
+    "categories": [
+      "军事",
+      "思想"
+    ],
+    "summary": "中国古代著名的军事家，兵家鼻祖。",
+    "achievements": [
+      "著有《孙子兵法》",
+      "指挥吴军破楚"
+    ],
+    "quote": "知彼知己，百战不殆。",
+    "relatedEventIds": []
+  },
+  {
+    "id": 3031,
+    "name": "李悝",
+    "title": "法家鼻祖",
+    "dynasty": "战国",
+    "birthYear": -455,
+    "deathYear": -395,
+    "categories": [
+      "政治",
+      "法律"
+    ],
+    "summary": "战国初期魏国政治家，主持变法，开启战国变法运动。",
+    "achievements": [
+      "著《法经》",
+      "尽地力之教",
+      "废除世卿世禄"
+    ],
+    "quote": "食有劳而禄有功。",
+    "relatedEventIds": [
+      1202
+    ]
   },
   {
     "id": 3002,
@@ -42,23 +230,47 @@
     ]
   },
   {
-    "id": 3003,
-    "name": "孙武",
-    "title": "兵圣",
-    "dynasty": "春秋",
-    "birthYear": -545,
-    "deathYear": -470,
+    "id": 3034,
+    "name": "石申",
+    "title": "石申夫",
+    "dynasty": "战国",
+    "birthYear": -360,
+    "deathYear": -300,
     "categories": [
-      "军事",
-      "思想"
+      "科学",
+      "天文"
     ],
-    "summary": "中国古代著名的军事家，兵家鼻祖。",
+    "summary": "战国天文学家，测定恒星坐标，编制星表。",
     "achievements": [
-      "著有《孙子兵法》",
-      "指挥吴军破楚"
+      "著《天文》八卷",
+      "测定121颗恒星坐标",
+      "《甘石星经》"
     ],
-    "quote": "知彼知己，百战不殆。",
-    "relatedEventIds": []
+    "quote": "岁星赢而东南，缩而西北。",
+    "relatedEventIds": [
+      1204
+    ]
+  },
+  {
+    "id": 3033,
+    "name": "李冰",
+    "title": "蜀守",
+    "dynasty": "战国",
+    "birthYear": -300,
+    "deathYear": -250,
+    "categories": [
+      "工程",
+      "政治"
+    ],
+    "summary": "战国时期秦国蜀郡太守，著名的水利工程专家。",
+    "achievements": [
+      "修建都江堰",
+      "治理成都平原水患"
+    ],
+    "quote": "深淘滩，低作堰。",
+    "relatedEventIds": [
+      1203
+    ]
   },
   {
     "id": 3004,
@@ -83,25 +295,23 @@
     ]
   },
   {
-    "id": 3005,
-    "name": "韩信",
-    "title": "兵仙",
-    "dynasty": "西汉",
-    "birthYear": -231,
-    "deathYear": -196,
+    "id": 3032,
+    "name": "韩非",
+    "title": "韩非子",
+    "dynasty": "战国",
+    "birthYear": -280,
+    "deathYear": -233,
     "categories": [
-      "军事"
+      "思想",
+      "法律"
     ],
-    "summary": "西汉开国功臣，中国历史上杰出的军事家。",
+    "summary": "战国末期法家集大成者，为秦统一提供理论基础。",
     "achievements": [
-      "明修栈道，暗度陈仓",
-      "背水一战，十面埋伏",
-      "定三秦，擒魏、取代、破赵、胁燕、击齐，灭楚"
+      "著《韩非子》",
+      "提出法术势结合的帝王之术"
     ],
-    "quote": "置之死地而后生。",
-    "relatedEventIds": [
-      1023
-    ]
+    "quote": "世异则事异，事异则备变。",
+    "relatedEventIds": []
   },
   {
     "id": 3006,
@@ -121,6 +331,27 @@
       "明哲保身"
     ],
     "quote": "夫运筹策帷帐之中，决胜于千里之外，吾不如子房。",
+    "relatedEventIds": [
+      1023
+    ]
+  },
+  {
+    "id": 3005,
+    "name": "韩信",
+    "title": "兵仙",
+    "dynasty": "西汉",
+    "birthYear": -231,
+    "deathYear": -196,
+    "categories": [
+      "军事"
+    ],
+    "summary": "西汉开国功臣，中国历史上杰出的军事家。",
+    "achievements": [
+      "明修栈道，暗度陈仓",
+      "背水一战，十面埋伏",
+      "定三秦，擒魏、取代、破赵、胁燕、击齐，灭楚"
+    ],
+    "quote": "置之死地而后生。",
     "relatedEventIds": [
       1023
     ]

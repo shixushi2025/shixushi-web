@@ -2711,6 +2711,141 @@ export const events: Event[] = [
     },
     "sources": []
   }
+,
+{
+  "id": 1201,
+  "title": "涿鹿之战",
+  "slug": "battle-of-zhuolu",
+  "startYear": -2600,
+  "endYear": -2600,
+  "eraSlug": "legendary",
+  "region": [
+    "CN"
+  ],
+  "types": [
+    "军事",
+    "政治"
+  ],
+  "summary": "黄帝部落联合炎帝部落在涿鹿击败蚩尤。",
+  "background": "九黎部落蚩尤势力扩张，与炎黄部落发生冲突。",
+  "process": "黄帝运用指南车辨别方向，大败蚩尤。",
+  "result": "蚩尤战死，黄帝统一华夏部落。",
+  "influence": {
+    "shortTerm": "确立黄帝共主地位。",
+    "longTerm": "奠定华夏文明基础。"
+  },
+  "sources": [
+    {
+      "type": "zhengshi",
+      "title": "《史记·五帝本纪》",
+      "quote": "与蚩尤战于涿鹿之野，遂禽杀蚩尤。"
+    }
+  ],
+  "relatedEmperorSlugs": []
+},
+{
+  "id": 1202,
+  "title": "李悝变法",
+  "slug": "li-kui-reform",
+  "startYear": -400,
+  "endYear": -395,
+  "eraSlug": "eastern-zhou",
+  "region": [
+    "CN"
+  ],
+  "types": [
+    "政治",
+    "改革"
+  ],
+  "summary": "魏文侯任用李悝变法，魏国率先强盛。",
+  "background": "战国初期，各国寻求富国强兵之道。",
+  "process": "颁布《法经》，废除世卿世禄，尽地力之教。",
+  "result": "魏国经济军事实力大增，成为战国初期霸主。",
+  "influence": {
+    "shortTerm": "魏国称霸。",
+    "longTerm": "开启战国变法运动先河，影响商鞅变法。"
+  },
+  "sources": [
+    {
+      "type": "zhengshi",
+      "title": "《史记·魏世家》",
+      "quote": "李悝尽地力之教... 魏用有功。"
+    }
+  ],
+  "relatedEmperorSlugs": []
+},
+{
+  "id": 1203,
+  "title": "修建都江堰",
+  "slug": "dujiangyan-irrigation",
+  "startYear": -256,
+  "endYear": -251,
+  "eraSlug": "eastern-zhou",
+  "region": [
+    "CN"
+  ],
+  "types": [
+    "工程",
+    "经济"
+  ],
+  "places": [
+    {
+      "ancient": "蜀郡",
+      "modern": "四川都江堰",
+      "geo": [
+        103.6,
+        31
+      ]
+    }
+  ],
+  "summary": "秦国蜀守李冰主持修建都江堰水利工程。",
+  "background": "成都平原水患频发，秦国欲开发蜀地为粮仓。",
+  "process": "凿离堆，筑鱼嘴，建飞沙堰与宝瓶口。",
+  "result": "根治水患，成都平原成为沃野千里。",
+  "influence": {
+    "shortTerm": "秦国国力大增，支撑统一战争。",
+    "longTerm": "造福川蜀两千余年，至今发挥作用。"
+  },
+  "sources": [
+    {
+      "type": "zhengshi",
+      "title": "《史记·河渠志》",
+      "quote": "蜀守冰凿离堆，辟沫水之害，穿二江成都之中。"
+    }
+  ],
+  "relatedEmperorSlugs": []
+},
+{
+  "id": 1204,
+  "title": "编制甘石星经",
+  "slug": "gan-shi-star-catalog",
+  "startYear": -350,
+  "endYear": -350,
+  "eraSlug": "eastern-zhou",
+  "region": [
+    "CN"
+  ],
+  "types": [
+    "科学",
+    "天文"
+  ],
+  "summary": "战国天文学家甘德、石申测定恒星坐标。",
+  "background": "战国时期天文学发展，占星术盛行。",
+  "process": "长期观测，测定120多颗恒星坐标。",
+  "result": "编制成世界上最早的星表之一。",
+  "influence": {
+    "shortTerm": "服务于农业与占星。",
+    "longTerm": "奠定中国古代天文学基础。"
+  },
+  "sources": [
+    {
+      "type": "other",
+      "title": "《开元占经》",
+      "quote": "引甘氏、石氏经文。"
+    }
+  ],
+  "relatedEmperorSlugs": []
+}
 ];
 
-export const worldPreviewEvents = events;
+export const worldPreviewEvents = events.filter(e => !e.region.includes('CN'));
