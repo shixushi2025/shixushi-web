@@ -22,7 +22,8 @@
       <nav :class="['nav', { open: isNavOpen }]">
         <div class="nav-links">
           <RouterLink to="/china" @click="closeMenu">中国史</RouterLink>
-          <RouterLink to="/world" @click="closeMenu">中外对照</RouterLink>
+          <RouterLink to="/world" @click="closeMenu">世界史</RouterLink>
+          <RouterLink to="/parallel" @click="closeMenu">中外对照</RouterLink>
           <RouterLink to="/people" @click="closeMenu">风云人物</RouterLink>
           <RouterLink to="/era" @click="closeMenu">朝代索引</RouterLink>
         </div>

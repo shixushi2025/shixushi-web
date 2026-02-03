@@ -4,6 +4,7 @@ import type { RouteRecordRaw } from "vue-router";
 import Home from '@/pages/Home.vue';
 import ChinaTimeline from '@/pages/ChinaTimeline.vue';
 import WorldTimeline from '@/pages/WorldTimeline.vue';
+import ParallelTimeline from '@/pages/ParallelTimeline.vue';
 import EraList from '@/pages/EraList.vue';
 import EraDetail from '@/pages/EraDetail.vue';
 import EventDetail from '@/pages/EventDetail.vue';
@@ -31,6 +32,12 @@ const routes: RouteRecordRaw[] = [
     name: 'world', 
     component: WorldTimeline,
     meta: { title: '世界重大事件对照' }
+  },
+  {
+    path: '/parallel',
+    name: 'parallel',
+    component: ParallelTimeline,
+    meta: { title: '中外历史对照' }
   },
   { 
     path: '/era', 
