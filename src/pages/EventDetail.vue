@@ -45,14 +45,26 @@
           <h2>参考来源</h2>
           <ul class="source-list">
             <li v-for="(s, idx) in event.sources" :key="idx">
+              <!-- 优先使用已有 URL -->
               <template v-if="s.url">
                 <a :href="s.url" target="_blank" rel="noopener noreferrer" class="source-link">
                   {{ s.title }} ↗
                 </a>
               </template>
+              
+              <!-- 没有 URL 时，自动生成 ctext.org 搜索链接 -->
               <template v-else>
-                {{ s.title }}
+                <a 
+                  :href="`https://ctext.org/search?if=gb&q=${encodeURIComponent(cleanTitle(s.title))}`" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="source-link search-link"
+                  title="在 ctext.org 搜索此文献"
+                >
+                  {{ s.title }} 🔍
+                </a>
               </template>
+              
               <span v-if="s.detail" class="source-detail">（{{ s.detail }}）</span>
             </li>
           </ul>
@@ -109,6 +121,10 @@ import { useRoute } from 'vue-router';
 import { events } from '@/data/events';
 import { formatEventTime, formatRegion, getEraName, formatPlace } from '@/utils/formatters';
 import HistoricalMap from '@/components/common/HistoricalMap.vue';
+
+const cleanTitle = (title: string) => {
+  return title.replace(/[《》]/g, ' ').trim();
+};
 
 const route = useRoute();
 const idSlug = Array.isArray(route.params.idSlug) ? route.params.idSlug[0] : route.params.idSlug;
