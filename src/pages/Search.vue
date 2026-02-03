@@ -58,9 +58,9 @@
             :to="`/event/${ev.id}-${ev.slug}`"
             class="list-item"
           >
-            <span class="time">{{ ev.timeLabel }}</span>
+            <span class="time">{{ formatEventTime(ev) }}</span>
             <span class="title">{{ ev.title }}</span>
-            <span class="era-badge">{{ ev.eraName }}</span>
+            <span class="era-badge">{{ getEraName(ev.eraSlug) }}</span>
           </RouterLink>
         </div>
       </section>
@@ -88,6 +88,7 @@ import { useRoute, RouterLink } from 'vue-router';
 import { events } from '@/data/events';
 import peopleData from '@/data/people.json';
 import { eras } from '@/data/eras';
+import { formatEventTime, getEraName } from '@/utils/formatters';
 
 const route = useRoute();
 const query = computed(() => (route.query.q as string || '').trim());
@@ -115,7 +116,7 @@ const matchedEvents = computed(() => {
   return events.filter(e => 
     e.title.includes(q) || 
     e.summary?.includes(q) ||
-    e.eraName?.includes(q)
+    getEraName(e.eraSlug).includes(q)
   );
 });
 

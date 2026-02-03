@@ -47,7 +47,7 @@
                 :to="`/event/${ev.id}-${ev.slug}`"
                 class="mini-event-card"
               >
-                <span class="ev-time">{{ ev.timeLabel }}</span>
+                <span class="ev-time">{{ formatEventTime(ev) }}</span>
                 <span class="ev-title">{{ ev.title }}</span>
                 <span class="ev-type" v-if="ev.types?.[0]">{{ ev.types[0] }}</span>
               </RouterLink>
@@ -85,6 +85,7 @@ import { eras } from '@/data/eras';
 import { events } from '@/data/events';
 import emperorsData from '@/data/emperors.json';
 import EventList from '@/components/common/EventList.vue';
+import { formatEventTime } from '@/utils/formatters';
 
 const route = useRoute();
 const slug = route.params.slug as string;

@@ -48,7 +48,7 @@
             <p class="filter-tip" v-else>显示该朝范围内的代表事件。</p>
             <ul>
               <li v-for="event in getEventsForEra(eraBlock.era.slug)" :key="event.id">
-                <strong>{{ event.timeLabel }}</strong>
+                <strong>{{ formatEventTime(event) }}</strong>
                 <span>{{ event.title }}</span>
               </li>
             </ul>
@@ -72,6 +72,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
 import type { Era, Emperor, Event } from '@/types/history';
+import { formatEventTime } from '@/utils/formatters';
 
 const props = defineProps<{
   eras: Era[];
@@ -147,7 +148,7 @@ const getEventsForEra = (eraSlug: string) => {
   if (!selectedEraSlug.value || selectedEraSlug.value !== eraSlug || !selectedEmperorSlug.value) {
     return events;
   }
-  return events.filter(ev => ev.relatedEmperors?.includes(selectedEmperorSlug.value as string));
+  return events.filter(ev => ev.relatedEmperorSlugs?.includes(selectedEmperorSlug.value as string));
 };
 
 const eraBlocks = computed(() => {

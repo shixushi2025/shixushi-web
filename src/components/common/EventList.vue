@@ -7,9 +7,9 @@
         <div class="event-content">
           <span class="title">{{ e.title }}</span>
           <span class="meta">
-            {{ e.timeLabel }}
+            {{ formatEventTime(e) }}
             <template v-if="e.region?.length">
-              · {{ e.region.join('、') }}
+              · {{ e.region.map(formatRegion).join('、') }}
             </template>
           </span>
         </div>
@@ -22,6 +22,7 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
 import type { Event } from '@/types/history';
+import { formatEventTime, formatRegion } from '@/utils/formatters';
 
 defineProps<{
   events: Event[];

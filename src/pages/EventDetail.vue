@@ -7,8 +7,13 @@
       </p>
       <h1>{{ event.title }}</h1>
       <p class="meta">
-        {{ event.timeLabel }} · {{ event.eraName }}
-        <template v-if="event.region?.length">· {{ event.region.join('、') }}</template>
+        {{ formatEventTime(event) }} · {{ getEraName(event.eraSlug) }}
+        <template v-if="event.places?.length">
+          · {{ event.places.map(formatPlace).join('、') }}
+        </template>
+        <template v-else-if="event.region?.length">
+          · {{ event.region.map(formatRegion).join('、') }}
+        </template>
       </p>
       <p class="lead">{{ event.summary }}</p>
     </header>
@@ -30,7 +35,7 @@
           <p>{{ event.result }}</p>
         </section>
 
-        <section class="block">
+        <section class="block" v-if="event.influence">
           <h2>影响</h2>
           <p><strong>短期：</strong>{{ event.influence.shortTerm }}</p>
           <p><strong>长期：</strong>{{ event.influence.longTerm }}</p>
@@ -38,35 +43,57 @@
 
         <section class="block">
           <h2>参考来源</h2>
-          <ul>
+          <ul class="source-list">
             <li v-for="(s, idx) in event.sources" :key="idx">
-              {{ s.title }}
-              <template v-if="s.detail">（{{ s.detail }}）</template>
+              <template v-if="s.url">
+                <a :href="s.url" target="_blank" rel="noopener noreferrer" class="source-link">
+                  {{ s.title }} ↗
+                </a>
+              </template>
+              <template v-else>
+                {{ s.title }}
+              </template>
+              <span v-if="s.detail" class="source-detail">（{{ s.detail }}）</span>
             </li>
           </ul>
         </section>
       </article>
 
-      <aside class="side-card">
-        <h3>基本信息</h3>
+      <aside class="side-col">
+        <HistoricalMap 
+          v-if="event.places && event.places.some(p => p.geo)" 
+          :places="event.places" 
+          class="mb-4"
+        />
+
+        <div class="side-card">
+          <h3>基本信息</h3>
         <ul>
           <li>
             <span>时间</span>
-            <strong>{{ event.timeLabel }}</strong>
+            <strong>{{ formatEventTime(event) }}</strong>
           </li>
           <li>
             <span>所属时期</span>
-            <strong>{{ event.eraName }}</strong>
+            <strong>{{ getEraName(event.eraSlug) }}</strong>
           </li>
-          <li v-if="event.region?.length">
-            <span>地区</span>
-            <strong>{{ event.region.join('、') }}</strong>
+          <li v-if="event.places?.length || event.region?.length">
+            <span>地点</span>
+            <strong>
+              <template v-if="event.places?.length">
+                {{ event.places.map(formatPlace).join('、') }}
+              </template>
+              <template v-else>
+                {{ event.region?.map(formatRegion).join('、') }}
+              </template>
+            </strong>
           </li>
           <li>
             <span>类型</span>
             <strong>{{ event.types.join('、') }}</strong>
           </li>
         </ul>
+        </div>
       </aside>
     </div>
   </section>
@@ -80,6 +107,8 @@
 import { computed, watchEffect } from 'vue';
 import { useRoute } from 'vue-router';
 import { events } from '@/data/events';
+import { formatEventTime, formatRegion, getEraName, formatPlace } from '@/utils/formatters';
+import HistoricalMap from '@/components/common/HistoricalMap.vue';
 
 const route = useRoute();
 const idSlug = Array.isArray(route.params.idSlug) ? route.params.idSlug[0] : route.params.idSlug;
@@ -90,7 +119,7 @@ const event = computed(() => events.find(e => e.id === id));
 
 watchEffect(() => {
   if (event.value) {
-    document.title = `${event.value.title} (${event.value.timeLabel}) | 时序史 · 时间宇宙`;
+    document.title = `${event.value.title} (${formatEventTime(event.value)}) | 时序史 · 时间宇宙`;
   }
 });
 </script>
@@ -132,6 +161,14 @@ watchEffect(() => {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+.side-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.mb-4 {
+  margin-bottom: 4px;
 }
 .block {
   background: #fff;
@@ -187,5 +224,22 @@ watchEffect(() => {
   .block {
     padding: 16px;
   }
+}
+
+.source-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.source-link {
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 500;
+}
+.source-link:hover {
+  text-decoration: underline;
+}
+.source-detail {
+  color: var(--text-muted);
 }
 </style>
