@@ -25,6 +25,7 @@ export interface Era {
   endYear: number;
   summary: string;
   parentSlug?: string | null;
+  broadPeriod?: string; // ✅ 新增：大历史分期（如“先秦”、“秦汉”）
   periods: EraPeriod[];
 }
 

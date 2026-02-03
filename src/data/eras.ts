@@ -12,6 +12,7 @@ export const chinaEras: Era[] = [
     startYear: -2070,
     endYear: -1600,
     summary: '传说中的第一个世袭王朝，禹治水后建立，开启华夏文明的国家形态。',
+    broadPeriod: '先秦',
     periods: [],
   },
   {
@@ -21,6 +22,7 @@ export const chinaEras: Era[] = [
     startYear: -1600,
     endYear: -1046,
     summary: '甲骨文与青铜文明高度发达，王权与宗教祭祀紧密结合。',
+    broadPeriod: '先秦',
     periods: [],
   },
   {
@@ -31,6 +33,7 @@ export const chinaEras: Era[] = [
     endYear: -771,
     summary: '周武王伐纣后建立，定都镐京，实行分封制与宗法制。',
     parentSlug: 'zhou',
+    broadPeriod: '先秦',
     periods: [],
   },
   {
@@ -41,6 +44,7 @@ export const chinaEras: Era[] = [
     endYear: -256,
     summary: '周室东迁洛邑后时期，包含春秋与战国两个阶段。',
     parentSlug: 'zhou',
+    broadPeriod: '先秦',
     periods: [],
   },
   {
@@ -50,6 +54,7 @@ export const chinaEras: Era[] = [
     startYear: -221,
     endYear: -207,
     summary: '秦始皇统一六国，推行郡县制、书同文车同轨，奠定大一统帝制。',
+    broadPeriod: '秦汉',
     periods: [],
   },
   {
@@ -60,6 +65,7 @@ export const chinaEras: Era[] = [
     endYear: 8,
     summary: '刘邦建立汉朝，文景之治与汉武盛世使国力强盛。',
     parentSlug: 'han',
+    broadPeriod: '秦汉',
     periods: [],
   },
   {
@@ -69,6 +75,7 @@ export const chinaEras: Era[] = [
     startYear: 9,
     endYear: 23,
     summary: '王莽改制自立的新朝，施政激进且失民心，短命而终。',
+    broadPeriod: '秦汉',
     periods: [],
   },
   {
@@ -79,6 +86,7 @@ export const chinaEras: Era[] = [
     endYear: 220,
     summary: '刘秀重建汉室，定都洛阳，后期宦官外戚专权，导致黄巾起义。',
     parentSlug: 'han',
+    broadPeriod: '秦汉',
     periods: [],
   },
   {
@@ -89,6 +97,7 @@ export const chinaEras: Era[] = [
     endYear: 265,
     summary: '三国之一，曹丕禅汉建魏，控制中原并推行九品中正制。',
     parentSlug: 'three-kingdoms',
+    broadPeriod: '魏晋南北朝',
     periods: [],
   },
   {
@@ -99,6 +108,7 @@ export const chinaEras: Era[] = [
     endYear: 263,
     summary: '刘备据益州建立，自称延续汉统，诸葛亮北伐成为历史佳话。',
     parentSlug: 'three-kingdoms',
+    broadPeriod: '魏晋南北朝',
     periods: [],
   },
   {
@@ -109,6 +119,7 @@ export const chinaEras: Era[] = [
     endYear: 280,
     summary: '孙权统治江东与南方，发展水军与海贸，是三国之一。',
     parentSlug: 'three-kingdoms',
+    broadPeriod: '魏晋南北朝',
     periods: [],
   },
   {
@@ -119,6 +130,7 @@ export const chinaEras: Era[] = [
     endYear: 316,
     summary: '司马炎改魏称帝，短暂统一全国，八王之乱后迅速崩溃。',
     parentSlug: 'jin',
+    broadPeriod: '魏晋南北朝',
     periods: [],
   },
   {
@@ -129,6 +141,7 @@ export const chinaEras: Era[] = [
     endYear: 420,
     summary: '晋室南渡建康偏安，与北方十六国对峙，江南经济发展。',
     parentSlug: 'jin',
+    broadPeriod: '魏晋南北朝',
     periods: [],
   },
   {
@@ -139,6 +152,7 @@ export const chinaEras: Era[] = [
     endYear: 479,
     summary: '南朝第一个政权，刘裕建立，江南经济文化繁荣。',
     parentSlug: 'southern-dynasties',
+    broadPeriod: '魏晋南北朝',
     periods: [],
   },
   {
@@ -149,6 +163,7 @@ export const chinaEras: Era[] = [
     endYear: 502,
     summary: '南朝第二个政权，政局动荡、统治短暂。',
     parentSlug: 'southern-dynasties',
+    broadPeriod: '魏晋南北朝',
     periods: [],
   },
   {
@@ -159,6 +174,7 @@ export const chinaEras: Era[] = [
     endYear: 557,
     summary: '南朝第三个政权，梁武帝崇佛，侯景之乱导致国力衰败。',
     parentSlug: 'southern-dynasties',
+    broadPeriod: '魏晋南北朝',
     periods: [],
   },
   {
@@ -169,6 +185,7 @@ export const chinaEras: Era[] = [
     endYear: 589,
     summary: '南朝最后政权，疆域最小，最终被隋朝所灭。',
     parentSlug: 'southern-dynasties',
+    broadPeriod: '魏晋南北朝',
     periods: [],
   },
   {
@@ -179,6 +196,7 @@ export const chinaEras: Era[] = [
     endYear: 534,
     summary: '鲜卑拓跋氏建立，统一北方并推行汉化改革，奠基北朝格局。',
     parentSlug: 'northern-dynasties',
+    broadPeriod: '魏晋南北朝',
     periods: [],
   },
   {
@@ -189,6 +207,7 @@ export const chinaEras: Era[] = [
     endYear: 550,
     summary: '北魏分裂后东部政权，高欢家族执掌大权，后被北齐取代。',
     parentSlug: 'northern-dynasties',
+    broadPeriod: '魏晋南北朝',
     periods: [],
   },
   {
@@ -199,6 +218,7 @@ export const chinaEras: Era[] = [
     endYear: 557,
     summary: '北魏西部遗绪，宇文泰掌权，军事改革为北周奠基。',
     parentSlug: 'northern-dynasties',
+    broadPeriod: '魏晋南北朝',
     periods: [],
   },
   {
@@ -209,6 +229,7 @@ export const chinaEras: Era[] = [
     endYear: 577,
     summary: '取代东魏统治华北，政治腐败，最终被北周所灭。',
     parentSlug: 'northern-dynasties',
+    broadPeriod: '魏晋南北朝',
     periods: [],
   },
   {
@@ -219,6 +240,7 @@ export const chinaEras: Era[] = [
     endYear: 581,
     summary: '取代西魏，改行府兵制并统一北方，为隋朝兴起奠定基础。',
     parentSlug: 'northern-dynasties',
+    broadPeriod: '魏晋南北朝',
     periods: [],
   },
   {
@@ -228,6 +250,7 @@ export const chinaEras: Era[] = [
     startYear: 581,
     endYear: 618,
     summary: '结束长达数世纪分裂，开凿大运河并创立科举制度。',
+    broadPeriod: '隋唐五代',
     periods: [],
   },
   {
@@ -237,6 +260,7 @@ export const chinaEras: Era[] = [
     startYear: 618,
     endYear: 907,
     summary: '中国最繁盛王朝之一，政治清明、文化开放，诗歌艺术鼎盛。',
+    broadPeriod: '隋唐五代',
     periods: [
       { key: 'early', name: '初唐', startYear: 618, endYear: 712 },
       { key: 'peak', name: '盛唐', startYear: 713, endYear: 755 },
@@ -252,6 +276,7 @@ export const chinaEras: Era[] = [
     endYear: 923,
     summary: '朱温篡唐建立的五代首国，控制黄河流域。',
     parentSlug: 'five-dynasties',
+    broadPeriod: '隋唐五代',
     periods: [],
   },
   {
@@ -262,6 +287,7 @@ export const chinaEras: Era[] = [
     endYear: 936,
     summary: '李存勖称帝，试图恢复唐室传统，是五代第二政权。',
     parentSlug: 'five-dynasties',
+    broadPeriod: '隋唐五代',
     periods: [],
   },
   {
@@ -272,6 +298,7 @@ export const chinaEras: Era[] = [
     endYear: 947,
     summary: '石敬瑭借契丹兵称帝，割让燕云十六州，政权孱弱。',
     parentSlug: 'five-dynasties',
+    broadPeriod: '隋唐五代',
     periods: [],
   },
   {
@@ -282,6 +309,7 @@ export const chinaEras: Era[] = [
     endYear: 951,
     summary: '刘知远建立的五代第四政权，统治短暂动荡。',
     parentSlug: 'five-dynasties',
+    broadPeriod: '隋唐五代',
     periods: [],
   },
   {
@@ -292,6 +320,7 @@ export const chinaEras: Era[] = [
     endYear: 960,
     summary: '郭威建立的五代末国，实行改革，为宋朝统一奠基。',
     parentSlug: 'five-dynasties',
+    broadPeriod: '隋唐五代',
     periods: [],
   },
   {
@@ -302,6 +331,7 @@ export const chinaEras: Era[] = [
     endYear: 978,
     summary: '钱镠据杭州建立，保境安民，海贸与手工业发达。',
     parentSlug: 'ten-kingdoms',
+    broadPeriod: '隋唐五代',
     periods: [],
   },
   {
@@ -312,6 +342,7 @@ export const chinaEras: Era[] = [
     endYear: 975,
     summary: '十国中最强大者，李昪、李煜相继执政，文化艺术昌盛。',
     parentSlug: 'ten-kingdoms',
+    broadPeriod: '隋唐五代',
     periods: [],
   },
   {
@@ -322,6 +353,7 @@ export const chinaEras: Era[] = [
     endYear: 925,
     summary: '王建据四川建立，政局稳定且文化繁荣。',
     parentSlug: 'ten-kingdoms',
+    broadPeriod: '隋唐五代',
     periods: [],
   },
   {
@@ -332,6 +364,7 @@ export const chinaEras: Era[] = [
     endYear: 965,
     summary: '孟知祥建立，延续蜀地文教传统，后被宋所灭。',
     parentSlug: 'ten-kingdoms',
+    broadPeriod: '隋唐五代',
     periods: [],
   },
   {
@@ -342,6 +375,7 @@ export const chinaEras: Era[] = [
     endYear: 971,
     summary: '刘䶮据岭南称帝，前期富庶，后期奢靡腐败。',
     parentSlug: 'ten-kingdoms',
+    broadPeriod: '隋唐五代',
     periods: [],
   },
   {
@@ -352,6 +386,7 @@ export const chinaEras: Era[] = [
     endYear: 951,
     summary: '马殷在湖南建立，重视商贸，维持地方稳定。',
     parentSlug: 'ten-kingdoms',
+    broadPeriod: '隋唐五代',
     periods: [],
   },
   {
@@ -362,6 +397,7 @@ export const chinaEras: Era[] = [
     endYear: 945,
     summary: '王审知家族统治福建，崇佛兴学，开发海贸。',
     parentSlug: 'ten-kingdoms',
+    broadPeriod: '隋唐五代',
     periods: [],
   },
   {
@@ -372,6 +408,7 @@ export const chinaEras: Era[] = [
     endYear: 963,
     summary: '高季兴建立的小国，夹缝求存，后归宋。',
     parentSlug: 'ten-kingdoms',
+    broadPeriod: '隋唐五代',
     periods: [],
   },
   {
@@ -382,6 +419,7 @@ export const chinaEras: Era[] = [
     endYear: 979,
     summary: '刘崇在太原称帝，倚靠契丹抗衡后周与宋，是十国中唯一北方政权。',
     parentSlug: 'ten-kingdoms',
+    broadPeriod: '隋唐五代',
     periods: [],
   },
   {
@@ -392,6 +430,7 @@ export const chinaEras: Era[] = [
     endYear: 937,
     summary: '杨行密割据江淮，奠定基础后被李昪夺位改国号南唐。',
     parentSlug: 'ten-kingdoms',
+    broadPeriod: '隋唐五代',
     periods: [],
   },
   {
@@ -402,6 +441,7 @@ export const chinaEras: Era[] = [
     endYear: 1127,
     summary: '赵匡胤陈桥兵变建立，结束五代，经济文化高度发达。',
     parentSlug: 'song',
+    broadPeriod: '宋元',
     periods: [],
   },
   {
@@ -412,6 +452,7 @@ export const chinaEras: Era[] = [
     endYear: 1279,
     summary: '宋室南渡临安，与金、蒙古长期对峙，文化昌盛。',
     parentSlug: 'song',
+    broadPeriod: '宋元',
     periods: [],
   },
   {
@@ -421,6 +462,7 @@ export const chinaEras: Era[] = [
     startYear: 907,
     endYear: 1125,
     summary: '契丹耶律阿保机建立，与宋对峙并统治东北草原与华北部分地区。',
+    broadPeriod: '宋元',
     periods: [],
   },
   {
@@ -430,6 +472,7 @@ export const chinaEras: Era[] = [
     startYear: 1038,
     endYear: 1227,
     summary: '党项族建立，控制河西走廊并创制西夏文字，长年与宋辽金周旋。',
+    broadPeriod: '宋元',
     periods: [],
   },
   {
@@ -439,6 +482,7 @@ export const chinaEras: Era[] = [
     startYear: 1115,
     endYear: 1234,
     summary: '女真完颜部建立，先灭辽再并北宋，后与南宋对峙，被蒙古所灭。',
+    broadPeriod: '宋元',
     periods: [],
   },
   {
@@ -448,6 +492,7 @@ export const chinaEras: Era[] = [
     startYear: 1271,
     endYear: 1368,
     summary: '蒙古忽必烈定国号大元，首次由少数民族统一全中国。',
+    broadPeriod: '宋元',
     periods: [],
   },
   {
@@ -457,6 +502,7 @@ export const chinaEras: Era[] = [
     startYear: 1368,
     endYear: 1644,
     summary: '朱元璋推翻元朝恢复汉人统治，永乐盛世后逐渐趋于闭关保守。',
+    broadPeriod: '明清',
     periods: [],
   },
   {
@@ -466,6 +512,7 @@ export const chinaEras: Era[] = [
     startYear: 1636,
     endYear: 1912,
     summary: '满族建立的最后一个封建王朝，近代面对列强侵略与制度变革。',
+    broadPeriod: '明清',
     periods: [],
   },
   {
@@ -476,6 +523,7 @@ export const chinaEras: Era[] = [
     endYear: 1218,
     summary: '耶律大石率契丹旧部西迁中亚建立的政权，兼采辽制与中亚传统，势力遍及河中与费尔干纳。',
     parentSlug: 'liao',
+    broadPeriod: '宋元',
     periods: [],
   },
   {
@@ -486,6 +534,7 @@ export const chinaEras: Era[] = [
     endYear: 1662,
     summary: '明室的延续政权，在江南、岭南等地抵抗清军，弘光、隆武、绍武与永历先后称帝。',
     parentSlug: 'ming',
+    broadPeriod: '明清',
     periods: [],
   },
 ];
