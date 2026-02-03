@@ -1,7 +1,7 @@
 <template>
   <div class="vertical-timeline">
     <div
-      v-for="(group, gIdx) in groupedEraBlocks"
+      v-for="group in groupedEraBlocks"
       :key="group.periodName"
       class="period-group"
     >
@@ -231,7 +231,7 @@ const groupedEraBlocks = computed(() => {
 
   return order.map((name) => ({
     periodName: name,
-    eras: groups[name],
+    eras: groups[name]!,
   }));
 });
 

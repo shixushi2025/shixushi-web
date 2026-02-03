@@ -120,7 +120,7 @@ const timelineGroups = computed(() => {
   });
 
   // Return as array, keeping the chronological order of discovery
-  return order.map(k => groups[k]);
+  return order.map(k => groups[k]!);
 });
 
 const goToEvent = (ev: Event) => {
