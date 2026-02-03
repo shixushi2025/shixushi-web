@@ -39,6 +39,16 @@
 
           <div class="column">
             <p class="column-title">关键事件</p>
+            
+            <!-- ✅ 新增：选中皇帝时的简介卡片 -->
+            <div v-if="selectedEmperor" class="emperor-bio-card">
+              <header>
+                <h4>{{ selectedEmperor.name }}</h4>
+                <span class="reign-date">{{ formatYear(selectedEmperor.reignStart) }} – {{ formatYear(selectedEmperor.reignEnd) }}</span>
+              </header>
+              <p class="bio-summary">{{ selectedEmperor.summary || '暂无详细生平简介。' }}</p>
+            </div>
+
             <p
               class="filter-tip"
               v-if="selectedEraSlug === eraBlock.era.slug && selectedEmperor"
@@ -168,6 +178,41 @@ const formatYear = (year: number) => {
 </script>
 
 <style scoped>
+.emperor-bio-card {
+  background: #fff;
+  border: 1px solid rgba(179, 91, 42, 0.2);
+  border-left: 4px solid var(--brand, #b35b2a);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+.emperor-bio-card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+  border-bottom: 1px dashed rgba(0,0,0,0.05);
+  padding-bottom: 8px;
+}
+.emperor-bio-card h4 {
+  margin: 0;
+  font-size: 16px;
+  color: var(--text-heading, #2c1810);
+}
+.emperor-bio-card .reign-date {
+  font-size: 12px;
+  color: var(--text-muted, #8c8c8c);
+  font-family: monospace;
+}
+.emperor-bio-card .bio-summary {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-body, #4a4a4a);
+  text-align: justify;
+}
+
 .vertical-timeline {
   display: flex;
   flex-direction: column;
