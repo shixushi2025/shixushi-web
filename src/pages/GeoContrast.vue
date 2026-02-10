@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, watch, nextTick } from 'vue';
+import { ref, computed, watch, nextTick } from 'vue';
 import { eras } from '@/data/eras';
 import placesRaw from '@/data/places_raw.json';
 import mapsData from '@/data/maps.json';
-import { wmtsLayers, getTileUrl } from '@/data/wmts_layers';
+import { wmtsLayers } from '@/data/wmts_layers';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
@@ -95,9 +95,14 @@ function updateTileLayer() {
     // Note: Leaflet uses {z}/{x}/{y} format.
     // Sinica API template: img={id}-{fmt}-{z}-{x}-{y}
     // We construct the URL template for Leaflet
-    const url = `https://gis.sinica.edu.tw/ccts/file-exists.php?img=${layerInfo.id}-${layerInfo.format}-{z}-{x}-{y}`;
+    const url = getTileUrl(layerInfo.id, layerInfo.format, '{x}' as any, '{y}' as any, '{z}' as any).replace('%7B', '{').replace('%7D', '}');
     
-    tileLayer = L.tileLayer(url, {
+    // Actually, getTileUrl returns a specific URL for x,y,z. Leaflet needs a template.
+    // Let's look at getTileUrl implementation: return `...img=${layerId}-${format}-${z}-${x}-${y}`;
+    // Leaflet template should be: ...img=${layerId}-${format}-{z}-{x}-{y}
+    const template = `https://gis.sinica.edu.tw/ccts/file-exists.php?img=${layerInfo.id}-${layerInfo.format}-{z}-{x}-{y}`;
+
+    tileLayer = L.tileLayer(template, {
       maxZoom: 10,
       minZoom: 3,
       attribution: 'Academia Sinica',
