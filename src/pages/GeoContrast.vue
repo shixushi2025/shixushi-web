@@ -92,21 +92,12 @@ function updateTileLayer() {
 
   const layerInfo = currentWmtsLayer.value;
   if (layerInfo) {
-    // Note: Leaflet uses {z}/{x}/{y} format.
-    // Sinica API template: img={id}-{fmt}-{z}-{x}-{y}
-    // We construct the URL template for Leaflet
-    const url = getTileUrl(layerInfo.id, layerInfo.format, '{x}' as any, '{y}' as any, '{z}' as any).replace('%7B', '{').replace('%7D', '}');
-    
-    // Actually, getTileUrl returns a specific URL for x,y,z. Leaflet needs a template.
-    // Let's look at getTileUrl implementation: return `...img=${layerId}-${format}-${z}-${x}-${y}`;
-    // Leaflet template should be: ...img=${layerId}-${format}-{z}-{x}-{y}
     const template = `https://gis.sinica.edu.tw/ccts/file-exists.php?img=${layerInfo.id}-${layerInfo.format}-{z}-{x}-{y}`;
 
     tileLayer = L.tileLayer(template, {
       maxZoom: 10,
       minZoom: 3,
       attribution: 'Academia Sinica',
-      // Provide a fallback or error handler if needed, but Leaflet handles 404s by just not showing tiles
     });
     tileLayer.addTo(map);
   }
