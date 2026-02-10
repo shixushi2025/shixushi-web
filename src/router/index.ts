@@ -13,8 +13,7 @@ import PersonDetail from '@/pages/PersonDetail.vue';
 import TopicsList from '@/pages/TopicsList.vue';
 import TopicDetail from '@/pages/TopicDetail.vue';
 import GeoContrast from '@/pages/GeoContrast.vue';
-
-import GeoContrast from '@/pages/GeoContrast.vue';
+import Search from '@/pages/Search.vue';
 
 const routes: RouteRecordRaw[] = [
   { 
