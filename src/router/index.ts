@@ -12,7 +12,9 @@ import PeopleList from '@/pages/PeopleList.vue';
 import PersonDetail from '@/pages/PersonDetail.vue';
 import TopicsList from '@/pages/TopicsList.vue';
 import TopicDetail from '@/pages/TopicDetail.vue';
-import Search from '@/pages/Search.vue';
+import GeoContrast from '@/pages/GeoContrast.vue';
+
+import GeoContrast from '@/pages/GeoContrast.vue';
 
 const routes: RouteRecordRaw[] = [
   { 
@@ -20,6 +22,12 @@ const routes: RouteRecordRaw[] = [
     name: 'home', 
     component: Home,
     meta: { title: '首页 - 纵览五千年文明脉络' }
+  },
+  {
+    path: '/geo',
+    name: 'geo-contrast',
+    component: GeoContrast,
+    meta: { title: '古今地名对照' }
   },
   { 
     path: '/china', 
